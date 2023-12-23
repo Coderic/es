@@ -1,4 +1,8 @@
-import { HttpClientModule, HttpClientXsrfModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import {
+  HttpClientModule,
+  HttpClientXsrfModule,
+  HTTP_INTERCEPTORS,
+} from '@angular/common/http';
 import { NgModule, DEFAULT_CURRENCY_CODE, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -31,7 +35,12 @@ import { MatTreeModule } from '@angular/material/tree';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-import { HashLocationStrategy, LocationStrategy, PathLocationStrategy, registerLocaleData } from '@angular/common';
+import {
+  HashLocationStrategy,
+  LocationStrategy,
+  PathLocationStrategy,
+  registerLocaleData,
+} from '@angular/common';
 import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
 import { NotifyComponent } from './utils/notify/notify.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
@@ -45,15 +54,27 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
-import { getAnalytics, provideAnalytics, ScreenTrackingService, UserTrackingService } from '@angular/fire/analytics';
-import { initializeAppCheck, ReCaptchaEnterpriseProvider, provideAppCheck } from '@angular/fire/app-check';
+import {
+  getAnalytics,
+  provideAnalytics,
+  ScreenTrackingService,
+  UserTrackingService,
+} from '@angular/fire/analytics';
+import {
+  initializeAppCheck,
+  ReCaptchaEnterpriseProvider,
+  provideAppCheck,
+} from '@angular/fire/app-check';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getDatabase, provideDatabase } from '@angular/fire/database';
 import { getFunctions, provideFunctions } from '@angular/fire/functions';
 import { getMessaging, provideMessaging } from '@angular/fire/messaging';
 import { getPerformance, providePerformance } from '@angular/fire/performance';
 import { getStorage, provideStorage } from '@angular/fire/storage';
-import { getRemoteConfig, provideRemoteConfig } from '@angular/fire/remote-config';
+import {
+  getRemoteConfig,
+  provideRemoteConfig,
+} from '@angular/fire/remote-config';
 
 registerLocaleData(localeEs, 'es');
 
@@ -65,7 +86,7 @@ registerLocaleData(localeEs, 'es');
     NotifyComponent,
     PrepararComponent,
     UserLoginComponent,
-    RegistrarComponent
+    RegistrarComponent,
   ],
   imports: [
     BrowserModule,
@@ -108,17 +129,9 @@ registerLocaleData(localeEs, 'es');
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
-      registrationStrategy: 'registerWhenStable:30000'
+      registrationStrategy: 'registerWhenStable:30000',
     }),
-    provideFirebaseApp(() => initializeApp({
-      "projectId":"coderic-org",
-      "appId":"1:553195982969:web:ac90037ccf302abb7844a8",
-      "storageBucket":"coderic-org.appspot.com",
-      "apiKey":"AIzaSyBvZqt7dLDSZSGMMNeB5VI0z0TM9SUOoxw",
-      "authDomain":"coderic-org.firebaseapp.com",
-      "messagingSenderId":"553195982969",
-      "measurementId":"G-HM43VHMVPR"
-    })),
+
     provideAuth(() => getAuth()),
     provideAnalytics(() => getAnalytics()),
     /*
@@ -135,6 +148,18 @@ registerLocaleData(localeEs, 'es');
     providePerformance(() => getPerformance()),
     provideStorage(() => getStorage()),
     provideRemoteConfig(() => getRemoteConfig()),
+    provideFirebaseApp(() =>
+      initializeApp({
+        projectId: 'coderic-org',
+        appId: '1:368772660823:web:0f071712e630d4e948ad12',
+        databaseURL:
+          'https://coderic-org-default-rtdb.europe-west1.firebasedatabase.app',
+        storageBucket: 'coderic-org.appspot.com',
+        apiKey: 'AIzaSyBh5h7CUQWKEvcELu-Th2bJmKEmJICNEws',
+        authDomain: 'coderic-org.firebaseapp.com',
+        messagingSenderId: '368772660823',
+      })
+    ),
   ],
   providers: [
     AuthService,
@@ -144,8 +169,8 @@ registerLocaleData(localeEs, 'es');
     { provide: MAT_DATE_LOCALE, useValue: $localize`en` },
     { provide: DEFAULT_CURRENCY_CODE, useValue: 'USD' },
     ScreenTrackingService,
-    UserTrackingService
+    UserTrackingService,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
