@@ -1,0 +1,15 @@
+{
+  "hosting": [
+    {
+      "target": "coderic-org",
+      "public": "target/dist",
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "frameworksBackend": {}
+    }
+  ]
+}

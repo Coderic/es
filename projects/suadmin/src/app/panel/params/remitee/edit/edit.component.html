@@ -1,0 +1,26 @@
+<mat-toolbar-row>
+    <h1 class="mat-h1">Editar tipo de proyecto con id: {{ id }}</h1>
+</mat-toolbar-row>
+<form [formGroup]="editForm" novalidate (ngSubmit)="onSubmit()">
+    <mat-card class="create-card">
+      <mat-card-content>
+        <div class="row">
+          <div class="col">
+            <mat-form-field class="full-width">
+              <input matInput placeholder="Tipo de proyecto" formControlName="name">
+            </mat-form-field>
+          </div>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!editForm.valid">
+          <mat-icon>save</mat-icon> Guardar
+        </button>
+        <div class="spacer"></div>
+        <a mat-raised-button color="warn" (click)="delete()">
+          <mat-icon>delete</mat-icon> Eliminar
+        </a>
+      </mat-card-actions>
+    </mat-card>
+  </form>
+  

@@ -1,0 +1,27 @@
+<mat-toolbar-row>
+  <h1 class="mat-h1">Registrar nuevo usuario</h1>
+</mat-toolbar-row>
+<form [formGroup]="createForm" novalidate (ngSubmit)="onSubmit()">
+  <mat-card class="create-card">
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <mat-label>Nombre de usuario</mat-label>
+            <input matInput autocomplete="off" placeholder="Usuario" formControlName="username">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-checkbox formControlName="enabled">Estado</mat-checkbox>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button [disabled]="!createForm.valid" mat-raised-button color="primary" type="submit">
+        <mat-icon>save</mat-icon> Crear
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</form>

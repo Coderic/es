@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "coderic-org": {
+      "hosting": {
+        "coderic-org": [
+          "coderic-org"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "coderic-org"
+  }
+}

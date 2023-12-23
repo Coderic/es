@@ -1,0 +1,47 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav"
+        mode="side" [opened]=" true">
+        <mat-list>
+            <!--button mat-list-item [routerLink]="['/package']">Paquetes</button>
+            <button mat-list-item [routerLink]="['/remitee']">Consignatarios</button-->
+
+            <mat-list-item [matMenuTriggerFor]="params">
+              <mat-icon matListItemIcon>expand_more</mat-icon>
+              <span matListItemTitle>Parámetros</span>
+            </mat-list-item>
+            <mat-menu #params="matMenu">
+              <button mat-menu-item [routerLink]="['/package-type']">Tipo de paquetes</button>
+              <button mat-menu-item [routerLink]="['/transport']">Transporte</button>
+              <button mat-menu-item [routerLink]="['/shipper']">Expedidor</button>
+            </mat-menu>
+
+            <mat-list-item [matMenuTriggerFor]="geo">
+              <mat-icon matListItemIcon>expand_more</mat-icon>
+              <span matListItemTitle>Geográficos</span>
+            </mat-list-item>
+            <mat-menu #geo="matMenu">
+                <button mat-menu-item [routerLink]="['/country']">Países</button>
+                <button mat-menu-item [routerLink]="['/department']">Estados</button>
+                <button mat-menu-item [routerLink]="['/city']">Ciudades</button>
+                <button mat-menu-item [routerLink]="['/currency-type']">Monedas</button>
+            </mat-menu>
+            <mat-list-item [matMenuTriggerFor]="security">
+              <mat-icon matListItemIcon>expand_more</mat-icon>
+              <span matListItemTitle>Seguridad</span>
+            </mat-list-item>
+            <mat-menu #security="matMenu">
+              <button mat-menu-item [routerLink]="['/authority']">Autoridades</button>
+              <button mat-menu-item [routerLink]="['/group']">Grupos</button>
+              <button mat-menu-item [routerLink]="['/role']">Roles</button>
+              <button mat-menu-item [routerLink]="['/user']">Usuarios</button>
+              <button mat-menu-item [routerLink]="['/permission']">Permisos</button>
+            </mat-menu>
+            <button mat-list-item (click)="cerrar()">
+                <span>Cerrar sesión</span>
+            </button>
+        </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

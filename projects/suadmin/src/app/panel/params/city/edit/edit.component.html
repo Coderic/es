@@ -1,0 +1,45 @@
+<mat-toolbar-row>
+  <h1 class="mat-h1">Editar ciudad con id: {{ id }}</h1>
+</mat-toolbar-row>
+<form [formGroup]="editForm" novalidate (ngSubmit)="onSubmit()">
+  <mat-card class="create-card">
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <mat-label>Ciudad</mat-label>
+            <input matInput placeholder="Ciudad" formControlName="name">
+            <mat-error *ngIf="editForm.controls.name.hasError('required')">
+              Ciudad es <strong>requerido</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <mat-label>Department</mat-label>
+            <mat-select matNativeControl [formControl]="editForm.controls.department_id">
+               
+              <mat-option *ngFor="let department of departments$ | async" [value]="department.id">
+                {{ department.name }}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="editForm.controls.department_id.hasError('required')">
+              Departamento es <strong>requerido</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit" [disabled]="!editForm.valid">
+        <mat-icon>save</mat-icon> Guardar
+      </button>
+      <div class="spacer"></div>
+      <a mat-raised-button color="warn" (click)="delete()">
+        <mat-icon>delete</mat-icon> Eliminar
+      </a>
+    </mat-card-actions>
+  </mat-card>
+</form>

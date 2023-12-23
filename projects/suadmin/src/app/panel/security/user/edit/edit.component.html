@@ -1,0 +1,71 @@
+<mat-toolbar-row>
+  <h1 class="mat-h1">Editar nuevo usuario con id: {{ id }}</h1>
+</mat-toolbar-row>
+<form [formGroup]="editForm" novalidate (ngSubmit)="onSubmit()">
+  <mat-card class="create-card">
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput autocomplete="off" placeholder="Username" formControlName="username">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput autocomplete="off" type="password" placeholder="Password" formControlName="password">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <mat-label>Grupos</mat-label>
+            <mat-select multiple formControlName="groups">
+              <mat-option *ngFor="let group of groups" [value]="group.id">
+                {{ group.groupName }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <mat-label>Roles</mat-label>
+            <mat-select multiple formControlName="roles">
+              <mat-option *ngFor="let role of roles" [value]="role.id">
+                {{ role.name }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <mat-label>Permisos</mat-label>
+            <mat-select multiple formControlName="permissions">
+              <mat-option *ngFor="let permission of permissions" [value]="permission.id">
+                {{ permission.name }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit" [disabled]="!editForm.valid">
+        <mat-icon>save</mat-icon> Guardar
+      </button>
+      <mat-checkbox formControlName="enabled">Estado</mat-checkbox>
+      <div class="spacer"></div>
+      <a mat-raised-button color="warn" (click)="delete()">
+        <mat-icon>delete</mat-icon> Eliminar
+      </a>
+    </mat-card-actions>
+  </mat-card>
+</form>

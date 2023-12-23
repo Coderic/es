@@ -1,0 +1,19 @@
+<h1>Inventario</h1>
+<div class="bg-body-tertiary border rounded-3 p-3">
+    <table datatable [dtOptions]="dtOptions" class="table table-striped row-border hover">
+        <thead class="bg-primary text-white rounded-top"></thead>
+    </table>
+</div>
+<div class="modal fade" id="gallery" tabindex="-1" aria-labelledby="galleryLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title" id="galleryLabel">Vista previa de la fotografía</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://picsum.photos/190" class="img-fluid img-thumbnail h-100 mx-auto" alt="">
+            </div>
+        </div>
+    </div>
+</div>
