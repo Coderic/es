@@ -2,7 +2,7 @@
   "hosting": [
     {
       "target": "coderic-org",
-      "public": "www",
+      "public": "dist",
       "rewrites": [
         {
           "source": "**",
