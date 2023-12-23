@@ -75,6 +75,8 @@ import {
   getRemoteConfig,
   provideRemoteConfig,
 } from '@angular/fire/remote-config';
+import { environment } from 'src/environments/environment';
+import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 
 registerLocaleData(localeEs, 'es');
 
@@ -149,16 +151,7 @@ registerLocaleData(localeEs, 'es');
     provideStorage(() => getStorage()),
     provideRemoteConfig(() => getRemoteConfig()),
     provideFirebaseApp(() =>
-      initializeApp({
-        projectId: 'coderic-org',
-        appId: '1:368772660823:web:0f071712e630d4e948ad12',
-        databaseURL:
-          'https://coderic-org-default-rtdb.europe-west1.firebasedatabase.app',
-        storageBucket: 'coderic-org.appspot.com',
-        apiKey: 'AIzaSyBh5h7CUQWKEvcELu-Th2bJmKEmJICNEws',
-        authDomain: 'coderic-org.firebaseapp.com',
-        messagingSenderId: '368772660823',
-      })
+      initializeApp(environment.firebase)
     ),
   ],
   providers: [
@@ -168,6 +161,7 @@ registerLocaleData(localeEs, 'es');
     { provide: LocationStrategy, useClass: PathLocationStrategy },
     { provide: MAT_DATE_LOCALE, useValue: $localize`en` },
     { provide: DEFAULT_CURRENCY_CODE, useValue: 'USD' },
+    { provide: FIREBASE_OPTIONS, useValue: environment.firebase },
     ScreenTrackingService,
     UserTrackingService,
   ],

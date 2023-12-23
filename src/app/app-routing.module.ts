@@ -8,16 +8,44 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { AppComponent } from './app.component';
 
+import {
+  AngularFireAuthGuard,
+  hasCustomClaim,
+  redirectUnauthorizedTo,
+  redirectLoggedInTo,
+} from '@angular/fire/compat/auth-guard';
+
+const adminOnly = () => hasCustomClaim('admin');
+const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['login']);
+const redirectLoggedInToItems = () => redirectLoggedInTo(['dashboard']);
+//const belongsToAccount = (next) => hasCustomClaim(`account-${next.params.id}`)
+
 const routes: Routes = [
-  { path: '', loadChildren: () => import('./portal/portal.module').then(m => m.PortalModule), canActivate: [SecurityGuard] },
-  { path: 'preparar/:id/:hash', component: PrepararComponent, canActivate: [SecurityGuard] },
-  { path: 'login', component: UserLoginComponent },
+  {
+    path: '',
+    loadChildren: () =>
+      import('./portal/portal.module').then((m) => m.PortalModule),
+    canActivate: [AngularFireAuthGuard],
+    data: { authGuardPipe: redirectUnauthorizedToLogin },
+  },
+  {
+    path: 'preparar/:id/:hash',
+    component: PrepararComponent,
+    canActivate: [AngularFireAuthGuard],
+    data: { authGuardPipe: redirectUnauthorizedToLogin },
+  },
+  {
+    path: 'login',
+    component: UserLoginComponent,
+    canActivate: [AngularFireAuthGuard],
+    data: { authGuardPipe: redirectLoggedInToItems },
+  },
   { path: 'registrar', component: RegistrarComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
