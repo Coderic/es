@@ -4,7 +4,7 @@
       "target": "coderic-org",
       "public": "dist",
       "i18n": {
-        "root": "./"
+        "root": "/"
       },
       "ignore": [
         "**/.*"
@@ -33,6 +33,15 @@
         {
           "source": "**",
           "destination": "/index.html"
+        }
+        ,
+        {
+          "source": "/es/**",
+          "destination": "/es/index.html"
+        },
+        {
+          "source": "/en/**",
+          "destination": "/en/index.html"
         }
       ],
       "frameworksBackend": {}
