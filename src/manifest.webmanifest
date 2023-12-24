@@ -1,8 +1,8 @@
 {
-  "name": "coderic-org",
-  "short_name": "coderic-org",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "Coderic",
+  "short_name": "Coderic",
+  "theme_color": "#f97316",
+  "background_color": "#FFFFFF",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
