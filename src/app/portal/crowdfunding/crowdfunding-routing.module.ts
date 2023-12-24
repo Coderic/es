@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CrowdfundingComponent } from './crowdfunding.component';
+import { ContainerComponent } from './container/container.component';
 
 const routes: Routes = [
   {
-    path: '', component: CrowdfundingComponent
+    path: '', component: ContainerComponent,
+    children: [
+      {
+        path: '', component: CrowdfundingComponent,
+      }
+    ]
   }
 ];
 @NgModule({

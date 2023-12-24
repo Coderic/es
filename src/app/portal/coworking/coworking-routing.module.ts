@@ -1,11 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CoworkingComponent } from './coworking.component';
+import { ContainerComponent } from './container/container.component';
 
 
 const routes: Routes = [
   {
-    path: '', component: CoworkingComponent
+    path: '', component: ContainerComponent,
+    children: [
+      {
+        path: '', component: CoworkingComponent,
+      }
+    ]
   }
 ];
 
