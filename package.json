@@ -34,6 +34,7 @@
     "@angular/cli": "^16.0.0",
     "@angular/compiler-cli": "^16.2.12",
     "@angular/localize": "^16.2.12",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "@types/datatables.net": "^1.10.24",
     "@types/datatables.net-buttons": "^1.4.7",
     "@types/jasmine": "~4.3.0",
