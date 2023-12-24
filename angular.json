@@ -28,9 +28,6 @@
               "src/manifest.webmanifest"
             ],
             "styles": [
-              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/bootswatch/dist/cerulean/bootstrap.min.css",
               "src/custom-theme.scss",
               "src/styles.css"
             ],
@@ -251,36 +248,12 @@
             "tsConfig": "projects/panel/tsconfig.app.json",
             "assets": [
               "projects/panel/src/favicon.ico",
-              "projects/panel/src/assets",
-              {
-                "glob": "es-ES.json",
-                "input": "./node_modules/datatables.net-plugins/i18n/",
-                "output": "./assets/"
-              },
               "projects/panel/src/manifest.webmanifest"
             ],
             "styles": [
-              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/bootswatch/dist/cerulean/bootstrap.min.css",
-              "node_modules/datatables.net-dt/css/jquery.dataTables.css",
-              "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css",
-              "node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css",
-              "node_modules/datatables.net-datetime/dist/dataTables.dateTime.min.css",
               "projects/panel/src/styles.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
-              "node_modules/datatables.net/js/jquery.dataTables.min.js",
-              "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.min.js",
-              "node_modules/pdfmake/build/pdfmake.min.js",
-              "node_modules/pdfmake/build/vfs_fonts.js",
-              "node_modules/jszip/dist/jszip.js",
-              "node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js",
-              "node_modules/datatables.net-buttons/js/buttons.html5.js",
-              "node_modules/datatables.net-buttons/js/buttons.print.js",
-              "node_modules/datatables.net-datetime/dist/dataTables.dateTime.min.js"
             ],
             "serviceWorker": true,
             "ngswConfigPath": "projects/panel/ngsw-config.json"

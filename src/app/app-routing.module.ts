@@ -25,14 +25,8 @@ const routes: Routes = [
     path: '',
     loadChildren: () =>
       import('./portal/portal.module').then((m) => m.PortalModule),
-    canActivate: [AngularFireAuthGuard],
-    data: { authGuardPipe: redirectUnauthorizedToLogin },
-  },
-  {
-    path: 'preparar/:id/:hash',
-    component: PrepararComponent,
-    canActivate: [AngularFireAuthGuard],
-    data: { authGuardPipe: redirectUnauthorizedToLogin },
+//    canActivate: [AngularFireAuthGuard],
+//    data: { authGuardPipe: redirectUnauthorizedToLogin },
   },
   {
     path: 'login',
