@@ -30,11 +30,7 @@
         }
       ],
       "rewrites": [
-        {
-          "source": "**",
-          "destination": "/index.html"
-        }
-        ,
+
         {
           "source": "/es/**",
           "destination": "/es/index.html"
@@ -42,6 +38,10 @@
         {
           "source": "/en/**",
           "destination": "/en/index.html"
+        },
+        {
+          "source": "**",
+          "destination": "/index.html"
         }
       ],
       "frameworksBackend": {}
