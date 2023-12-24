@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { DevelopmentRoutingModule } from './development-routing.module';
 import { DevelopmentComponent } from './development.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 
 @NgModule({
   declarations: [
-    DevelopmentComponent
+    DevelopmentComponent,
+    NavigationComponent
   ],
   imports: [
     CommonModule,

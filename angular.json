@@ -32,7 +32,7 @@
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "localize": true,
+            "localize": false,
             "polyfills": [
               "zone.js"
             ],
