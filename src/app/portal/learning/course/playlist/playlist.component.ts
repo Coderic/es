@@ -11,7 +11,7 @@ let apiLoaded = false;
 export class PlaylistComponent implements OnInit {
   private playlistItems: any;
   constructor(private yt: YoutubeService) {
-    this.yt.getItems('lipsum').subscribe(console.dir);
+    //this.yt.getItems('lipsum').subscribe(console.dir);
   }
 
   ngOnInit() {
