@@ -1,801 +1,117 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en" datatype="plaintext" original="ng2.template">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="4682189509605310573" datatype="html">
-        <source>Companies</source>
-        <target>Empresas</target>
+      <trans-unit id="5051275796279096757" datatype="html">
+        <source>Development</source>
+        <target>Desarrollo</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">projects/companies/src/lib/companies.component.html</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
-          <context context-type="linenumber">21</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8113497417584480779" datatype="html">
-        <source>Contract management</source>
-        <target>Gestión de contratos</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/contracts/src/lib/contracts.component.html</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5502398334173581061" datatype="html">
-        <source>Assignment</source>
-        <target>Asignación</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/assignment/assignment.component.html</context>
-          <context context-type="linenumber">6</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8890553633144307762" datatype="html">
-        <source>Back</source>
-        <target>Volver</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">4</context>
-        </context-group>
-      </trans-unit>     
-      <trans-unit id="6814727803743723806" datatype="html">
-        <source>Create fund</source>
-        <target>Crear fondo</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">6</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">7</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8186013988289067040" datatype="html">
-        <source>Code</source>
-        <target>Código</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
+          <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">14</context>
         </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">105</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">42</context>
-        </context-group>
       </trans-unit>
-      <trans-unit id="2786551763676707360" datatype="html">
-        <source> Code is required </source>
-        <target>Código es requerido</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">15,17</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4526514308040120044" datatype="html">
-        <source>Name of fund</source>
-        <target>Nombre del fondo</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">22</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2853423837206269818" datatype="html">
-        <source> Name of fund is required </source>
-        <target>Nombre del fondo es requerido</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">23,25</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7288563743534752692" datatype="html">
-        <source>First Close Date</source>
-        <target>Primera fecha de cierre</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">32</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8845219325208590180" datatype="html">
-        <source>MM/DD/YYYY</source>
-        <target>DD/MM/YYYY</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">34</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">47</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">62</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">75</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4822024770573090537" datatype="html">
-        <source> First Close Date is required </source>
-        <target>Primera fecha de cierre es requerido</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">38,40</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5291720228861196308" datatype="html">
-        <source>Final closing date</source>
-        <target>Fecha de cierre final</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">45</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1564710011702704231" datatype="html">
-        <source> Final closing date is required </source>
-        <target>Fecha de cierre final es requerido</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">51,53</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3895958502452067458" datatype="html">
-        <source>Fund start date</source>
-        <target>Fecha de inicio del fondo</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">60</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7508373747813253544" datatype="html">
-        <source> Fund start date is required </source>
-        <target>Fecha de inicio del fondo es requerido</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">66,68</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1064211629811319840" datatype="html">
-        <source>Fund close date</source>
-        <target>Fecha de cierre del fondo</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">73</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4109956423819783574" datatype="html">
-        <source> Fund close date is required </source>
-        <target>Fecha de cierre del fondo es requerido</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">79,81</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2718123425599320514" datatype="html">
-        <source>Projected total commitment</source>
-        <target>Compromiso total proyectado</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">88</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="9022356349876440567" datatype="html">
-        <source> Projected total commitment is required </source>
-        <target>Compromiso total proyectado es requerido</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">89,91</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3150215518661936477" datatype="html">
-        <source>Total commitment</source>
-        <target>Compromiso total</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">96</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">10</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3840432586211124782" datatype="html">
-        <source> Total commitment is required </source>
-        <target>Compromiso total es requerido</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">97,99</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4902817035128594900" datatype="html">
-        <source>Description</source>
-        <target>Descripción</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">106</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2955929752241859415" datatype="html">
-        <source> Description is required </source>
-        <target>Descripción es requerido</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">107,109</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3249513483374643425" datatype="html">
-        <source>Add</source>
-        <target>Añadir</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/create/create.component.html</context>
-          <context context-type="linenumber">115</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1572891961460692763" datatype="html">
-        <source>Fund <x id="INTERPOLATION" equiv-text="{{ id }}"/> detail</source>
-        <target>Detalle del fondo <x id="INTERPOLATION" equiv-text="{{ id }}"/></target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4172132635738209452" datatype="html">
-        <source>Fund information</source>
-        <target>Información de fondo</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">4</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/information/information.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5220904524310683181" datatype="html">
-        <source>Total drawdowns to date</source>
-        <target>Total de detracciones hasta la fecha</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">20</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2385975585609371107" datatype="html">
-        <source>Investors in the fund</source>
-        <target>Inversionistas en el fondo</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">5</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">5</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8934201704969227373" datatype="html">
-        <source>Disbursed</source>
-        <target>Desembolsado</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">16</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">28</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">40</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">52</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">64</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">76</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">88</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">16</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">28</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">40</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">52</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">64</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">76</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">88</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2873196070623992437" datatype="html">
-        <source>Committed</source>
-        <target>Comprometido</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">29</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">41</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">53</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">65</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">77</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">89</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">29</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">41</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">53</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">65</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">77</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">89</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7091571651222742304" datatype="html">
-        <source>Projects</source>
-        <target>Proyectos</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/fund.component.html</context>
-          <context context-type="linenumber">93</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/project/project.component.html</context>
-          <context context-type="linenumber">4</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
-          <context context-type="linenumber">18</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
-          <context context-type="linenumber">68</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
-          <context context-type="linenumber">18</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5088803815747342263" datatype="html">
-        <source>Fund detail <x id="INTERPOLATION" equiv-text="{{ id }}"/></source>
-        <target>Detalle de fondo <x id="INTERPOLATION" equiv-text="{{ id }}"/></target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/information/information.component.html</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4287163324241582071" datatype="html">
-        <source>Distribution Notice</source>
-        <target>Aviso de distribución</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/distribution/distribution.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5900065716239408177" datatype="html">
-        <source>Fund detail</source>
-        <target>Detalle de fondo</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">1</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8425776609816976532" datatype="html">
-        <source>Capital called</source>
-        <target>Capital solicitado</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">92</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7064381345174585628" datatype="html">
-        <source>Distributions</source>
-        <target>Distribuciones</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">93</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8186013988289067040" datatype="html">
-        <source>Code</source>
-        <target>Código</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">105</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">109</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2393709620346049963" datatype="html">
-        <source>Name of funds</source>
-        <target>Nombre de fondos</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">111</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">115</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="888341446683346521" datatype="html">
-        <source>Start date</source>
-        <target>Fecha inicial</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">117</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">121</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="9126473650688138870" datatype="html">
-        <source>Final date</source>
-        <target>Fecha final</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">123</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">127</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3193976279273491157" datatype="html">
-        <source>Actions</source>
-        <target>Acciones</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/investor/investor.component.html</context>
-          <context context-type="linenumber">128</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">132</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8392652297085962969" datatype="html">
-        <source>Detail of fund projects</source>
-        <target>Detalle de fondo del proyecto</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/project/project.component.html</context>
-          <context context-type="linenumber">1</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2700386075843401618" datatype="html">
-        <source>Information on fund projects</source>
-        <target>Información de fondo del proyecto</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/fund/project/project.component.html</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2950450486092426663" datatype="html">
-        <source>Funds</source>
-        <target>Fondos</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
-          <context context-type="linenumber">28</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
-          <context context-type="linenumber">12</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6605018471713236006" datatype="html">
-        <source>Fund management</source>
-        <target>Gestión de fondos</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="584754872792429089" datatype="html">
-        <source>Assign</source>
-        <target>Asignar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">5</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1548763183096315929" datatype="html">
-        <source>Fondos creados</source>
-        <target>Fondos creados</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">7</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8851254255310908907" datatype="html">
-        <source>Commitment disbursed as of today</source>
-        <target>Compromiso desembolsado al día de hoy</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">18</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">30</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">42</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">54</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">66</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">78</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">90</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3553555769495256898" datatype="html">
-        <source>Total Commitment</source>
-        <target>Compromiso total</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">19</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">31</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">43</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">55</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">67</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">79</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">91</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8498071343269139396" datatype="html">
-        <source>See summary of combined funds</source>
-        <target>Ver resumen de fondos combinados</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">95</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6780499089457000793" datatype="html">
-        <source>Combine</source>
-        <target>Combinar</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/funds/src/lib/funds.component.html</context>
-          <context context-type="linenumber">97</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3492007542396725315" datatype="html">
-        <source>Welcome</source>
-        <target>Bienvenido</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/security/src/lib/security.component.html</context>
-          <context context-type="linenumber">5</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1692815930495952260" datatype="html">
-        <source>Please log in</source>
-        <target>Inicie sesión por favor</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/security/src/lib/security.component.html</context>
-          <context context-type="linenumber">6</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8160120505380525079" datatype="html">
-        <source>Start Session</source>
-        <target>Iniciar sesión</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">projects/security/src/lib/security.component.html</context>
-          <context context-type="linenumber">26</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7618870723010461457" datatype="html">
-        <source>en</source>
-        <target>es</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.module.ts</context>
-          <context context-type="linenumber">102</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6570363013146073520" datatype="html">
-        <source>Dashboard</source>
-        <target>Dashboard</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
-          <context context-type="linenumber">9</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7309727112949202605" datatype="html">
-        <source>General indicators</source>
-        <target>Indicadores generales</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3579359653177704656" datatype="html">
-        <source>Investors</source>
-        <target>Inversionistas</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
-          <context context-type="linenumber">8</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
-          <context context-type="linenumber">15</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1322586333669103999" datatype="html">
-        <source>Performance</source>
-        <target>Rendimiento</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
-          <context context-type="linenumber">38</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2363158409383485440" datatype="html">
-        <source>Invoices</source>
-        <target>Facturas</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
-          <context context-type="linenumber">48</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6782077395930235254" datatype="html">
-        <source>Countries</source>
-        <target>Países</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
-          <context context-type="linenumber">58</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7535527225967694107" datatype="html">
-        <source>Español</source>
-        <target>English</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
-          <context context-type="linenumber">5</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4733307402565258070" datatype="html">
-        <source>Documents</source>
-        <target>Documentos</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
-          <context context-type="linenumber">24</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1868606282505332204" datatype="html">
-        <source>Reports</source>
-        <target>Reportes</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
+      <trans-unit id="6766426820613979595" datatype="html">
+        <source>Crowdfunding</source>
+        <target>Financiamiento</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">27</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3008420115644088420" datatype="html">
-        <source>Configuration</source>
-        <target>Configuración</target>
+      <trans-unit id="6169807874946516695" datatype="html">
+        <source>Coworking</source>
+        <target>Co-Working</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/menu/menu.component.html</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">40</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="609639138269862163" datatype="html">
-        <source>/es</source>
-        <target>/en</target>
+      <trans-unit id="8592968690354608818" datatype="html">
+        <source>Freelancers</source>
+        <target>Freelancers</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/menu/menu.component.ts</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7185591550196745737" datatype="html">
-        <source>Error 404</source>
-        <target>Error 404</target>
+      <trans-unit id="8832343684695963710" datatype="html">
+        <source>Learning</source>
+        <target>Apendizaje</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/page-not-found/page-not-found.component.html</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1274247756500564795" datatype="html">
+        <source>Community</source>
+        <target>Comunidad</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8440128775129354214" datatype="html">
+        <source>Privacy</source>
+        <target>Privacidad</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7372755454773589030" datatype="html">
+        <source>Delivery</source>
+        <target>Entrega</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2350687709484433717" datatype="html">
+        <source>Refunds</source>
+        <target>Reembolsos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7814069298939347422" datatype="html">
+        <source>Legal</source>
+        <target>Marco Legal</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="664573589261423471" datatype="html">
+        <source>Terms and Conditions</source>
+        <target>Términos y Condiciones</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5710053734496712707" datatype="html">
+        <source>Faq&apos;s</source>
+        <target>Preguntas Frecuentes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2521484543737872425" datatype="html">
+        <source>Corporation Oriented to the Development of Engineering of Resources Information Commercial</source>
+        <target>Corporación Orientada al Desarrollo Estratégico de Recursos de Información Comercial</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2770678842898812543" datatype="html">
+        <source>Since September 30, 2004</source>
+        <target>Desde el 30 de septiembre de 2004</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">142</context>
         </context-group>
       </trans-unit>
     </body>

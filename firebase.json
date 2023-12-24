@@ -3,6 +3,9 @@
     {
       "target": "coderic-org",
       "public": "dist",
+      "i18n": {
+        "root": "./"
+      },
       "ignore": [
         "**/.*"
       ],
