@@ -1,10 +1,8 @@
 import { HttpErrorResponse, HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { MatDialog } from "@angular/material/dialog";
 import { Router } from "@angular/router";
 import { Observable, throwError } from "rxjs";
 import { catchError, tap } from "rxjs/operators";
-import { UtilsService } from "src/app/utils/utils.service";
 
 @Injectable({
     providedIn: 'root'
@@ -12,7 +10,6 @@ import { UtilsService } from "src/app/utils/utils.service";
 export class AppInterceptor implements HttpInterceptor {
     constructor(
         private router: Router,
-        private utilsSrv: UtilsService,
     ) { }
 
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
@@ -42,26 +39,24 @@ export class AppInterceptor implements HttpInterceptor {
                     if (error.status === 401) {
                         localStorage.clear();
                         if (error.error.message) {
-                            this.utilsSrv.notify('X', error.error.message);
                         }
                         this.router.navigate(['/login'])
                     }
                     if (error.status === 403 || error.status === 0) {
-                        this.utilsSrv.notify('X', 'No está autorizado para acceder a este recurso');
+                        //this.utilsSrv.notify('X', 'No está autorizado para acceder a este recurso');
                     }
                     if (error.status > 500) {
                         localStorage.clear();
                         if (error.error.message) {
-                            this.utilsSrv.notify('X', error.error.message);
                         }
                         this.router.navigate(['/']);
                     }
 
                     /*
                         if (error.status === 422) {
-    
+
                         }
-    
+
                         if (error.status === 409) {
                             this.router.navigate(['/']);
                         }

@@ -3,7 +3,7 @@ import {
   HttpClientXsrfModule,
   HTTP_INTERCEPTORS,
 } from '@angular/common/http';
-import { NgModule, DEFAULT_CURRENCY_CODE, isDevMode } from '@angular/core';
+import { NgModule, DEFAULT_CURRENCY_CODE, isDevMode, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -12,25 +12,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppInterceptor } from './app.interceptor';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { MatListModule } from '@angular/material/list';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatCardModule } from '@angular/material/card';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatSliderModule } from '@angular/material/slider';
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatSortModule } from '@angular/material/sort';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatRadioModule } from '@angular/material/radio';
-import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule } from '@angular/material/select';
-import { MatTreeModule } from '@angular/material/tree';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -41,9 +22,7 @@ import {
   PathLocationStrategy,
   registerLocaleData,
 } from '@angular/common';
-import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
 import { NotifyComponent } from './utils/notify/notify.component';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import localeEs from '@angular/common/locales/es';
 import { AuthService } from './security/auth.service';
@@ -77,6 +56,7 @@ import {
 } from '@angular/fire/remote-config';
 import { environment } from 'src/environments/environment';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 registerLocaleData(localeEs, 'es');
 
@@ -95,38 +75,13 @@ registerLocaleData(localeEs, 'es');
     HttpClientModule,
     BrowserAnimationsModule,
     LayoutModule,
-    MatNativeDateModule,
-    MatSnackBarModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatTreeModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
+    YouTubePlayerModule,
     BrowserModule,
     FormsModule,
-    MatProgressSpinnerModule,
-    MatSliderModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    MatGridListModule,
-    MatCardModule,
-    MatMenuModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatFormFieldModule,
-    MatCheckboxModule,
-    MatSortModule,
     ReactiveFormsModule,
-    MatRadioModule,
-    MatInputModule,
-    MatSelectModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
@@ -159,12 +114,14 @@ registerLocaleData(localeEs, 'es');
     UtilsService,
     { provide: HTTP_INTERCEPTORS, useClass: AppInterceptor, multi: true },
     { provide: LocationStrategy, useClass: PathLocationStrategy },
-    { provide: MAT_DATE_LOCALE, useValue: $localize`en` },
     { provide: DEFAULT_CURRENCY_CODE, useValue: 'USD' },
     { provide: FIREBASE_OPTIONS, useValue: environment.firebase },
     ScreenTrackingService,
     UserTrackingService,
   ],
   bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ]
 })
 export class AppModule {}

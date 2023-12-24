@@ -5,7 +5,14 @@ import { LearningComponent } from './learning.component';
 const routes: Routes = [
   {
     path: '', component: LearningComponent
-  }
+  },
+  {
+    path: 'course',
+    loadChildren: () =>
+      import('./course/course.module').then(
+        (m) => m.CourseModule
+      ),
+  },
 ];
 
 @NgModule({
