@@ -18,6 +18,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'matchfunding',
+        loadChildren: () =>
+          import('./matchfunding/matchfunding.module').then(
+            (m) => m.MatchfundingModule
+          ),
+      },
+      {
         path: 'stakeholders',
         loadChildren: () =>
           import('./stakeholders/stakeholders.module').then(
