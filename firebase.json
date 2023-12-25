@@ -41,7 +41,7 @@
         },
         {
           "source": "**",
-          "destination": "/index.html"
+          "destination": "/en/index.html"
         }
       ],
       "frameworksBackend": {}

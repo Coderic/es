@@ -11,10 +11,24 @@ const routes: Routes = [
         path: '', component: LearningComponent,
       },
       {
+        path: 'careers',
+        loadChildren: () =>
+          import('./careers/careers.module').then(
+            (m) => m.CareersModule
+          ),
+      },
+      {
         path: 'courses',
         loadChildren: () =>
           import('./courses/courses.module').then(
             (m) => m.CoursesModule
+          ),
+      },
+      {
+        path: 'tutorials',
+        loadChildren: () =>
+          import('./tutorials/tutorials.module').then(
+            (m) => m.TutorialsModule
           ),
       },
       {
