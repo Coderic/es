@@ -16,7 +16,7 @@
       </trans-unit>
       <trans-unit id="6766426820613979595" datatype="html">
         <source>Crowdfunding</source>
-        <target>Financiamiento</target>
+        <target>Recaudación de fondos</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">27</context>
@@ -28,7 +28,7 @@
       </trans-unit>
       <trans-unit id="6169807874946516695" datatype="html">
         <source>Coworking</source>
-        <target>Co-Working</target>
+        <target>Trabajo colaborativo</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">40</context>
@@ -40,7 +40,7 @@
       </trans-unit>
       <trans-unit id="8592968690354608818" datatype="html">
         <source>Freelancers</source>
-        <target>Freelancers</target>
+        <target>Autónomos</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">53</context>
