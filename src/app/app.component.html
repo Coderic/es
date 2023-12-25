@@ -83,12 +83,23 @@
     </nav>
 
   </div>
-  <header class="flex justify-between px-4 py-2 border-t-4 border-b-2 border-orange-500">
+  <header class="flex justify-between border-t-4 border-b-2 border-orange-500">
     <a routerLink="/">
-      <img src="/assets/img/logo.png" />
+      <img src="/assets/img/logo.png" class="h-32">
     </a>
-    <div>
+    <div class="bg-cover bg-no-repeat h-32 w-3/4" style="
+        background-position: center;
+        background-image: url('/assets/img/hexagons.jpg');
 
+      ">
+      <div class="h-full w-full bg-fixed" style="background-color: rgba(255, 255, 255, 0.80);
+          background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(229, 229, 229, 0.50) 150%);">
+        <div class="flex h-full items-center justify-center text-right">
+          <div class="px-6 text-black w-full md:px-6">
+            &nbsp;
+          </div>
+        </div>
+      </div>
     </div>
   </header>
   <main>
@@ -103,7 +114,8 @@
         <ol class="inline-flex items-center text-stone-500 md:space-x-2 rtl:space-x-reverse">
           <li>
             <a routerLink="/privacy"
-              class="inline-flex items-center text-sm font-medium hover:text-white dark:text-gray-400 dark:hover:text-white" i18n>Privacy</a>
+              class="inline-flex items-center text-sm font-medium hover:text-white dark:text-gray-400 dark:hover:text-white"
+              i18n>Privacy</a>
           </li>
         </ol>
       </nav>
@@ -111,17 +123,20 @@
         <ol class="inline-flex items-center text-stone-500 md:space-x-2 rtl:space-x-reverse">
           <li>
             <a routerLink="/legal"
-              class="inline-flex items-center text-sm font-medium hover:text-white dark:text-gray-400 dark:hover:text-white" i18n>Legal</a>
+              class="inline-flex items-center text-sm font-medium hover:text-white dark:text-gray-400 dark:hover:text-white"
+              i18n>Legal</a>
           </li>
           <li>·</li>
           <li>
             <a routerLink="/tos"
-              class="text-sm font-medium ms-1 hover:text-white md:ms-2 dark:text-gray-400 dark:hover:text-white" i18n>Terms and Conditions</a>
+              class="text-sm font-medium ms-1 hover:text-white md:ms-2 dark:text-gray-400 dark:hover:text-white"
+              i18n>Terms and Conditions</a>
           </li>
           <li>·</li>
           <li>
             <a routerLink="/faqs"
-              class="text-sm font-medium ms-1 hover:text-white md:ms-2 dark:text-gray-400 dark:hover:text-white" i18n>Faq's</a>
+              class="text-sm font-medium ms-1 hover:text-white md:ms-2 dark:text-gray-400 dark:hover:text-white"
+              i18n>Faq's</a>
           </li>
         </ol>
       </nav>

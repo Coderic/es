@@ -100,6 +100,20 @@
           <context context-type="linenumber">142</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="6747202928800453043" datatype="html">
+        <source>Welcome! This is</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6729681822193900473" datatype="html">
+        <source>Coderic may seem like a lot to you, but the truth is that we are a Software Factory, and that is that we, we do software engineering, our technological ecosystems are our exposure to the world of what we do offering tools and integration within everyone’s reach.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
