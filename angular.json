@@ -32,7 +32,7 @@
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "localize": true,
+            "localize": false,
             "polyfills": [
               "zone.js"
             ],
@@ -80,6 +80,12 @@
                   "with": "src/environments/environment.development.ts"
                 }
               ]
+            },
+            "en":{
+              "localize": ["en"]
+            },
+            "es":{
+              "localize": ["es"]
             }
           },
           "defaultConfiguration": "production"
@@ -92,6 +98,9 @@
             },
             "development": {
               "browserTarget": "coderic-org:build:development"
+            },
+            "es": {
+              "browserTarget": "coderic-org:build:development,es"
             }
           },
           "defaultConfiguration": "development"

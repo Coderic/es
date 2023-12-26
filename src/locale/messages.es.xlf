@@ -169,6 +169,10 @@
           <context context-type="sourcefile">src/app/portal/crowdfunding/navigation/navigation.component.html</context>
           <context context-type="linenumber">22</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="4111208477948747698" datatype="html">
         <source>Matchfunding</source>
@@ -210,6 +214,38 @@
           <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="88715016040550427" datatype="html">
+        <source>Contests</source>
+        <target>Concursos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4025908637465733151" datatype="html">
+        <source>Recruiters</source>
+        <target>Reclutadores</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6748928356220723437" datatype="html">
+        <source>Local Jobs</source>
+        <target>Empleos Locales</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3620668876378879803" datatype="html">
+        <source>Exams</source>
+        <target>Exámenes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="6747202928800453043" datatype="html">
         <source>Welcome! This is</source>
         <target>¡Bienvenido! Esto es</target>
@@ -224,6 +260,38 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5779770381601735038" datatype="html">
+        <source>Careers</source>
+        <target>Carreras</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/learning/navigation/navigation.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1368388923673520351" datatype="html">
+        <source>Courses</source>
+        <target>Cursos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/learning/navigation/navigation.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4699310706051946809" datatype="html">
+        <source>Tutorials</source>
+        <target>Tutoriales</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/learning/navigation/navigation.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4145287881406093444" datatype="html">
+        <source>Video Tutorials</source>
+        <target>Vídeotutoriales</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/learning/navigation/navigation.component.html</context>
+          <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
     </body>

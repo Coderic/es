@@ -42,6 +42,10 @@
           <context context-type="linenumber">50</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">35</context>
         </context-group>
@@ -72,35 +76,35 @@
         <source>Privacy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">113</context>
+          <context context-type="linenumber">115</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7814069298939347422" datatype="html">
         <source>Legal</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">122</context>
+          <context context-type="linenumber">124</context>
         </context-group>
       </trans-unit>
       <trans-unit id="664573589261423471" datatype="html">
         <source>Terms and Conditions</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">128</context>
+          <context context-type="linenumber">130</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5710053734496712707" datatype="html">
         <source>Faq&apos;s</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">134</context>
+          <context context-type="linenumber">136</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2521484543737872425" datatype="html">
         <source>Corporation Oriented to the Development of Engineering of Resources Information Commercial</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">140</context>
+          <context context-type="linenumber">142</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
@@ -111,7 +115,7 @@
         <source>Since September 30, 2004</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">142</context>
+          <context context-type="linenumber">144</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6451191643745835290" datatype="html">
@@ -139,6 +143,10 @@
         <source>Projects</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/crowdfunding/navigation/navigation.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
           <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
@@ -177,6 +185,34 @@
           <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="88715016040550427" datatype="html">
+        <source>Contests</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4025908637465733151" datatype="html">
+        <source>Recruiters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6748928356220723437" datatype="html">
+        <source>Local Jobs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3620668876378879803" datatype="html">
+        <source>Exams</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="6747202928800453043" datatype="html">
         <source>Welcome! This is</source>
         <context-group purpose="location">
@@ -189,6 +225,34 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5779770381601735038" datatype="html">
+        <source>Careers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/learning/navigation/navigation.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1368388923673520351" datatype="html">
+        <source>Courses</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/learning/navigation/navigation.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4699310706051946809" datatype="html">
+        <source>Tutorials</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/learning/navigation/navigation.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4145287881406093444" datatype="html">
+        <source>Video Tutorials</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/learning/navigation/navigation.component.html</context>
+          <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
     </body>
