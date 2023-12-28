@@ -1,6 +1,8 @@
 export const environment = {
   production: false,
   api: '/api',
+  githubApi: 'https://api.github.com/orgs/CodericLatam',
+  githubToken: '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',
   firebase: {
     projectId: 'coderic-org',
     appId: '1:368772660823:web:0f071712e630d4e948ad12',

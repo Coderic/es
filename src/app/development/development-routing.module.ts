@@ -5,17 +5,26 @@ import { ContainerComponent } from './container/container.component';
 
 const routes: Routes = [
   {
-    path: '', component: ContainerComponent,
+    path: '',
+    component: ContainerComponent,
     children: [
       {
-        path: '', component: DevelopmentComponent,
-      }
-    ]
-  }
+        path: '',
+        component: DevelopmentComponent,
+      },
+      {
+        path: 'repositories',
+        loadChildren: () =>
+          import('./repositories/repositories.module').then(
+            (m) => m.RepositoriesModule
+          ),
+      },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class DevelopmentRoutingModule { }
+export class DevelopmentRoutingModule {}

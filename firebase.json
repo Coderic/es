@@ -46,5 +46,8 @@
       ],
       "frameworksBackend": {}
     }
-  ]
+  ],
+  "functions": {
+    "codebase": "coderic"
+  }
 }
