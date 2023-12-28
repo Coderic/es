@@ -21,9 +21,8 @@ export class AppComponent implements OnInit {
   public categories$: Observable<any[]>;
   public user$: Observable<firebase.User | null> = this.auth.user;
   constructor(public auth: AngularFireAuth, private router: Router) {
-    /*
+
     this.auth.onAuthStateChanged((user) => {
-      this.user=user;
       if (user) {
         this.router.navigate(['dashboard'])
       }
@@ -31,7 +30,7 @@ export class AppComponent implements OnInit {
         //this.router.navigate(['login']);
       }
     });
-    */
+
     console.dir(this.remoteConfig);
     const aCollection = collection(this.firestore, 'items')
     this.items$ = collectionData(aCollection);
@@ -42,8 +41,16 @@ export class AppComponent implements OnInit {
 
   }
 
-  login(): void {
+  loginGithub(): void {
     this.auth.signInWithRedirect(new firebase.auth.GithubAuthProvider());
+  }
+
+  loginGoogle(): void {
+    this.auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider());
+  }
+
+  loginFacebook(): void {
+    this.auth.signInWithRedirect(new firebase.auth.FacebookAuthProvider());
   }
 
   logout(): void {
