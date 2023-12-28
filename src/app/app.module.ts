@@ -13,7 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppInterceptor } from './app.interceptor';
 import { LayoutModule } from '@angular/cdk/layout';
 
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent } from './account/dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 import {
@@ -28,9 +28,7 @@ import localeEs from '@angular/common/locales/es';
 import { AuthService } from './security/auth.service';
 import { UtilsService } from './utils/utils.service';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { PrepararComponent } from './preparar/preparar.component';
 import { UserLoginComponent } from './user-login/user-login.component';
-import { RegistrarComponent } from './registrar/registrar.component';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import {
@@ -50,10 +48,7 @@ import { getFunctions, provideFunctions } from '@angular/fire/functions';
 import { getMessaging, provideMessaging } from '@angular/fire/messaging';
 import { getPerformance, providePerformance } from '@angular/fire/performance';
 import { getStorage, provideStorage } from '@angular/fire/storage';
-import {
-  getRemoteConfig,
-  provideRemoteConfig,
-} from '@angular/fire/remote-config';
+import { getRemoteConfig, provideRemoteConfig } from '@angular/fire/remote-config';
 import { environment } from 'src/environments/environment';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { YouTubePlayerModule } from '@angular/youtube-player';
@@ -66,9 +61,7 @@ registerLocaleData(localeEs, 'es');
     DashboardComponent,
     PageNotFoundComponent,
     NotifyComponent,
-    PrepararComponent,
-    UserLoginComponent,
-    RegistrarComponent,
+    UserLoginComponent
   ],
   imports: [
     BrowserModule,

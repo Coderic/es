@@ -8,7 +8,7 @@ export const environment = {
       'https://coderic-org-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'coderic-org.appspot.com',
     apiKey: 'AIzaSyBh5h7CUQWKEvcELu-Th2bJmKEmJICNEws',
-    authDomain: 'coderic-org.firebaseapp.com',
+    authDomain: 'coderic.org',
     messagingSenderId: '368772660823',
     locationId: 'europe-west',
   },

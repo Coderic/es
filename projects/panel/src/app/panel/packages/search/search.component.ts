@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent {
-  dtOptions: DataTables.Settings = {
-    language: {
-      url: './assets/es-ES.json'
-    }
-  };
+
 }

@@ -5,7 +5,6 @@ import { PackagesRoutingModule } from './packages-routing.module';
 import { PackagesComponent } from './packages.component';
 import { AddComponent } from './add/add.component';
 import { SearchComponent } from './search/search.component';
-import { DataTablesModule } from 'angular-datatables';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -17,7 +16,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     PackagesRoutingModule,
-    DataTablesModule,
     FormsModule,
     ReactiveFormsModule
   ],

@@ -42,7 +42,7 @@
           <context context-type="linenumber">50</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
+          <context context-type="sourcefile">src/app/freelancers/navigation/navigation.component.html</context>
           <context context-type="linenumber">30</context>
         </context-group>
         <context-group purpose="location">
@@ -72,145 +72,201 @@
           <context context-type="linenumber">49</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="6570363013146073520" datatype="html">
+        <source>Dashboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8893390761160292681" datatype="html">
+        <source>My account</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3797778920049399855" datatype="html">
+        <source>Logout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2949848596707725099" datatype="html">
+        <source>Sign out</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="8440128775129354214" datatype="html">
         <source>Privacy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">115</context>
+          <context context-type="linenumber">174</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7814069298939347422" datatype="html">
         <source>Legal</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">124</context>
+          <context context-type="linenumber">183</context>
         </context-group>
       </trans-unit>
       <trans-unit id="664573589261423471" datatype="html">
         <source>Terms and Conditions</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">130</context>
+          <context context-type="linenumber">189</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5710053734496712707" datatype="html">
         <source>Faq&apos;s</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">136</context>
+          <context context-type="linenumber">195</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2521484543737872425" datatype="html">
         <source>Corporation Oriented to the Development of Engineering of Resources Information Commercial</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">142</context>
+          <context context-type="linenumber">201</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2770678842898812543" datatype="html">
-        <source>Since September 30, 2004</source>
+      <trans-unit id="2543092545743423349" datatype="html">
+        <source>since september 30, 2004</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">144</context>
+          <context context-type="linenumber">203</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6451191643745835290" datatype="html">
         <source>We don&apos;t know what the hell we should put here,</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/coworking/coworking.component.html</context>
+          <context context-type="sourcefile">src/app/coworking/coworking.component.html</context>
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8404591718096552230" datatype="html">
         <source>what we do know is that Coderic must have Coworking spaces</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/coworking/coworking.component.html</context>
+          <context context-type="sourcefile">src/app/coworking/coworking.component.html</context>
           <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1726138143449361222" datatype="html">
         <source>Join the discussion</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/coworking/coworking.component.html</context>
+          <context context-type="sourcefile">src/app/coworking/coworking.component.html</context>
           <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7091571651222742304" datatype="html">
         <source>Projects</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/crowdfunding/navigation/navigation.component.html</context>
+          <context context-type="sourcefile">src/app/crowdfunding/navigation/navigation.component.html</context>
           <context context-type="linenumber">22</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
+          <context context-type="sourcefile">src/app/freelancers/navigation/navigation.component.html</context>
           <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4111208477948747698" datatype="html">
         <source>Matchfunding</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/crowdfunding/navigation/navigation.component.html</context>
+          <context context-type="sourcefile">src/app/crowdfunding/navigation/navigation.component.html</context>
           <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1697703440980943507" datatype="html">
         <source>Stakeholders</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/crowdfunding/navigation/navigation.component.html</context>
+          <context context-type="sourcefile">src/app/crowdfunding/navigation/navigation.component.html</context>
           <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2950450486092426663" datatype="html">
         <source>Funds</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/crowdfunding/navigation/navigation.component.html</context>
+          <context context-type="sourcefile">src/app/crowdfunding/navigation/navigation.component.html</context>
           <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3579359653177704656" datatype="html">
         <source>Investors</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/crowdfunding/navigation/navigation.component.html</context>
+          <context context-type="sourcefile">src/app/crowdfunding/navigation/navigation.component.html</context>
           <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6342682425862972636" datatype="html">
         <source>Investments</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/crowdfunding/navigation/navigation.component.html</context>
+          <context context-type="sourcefile">src/app/crowdfunding/navigation/navigation.component.html</context>
           <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="88715016040550427" datatype="html">
         <source>Contests</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
+          <context context-type="sourcefile">src/app/freelancers/navigation/navigation.component.html</context>
           <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4025908637465733151" datatype="html">
         <source>Recruiters</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
+          <context context-type="sourcefile">src/app/freelancers/navigation/navigation.component.html</context>
           <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6748928356220723437" datatype="html">
         <source>Local Jobs</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
+          <context context-type="sourcefile">src/app/freelancers/navigation/navigation.component.html</context>
           <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3620668876378879803" datatype="html">
         <source>Exams</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
+          <context context-type="sourcefile">src/app/freelancers/navigation/navigation.component.html</context>
           <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5779770381601735038" datatype="html">
+        <source>Careers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/learning/navigation/navigation.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1368388923673520351" datatype="html">
+        <source>Courses</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/learning/navigation/navigation.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4699310706051946809" datatype="html">
+        <source>Tutorials</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/learning/navigation/navigation.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4145287881406093444" datatype="html">
+        <source>Video Tutorials</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/learning/navigation/navigation.component.html</context>
+          <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6747202928800453043" datatype="html">
@@ -225,34 +281,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">7</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5779770381601735038" datatype="html">
-        <source>Careers</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/learning/navigation/navigation.component.html</context>
-          <context context-type="linenumber">22</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1368388923673520351" datatype="html">
-        <source>Courses</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/learning/navigation/navigation.component.html</context>
-          <context context-type="linenumber">26</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4699310706051946809" datatype="html">
-        <source>Tutorials</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/learning/navigation/navigation.component.html</context>
-          <context context-type="linenumber">30</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4145287881406093444" datatype="html">
-        <source>Video Tutorials</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/portal/learning/navigation/navigation.component.html</context>
-          <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
     </body>
