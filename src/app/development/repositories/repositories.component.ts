@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
-import { DevelopmentService } from '../development.service';
+import { Component, OnInit } from '@angular/core';
+import { GithubService } from '../../github.service';
+import { FirefunctionsService } from '../../firefunctions.service';
+import { Observable } from 'rxjs';
 @Component({
   selector: 'app-repositories',
   templateUrl: './repositories.component.html',
-  styleUrls: ['./repositories.component.css']
+  styleUrls: ['./repositories.component.css'],
 })
-export class RepositoriesComponent {
-  constructor(private dev: DevelopmentService) {
-    this.dev.getRepositories().subscribe(console.dir);
+export class RepositoriesComponent implements OnInit {
+  public repositories$: Observable<any>;
+
+  constructor(private github: GithubService, private fn: FirefunctionsService) { }
+
+  ngOnInit(): void {
+    this.repositories$ = this.github.getRepositories();
   }
 }

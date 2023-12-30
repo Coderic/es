@@ -15,13 +15,11 @@ import firebase from 'firebase/compat/app';
   templateUrl: 'app.component.html'
 })
 export class AppComponent implements OnInit {
-  private firestore: Firestore = inject(Firestore);
   private remoteConfig: RemoteConfig = inject(RemoteConfig);
-  public items$: Observable<any[]>;
   public categories$: Observable<any[]>;
   public user$: Observable<firebase.User | null> = this.auth.user;
   constructor(public auth: AngularFireAuth, private router: Router) {
-
+    /*
     this.auth.onAuthStateChanged((user) => {
       if (user) {
         this.router.navigate(['dashboard'])
@@ -30,11 +28,7 @@ export class AppComponent implements OnInit {
         //this.router.navigate(['login']);
       }
     });
-
-    console.dir(this.remoteConfig);
-    const aCollection = collection(this.firestore, 'items')
-    this.items$ = collectionData(aCollection);
-
+*/
   }
 
   ngOnInit(): void {

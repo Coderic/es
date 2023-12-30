@@ -27,17 +27,57 @@
               "value": "no-cache"
             }
           ]
+        },
+        {
+          "source": "/api/**",
+          "headers": [
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "https://coderic.org"
+            },
+            {
+              "key": "Access-Control-Allow-Credentials",
+              "value": "true"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, POST, OPTIONS, PUT, DELETE"
+            },
+            {
+              "key": "Allow",
+              "value": "GET, POST, OPTIONS, PUT, DELETE"
+            }
+          ]
         }
       ],
       "rewrites": [
-
         {
-          "source": "/es/**",
-          "destination": "/es/index.html"
+          "source": "/api/webhooks",
+          "function": {
+            "functionId": "webhooks",
+            "region": "us-central1",
+            "pinTag": true
+          }
         },
         {
-          "source": "/en/**",
-          "destination": "/en/index.html"
+          "source": "/api/repositories",
+          "function": {
+            "functionId": "repositories",
+            "region": "us-central1",
+            "pinTag": true
+          }
+        },
+        {
+          "source": "/api/dns",
+          "function": {
+            "functionId": "dns",
+            "region": "us-central1",
+            "pinTag": true
+          }
         },
         {
           "source": "**",
@@ -48,6 +88,43 @@
     }
   ],
   "functions": {
-    "codebase": "coderic"
+    "codebase": "codericorg",
+    "source": "functions"
+  },
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "emulators": {
+    "auth": {
+      "port": 9099
+    },
+    "functions": {
+      "port": 5001
+    },
+    "firestore": {
+      "port": 8080
+    },
+    "database": {
+      "port": 9000
+    },
+    "hosting": {
+      "port": 5000
+    },
+    "pubsub": {
+      "port": 8085
+    },
+    "storage": {
+      "port": 9199
+    },
+    "ui": {
+      "enabled": true
+    },
+    "singleProjectMode": false
   }
 }

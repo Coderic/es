@@ -10,8 +10,15 @@ const routes: Routes = [
     component: AccountComponent,
     children: [
       { path: 'dashboard', component: DashboardComponent },
+      {
+        path: 'training',
+        loadChildren: () =>
+          import('./training/training.module').then(
+            (m) => m.TrainingModule
+          ),
+      },
     ],
-  }
+  },
 ];
 
 @NgModule({

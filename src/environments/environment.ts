@@ -1,17 +1,18 @@
 export const environment = {
-  production: false,
+  production: true,
   api: '/api',
-  githubApi: 'https://api.github.com/orgs/CodericLatam',
-  githubToken: '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',
+  services: {
+    github: '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'
+  },
   firebase: {
-    projectId: 'coderic-org',
-    appId: '1:368772660823:web:0f071712e630d4e948ad12',
-    databaseURL:
-      'https://coderic-org-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'coderic-org.appspot.com',
     apiKey: 'AIzaSyBh5h7CUQWKEvcELu-Th2bJmKEmJICNEws',
     authDomain: 'coderic-org.firebaseapp.com',
+    databaseURL:
+      'https://coderic-org-default-rtdb.europe-west1.firebasedatabase.app',
+    projectId: 'coderic-org',
+    storageBucket: 'coderic-org.appspot.com',
     messagingSenderId: '368772660823',
+    appId: '1:368772660823:web:0f071712e630d4e948ad12',
     locationId: 'europe-west',
   },
   web: {

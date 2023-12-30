@@ -1,1 +1,3 @@
-<p>video-tutorials works!</p>
+<div *ngFor="let playlist of playlists$ | async" routerLink="/learning/video-tutorials/{{ playlist.playlistId }}">
+  <h1>{{ playlist.title }}</h1>
+</div>

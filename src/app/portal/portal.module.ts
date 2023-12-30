@@ -11,6 +11,8 @@ import { RefundsComponent } from './refunds/refunds.component';
 import { LegalComponent } from './legal/legal.component';
 import { TosComponent } from './tos/tos.component';
 import { FaqsComponent } from './faqs/faqs.component';
+import { MemberCardComponent } from './member-card/member-card.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -23,11 +25,14 @@ import { FaqsComponent } from './faqs/faqs.component';
     RefundsComponent,
     LegalComponent,
     TosComponent,
-    FaqsComponent
+    FaqsComponent,
+    MemberCardComponent,
   ],
   imports: [
     CommonModule,
-    PortalRoutingModule
+    PortalRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class PortalModule { }

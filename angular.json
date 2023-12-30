@@ -95,7 +95,8 @@
               "browserTarget": "coderic-org:build:production"
             },
             "development": {
-              "browserTarget": "coderic-org:build:development"
+              "browserTarget": "coderic-org:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             },
             "es": {
               "browserTarget": "coderic-org:build:development,es"
@@ -172,7 +173,7 @@
               "projects/suadmin/src/styles.css"
             ],
             "scripts": [],
-            "serviceWorker": true,
+            "serviceWorker": false,
             "ngswConfigPath": "projects/suadmin/ngsw-config.json"
           },
           "configurations": {
@@ -275,7 +276,7 @@
             ],
             "scripts": [
             ],
-            "serviceWorker": true,
+            "serviceWorker": false,
             "ngswConfigPath": "projects/panel/ngsw-config.json"
           },
           "configurations": {
