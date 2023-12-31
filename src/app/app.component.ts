@@ -9,6 +9,7 @@ import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Router } from '@angular/router';
 import { RemoteConfig } from '@angular/fire/remote-config';
 import firebase from 'firebase/compat/app';
+import { getAuth, signInWithRedirect } from '@angular/fire/auth';
 
 @Component({
   selector: 'app-root',

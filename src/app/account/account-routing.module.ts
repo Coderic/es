@@ -17,6 +17,27 @@ const routes: Routes = [
             (m) => m.TrainingModule
           ),
       },
+      {
+        path: 'modules',
+        loadChildren: () =>
+          import('./modules/modules.module').then(
+            (m) => m.ModulesModule
+          ),
+      },
+      {
+        path: 'products',
+        loadChildren: () =>
+          import('./products/products.module').then(
+            (m) => m.ProductsModule
+          ),
+      },
+      {
+        path: 'inbox',
+        loadChildren: () =>
+          import('./inbox/inbox.module').then(
+            (m) => m.InboxModule
+          ),
+      }
     ],
   },
 ];
