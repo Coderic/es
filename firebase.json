@@ -82,7 +82,7 @@
     }
   ],
   "functions": {
-    "codebase": "codericorg",
+    "codebase": "default",
     "source": "functions"
   },
   "database": {
