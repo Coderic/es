@@ -6,9 +6,6 @@
       "i18n": {
         "root": "/"
       },
-      "ignore": [
-        "**/.*"
-      ],
       "rewrites": [
         {
           "source": "/api/webhooks",
