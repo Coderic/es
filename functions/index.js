@@ -10,7 +10,7 @@ const { defineSecret } = require('firebase-functions/params');
 const { Octokit } = require("@octokit/rest");
 const acceptLanguage = require('accept-language');
 
-const githubToken = defineSecret('TOKEN_GH');
+const githubToken = defineSecret('GITHUB_TOKEN');
 const cloudflareToken = defineSecret('CLOUDFLARE_TOKEN');
 const cloudflareZoneId = defineSecret('CLOUDFLARE_ZONE_ID');
 
