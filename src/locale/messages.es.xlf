@@ -326,6 +326,46 @@
           <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="964906777101279395" datatype="html">
+        <source>Not yet a member?</source>
+        <target>¿Todavía no eres miembro?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3572000366455600240" datatype="html">
+        <source>Enter your github address and receive an invitation to our repositories, collaborate with professionals, and share in our Free Software development ecosystem, training, support, advice, tools, take-off platforms, incubators, collaborative work spaces.</source>
+        <target>Ingresa tu dirección de github y recibe una invitación a nuestros repositorios, colabora con profesionales y comparte en nuestro ecosistema de desarrollo de Software Libre, capacitación, soporte, asesoría, herramientas, plataformas de despegue, incubadoras, espacios de trabajo colaborativo.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4993445553787667175" datatype="html">
+        <source>Github Username</source>
+        <target>Nombre de usuario de Github</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4777900865118624664" datatype="html">
+        <source>We care about the protection of your data.</source>
+        <target>Nos preocupamos por la protección de tus datos.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7218347871480825149" datatype="html">
+        <source>Read our Privacy Policy</source>
+        <target>Lea nuestra Política de Privacidad</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
