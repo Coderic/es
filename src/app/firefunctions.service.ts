@@ -30,6 +30,9 @@ export class FirefunctionsService {
     );
   }
 
+  invite(invitee_id: number): Observable<HttpsCallableResult<any>> {
+    return this.func.httpsCallable('invitee')(invitee_id);
+  }
   fnMyUppercase(value: any): Observable<HttpsCallableResult> {
     return this.func.httpsCallable<HttpsCallableResult>('upper')(value);
   }

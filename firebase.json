@@ -2,7 +2,7 @@
   "hosting": [
     {
       "target": "coderic-org",
-      "public": "dist",
+      "source": ".",
       "i18n": {
         "root": "/"
       },
@@ -81,7 +81,7 @@
         },
         {
           "source": "**",
-          "destination": "/en/index.html"
+          "destination": "/index.html"
         }
       ],
       "frameworksBackend": {}

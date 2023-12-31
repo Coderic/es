@@ -6,7 +6,7 @@ export const environment = {
   },
   firebase: {
     apiKey: 'AIzaSyBh5h7CUQWKEvcELu-Th2bJmKEmJICNEws',
-    authDomain: 'coderic.org',
+    authDomain: 'coderic-org.firebaseapp.com',
     databaseURL:
       'https://coderic-org-default-rtdb.europe-west1.firebasedatabase.app',
     projectId: 'coderic-org',

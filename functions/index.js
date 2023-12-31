@@ -8,35 +8,44 @@ const { getFirestore } = require("firebase-admin/firestore");
 
 const { defineSecret } = require('firebase-functions/params');
 const { Octokit } = require("@octokit/rest");
+const acceptLanguage = require('accept-language');
 
 const githubToken = defineSecret('TOKEN_GH');
 const cloudflareToken = defineSecret('CLOUDFLARE_TOKEN');
 const cloudflareZoneId = defineSecret('CLOUDFLARE_ZONE_ID');
 
 setGlobalOptions({ maxInstances: 4 });
-const app = express();
 
+const app = express();
+/*
 const onCallFn = require("./cloud/on-call");
 const onCreateFn = require("./cloud/on-create");
 const onWriteFn = require("./cloud/on-write");
 const onUpdateFn = require("./cloud/on-update");
 const pubSubFn = require("./cloud/pub-sub");
-
-exports.repositories = onRequest(
+*/
+exports.invitee = onRequest(
   { secrets: [githubToken] },
   async (req, res) => {
-    const octokit = new Octokit({ auth: githubToken.value() });
-    const { data, } = await octokit.rest.repos.listForOrg({ org: "CodericLatam" });
-    res.json(data);
-  }
-);
+    acceptLanguage.languages(['en', 'es']);
+    let lang = acceptLanguage.get(req.get('Accept-Language'));
 
-exports.projects = onRequest(
-  { secrets: [githubToken] },
-  async (req, res) => {
     const octokit = new Octokit({ auth: githubToken.value() });
-    const { data, } = await octokit.rest.projects.listForOrg({ org: "CodericLatam" });
-    res.json(data);
+    let invitee_id = req.body.data;
+    try {
+      //console.dir(req);
+
+      const { data, } = await octokit.rest.orgs.createInvitation({
+        invitee_id: invitee_id,
+        org: 'CodericLatam',
+        team_ids: [9194674],
+      });
+      res.json(data);
+    }
+    catch (error) {
+      console.dir(error.response);
+      res.json(error.response);
+    }
   }
 );
 

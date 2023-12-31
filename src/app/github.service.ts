@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment';
 import { Observable, defer, from, map } from 'rxjs';
 import { Octokit } from '@octokit/rest';
+import { FirefunctionsService } from './firefunctions.service';
 
 const octokit = new Octokit({
   auth: environment.services.github,
@@ -11,17 +12,10 @@ const octokit = new Octokit({
   providedIn: 'root',
 })
 export class GithubService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private fire: FirefunctionsService) {}
 
   inviteMember(invitee_id: number): Observable<any> {
-
-    return from(octokit.rest.orgs.createInvitation({
-      invitee_id: invitee_id,
-      org: 'CodericLatam',
-      team_ids: [9194674],
-    })).pipe(
-      map((response: any) => response.data)
-    );
+    return this.fire.invite(invitee_id);
   }
 
   getMember(username: string): Observable<any> {
