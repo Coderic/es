@@ -5,7 +5,6 @@ const { onRequest, onCall } = require("firebase-functions/v2/https");
 const { onDocumentWritten, onDocumentCreated } = require("firebase-functions/v2/firestore");
 const { onMessagePublished } = require("firebase-functions/v2/pubsub");
 const { getFirestore } = require("firebase-admin/firestore");
-const { getAuth } = require("firebase-admin/auth");
 
 const { defineSecret } = require('firebase-functions/params');
 const { Octokit } = require("@octokit/rest");
@@ -67,7 +66,7 @@ webhooks.onAny(({ id, name, payload }) => {
 });
 
 exports.webhooks = onRequest(createNodeMiddleware(webhooks, { path: '/' }));
-
+/*
 exports.addmessage = onRequest(async (req, res) => {
   // Grab the text parameter.
   const original = req.query.text;
@@ -100,9 +99,8 @@ exports.makeuppercase = onDocumentCreated("/messages/{documentId}", (event) => {
   logger.log("Uppercasing", event.params.documentId, original);
   const uppercase = original.toUpperCase();
   return event.data.ref.set({uppercase}, {merge: true});
-});*/
+});
 
-//+++++++++++++++++++++onCall Functions+++++++++++++++++++++++++++++++++
 exports.resendVerificationEmail = functions.https.onCall(
   onCallFn.resendVerificationEmailHandler
 );
@@ -128,7 +126,7 @@ exports.registerUserHandle = functions.firestore
 exports.updateOrgUser = functions.firestore
   .document("cl_org_general/{org_handle}/cl_org_users/users")
   .onUpdate(onUpdateFn.addOrgUserHandler);
-
+/*
 //++++++++++++++++++++Pub/Sub Functions++++++++++++++++++++++++++++++
 exports.deleteTutorialSteps = functions.pubsub
   .schedule("every 7 days")
@@ -136,3 +134,4 @@ exports.deleteTutorialSteps = functions.pubsub
 exports.members = onMessagePublished("members", (event) => {
 
 });
+*/

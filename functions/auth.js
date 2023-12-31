@@ -1,8 +1,8 @@
 const admin = require("firebase-admin");
-const { getAnalytics } = require("firebase/analytics");
+//const { getAnalytics } = require("firebase/analytics");
 
 admin.initializeApp();
-const analytics = getAnalytics(admin);
+//const analytics = getAnalytics(admin);
 
 const db = admin.firestore();
 const rtdb = admin.database();
