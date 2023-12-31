@@ -9,7 +9,7 @@ const { getFirestore } = require("firebase-admin/firestore");
 const { defineSecret } = require('firebase-functions/params');
 const { Octokit } = require("@octokit/rest");
 
-const githubToken = defineSecret('GITHUB_TOKEN');
+const githubToken = defineSecret('TOKEN_GH');
 const cloudflareToken = defineSecret('CLOUDFLARE_TOKEN');
 const cloudflareZoneId = defineSecret('CLOUDFLARE_ZONE_ID');
 

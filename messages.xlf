@@ -76,63 +76,63 @@
         <source>Dashboard</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">106</context>
+          <context context-type="linenumber">105</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8893390761160292681" datatype="html">
         <source>My account</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">107</context>
+          <context context-type="linenumber">106</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3797778920049399855" datatype="html">
         <source>Logout</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">119</context>
+          <context context-type="linenumber">118</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2949848596707725099" datatype="html">
         <source>Sign out</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">120</context>
+          <context context-type="linenumber">119</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8440128775129354214" datatype="html">
         <source>Privacy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">193</context>
+          <context context-type="linenumber">195</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7814069298939347422" datatype="html">
         <source>Legal</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">202</context>
+          <context context-type="linenumber">204</context>
         </context-group>
       </trans-unit>
       <trans-unit id="664573589261423471" datatype="html">
         <source>Terms and Conditions</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">208</context>
+          <context context-type="linenumber">210</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5710053734496712707" datatype="html">
         <source>Faq&apos;s</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">214</context>
+          <context context-type="linenumber">216</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2521484543737872425" datatype="html">
         <source>Corporation Oriented to the Development of Engineering of Resources Information Commercial</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">220</context>
+          <context context-type="linenumber">222</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
@@ -143,7 +143,7 @@
         <source>since september 30, 2004</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">222</context>
+          <context context-type="linenumber">224</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6451191643745835290" datatype="html">
@@ -281,6 +281,41 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="964906777101279395" datatype="html">
+        <source>Not yet a member?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3572000366455600240" datatype="html">
+        <source>Enter your github address and receive an invitation to our repositories, collaborate with professionals, and share in our Free Software development ecosystem, training, support, advice, tools, take-off platforms, incubators, collaborative work spaces.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4993445553787667175" datatype="html">
+        <source>Github Username</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4777900865118624664" datatype="html">
+        <source>We care about the protection of your data.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7218347871480825149" datatype="html">
+        <source>Read our Privacy Policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
+          <context context-type="linenumber">79</context>
         </context-group>
       </trans-unit>
     </body>
