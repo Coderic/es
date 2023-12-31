@@ -350,18 +350,32 @@
           <context context-type="linenumber">73</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="7484272056609114481" datatype="html">
+        <source>The invitation has been sent successfully</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="187187500641108332" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="invite.errors[0].message }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
+          <context context-type="linenumber">79,80</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="4777900865118624664" datatype="html">
         <source>We care about the protection of your data.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
-          <context context-type="linenumber">79</context>
+          <context context-type="linenumber">81</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7218347871480825149" datatype="html">
         <source>Read our Privacy Policy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
-          <context context-type="linenumber">79</context>
+          <context context-type="linenumber">81</context>
         </context-group>
       </trans-unit>
     </body>

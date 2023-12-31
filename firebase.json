@@ -9,51 +9,6 @@
       "ignore": [
         "**/.*"
       ],
-      "headers": [
-        {
-          "source": "*.[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].+(css|js)",
-          "headers": [
-            {
-              "key": "Cache-Control",
-              "value": "public,max-age=31536000,immutable"
-            }
-          ]
-        },
-        {
-          "source": "/@(ngsw-worker.js|ngsw.json)",
-          "headers": [
-            {
-              "key": "Cache-Control",
-              "value": "no-cache"
-            }
-          ]
-        },
-        {
-          "source": "/api/**",
-          "headers": [
-            {
-              "key": "Access-Control-Allow-Origin",
-              "value": "https://coderic.org"
-            },
-            {
-              "key": "Access-Control-Allow-Credentials",
-              "value": "true"
-            },
-            {
-              "key": "Access-Control-Allow-Headers",
-              "value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method"
-            },
-            {
-              "key": "Access-Control-Allow-Methods",
-              "value": "GET, POST, OPTIONS, PUT, DELETE"
-            },
-            {
-              "key": "Allow",
-              "value": "GET, POST, OPTIONS, PUT, DELETE"
-            }
-          ]
-        }
-      ],
       "rewrites": [
         {
           "source": "/api/webhooks",
@@ -77,12 +32,12 @@
         }
       ],
       "frameworksBackend": {
-        "region": "europe-west1"
+        "region": "us-central1"
       }
     }
   ],
   "functions": {
-    "codebase": "default",
+    "codebase": "codericorg",
     "source": "functions"
   },
   "database": {
