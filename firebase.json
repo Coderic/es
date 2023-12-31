@@ -2,7 +2,7 @@
   "hosting": [
     {
       "target": "coderic-org",
-      "source": ".",
+      "public": "dist",
       "i18n": {
         "root": "/"
       },
@@ -64,14 +64,6 @@
           }
         },
         {
-          "source": "/api/repositories",
-          "function": {
-            "functionId": "repositories",
-            "region": "us-central1",
-            "pinTag": true
-          }
-        },
-        {
           "source": "/api/dns",
           "function": {
             "functionId": "dns",
@@ -84,7 +76,9 @@
           "destination": "/index.html"
         }
       ],
-      "frameworksBackend": {}
+      "frameworksBackend": {
+        "region": "europe-west1"
+      }
     }
   ],
   "functions": {
