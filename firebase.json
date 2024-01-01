@@ -8,29 +8,14 @@
       },
       "rewrites": [
         {
-          "source": "/api/webhooks",
-          "function": {
-            "functionId": "webhooks",
-            "region": "us-central1",
-            "pinTag": true
-          }
-        },
-        {
-          "source": "/api/dns",
-          "function": {
-            "functionId": "dns",
-            "region": "us-central1",
-            "pinTag": true
-          }
+          "source": "**",
+          "destination": "/en/index.html"
         },
         {
           "source": "**",
           "destination": "/index.html"
         }
-      ],
-      "frameworksBackend": {
-        "region": "us-central1"
-      }
+      ]
     }
   ],
   "functions": {
