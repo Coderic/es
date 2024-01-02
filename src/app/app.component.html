@@ -125,23 +125,10 @@
               </div>
             </div>
             <div *ngIf="!(user$ | async)">
-              <!--button class="flex items-center justify-around px-6 bg-white shadow-lg rounded-xl">
-                <div class="p-2 mr-4 text-white shadow-lg rounded-xl bg-gradient-to-r from-stone-500 to-stone-700">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-16 h-16">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                  </svg>
-                </div>
-                <div class="text-center">
-                  <h1 class="text-4xl font-bold text-gray-800">534</h1>
-                  <span class="text-gray-500">Coaches</span>
-                </div>
-              </button-->
               <div class="flex items-center justify-around gap-4 p-4 bg-white shadow-lg rounded-xl">
                 <div class="mx-4 text-center">
-                  <h1 class="text-4xl font-bold text-gray-800">Join</h1>
-                  <span class="text-gray-500">Log in</span>
+                  <h1 class="text-4xl font-bold text-gray-800" i18n>Join</h1>
+                  <span class="text-gray-500" i18n>Log in</span>
                 </div>
                 <button (click)="loginGithub()"
                   class="inline-flex items-center p-2 space-x-2 font-semibold text-white bg-gray-700 shadow-lg rounded-xl">

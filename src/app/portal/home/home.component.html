@@ -76,7 +76,7 @@
               <p *ngIf="account?.id"><span>Confirm if this is your user:</span>&nbsp;{{ account?.name ?? account?.login }}</p>
               <div *ngIf="invited$ | async as invite">
                 <p *ngIf="!invite?.errors" i18n>The invitation has been sent successfully</p>
-                <p *ngIf="invite?.errors" i18n>{{ invite.errors[0].message }}</p>
+                <p *ngIf="invite?.errors">{{ invite.errors[0].message }}</p>
               </div>
               <div class="max-w-screen-sm mx-auto text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300"><span i18n>We care about the protection of your data.</span>&nbsp;<a routerLink="/privacy" class="font-medium text-stone-600 dark:text-stone-500 hover:underline" i18n>Read our Privacy Policy</a>.</div>
           </form>
