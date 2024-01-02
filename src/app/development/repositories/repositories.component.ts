@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class RepositoriesComponent implements OnInit {
   public repositories$: Observable<any>;
 
-  constructor(private github: GithubService, private fn: FirefunctionsService) { }
+  constructor(private github: GithubService) { }
 
   ngOnInit(): void {
     this.repositories$ = this.github.getRepositories();

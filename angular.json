@@ -95,8 +95,7 @@
               "browserTarget": "coderic-org:build:production"
             },
             "development": {
-              "browserTarget": "coderic-org:build:development",
-              "proxyConfig": "src/proxy.conf.json"
+              "browserTarget": "coderic-org:build:development"
             },
             "es": {
               "browserTarget": "coderic-org:build:development,es"

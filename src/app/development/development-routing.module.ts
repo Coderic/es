@@ -19,6 +19,20 @@ const routes: Routes = [
             (m) => m.RepositoriesModule
           ),
       },
+      {
+        path: 'projects',
+        loadChildren: () =>
+          import('./projects/projects.module').then(
+            (m) => m.ProjectsModule
+          ),
+      },
+      {
+        path: 'issues',
+        loadChildren: () =>
+          import('./issues/issues.module').then(
+            (m) => m.IssuesModule
+          ),
+      },
     ],
   },
 ];
