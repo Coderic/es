@@ -73,7 +73,7 @@
                       <button type="submit" class="w-full px-5 py-3 text-sm font-medium text-center text-white border rounded-lg cursor-pointer bg-stone-700 border-stone-600 sm:rounded-none sm:rounded-r-lg hover:bg-stone-800 focus:ring-4 focus:ring-stone-300 dark:bg-stone-600 dark:hover:bg-stone-700 dark:focus:ring-stone-800" i18n>Invite</button>
                   </div>
               </div>
-              <p *ngIf="account?.id"><span>Confirm if this is your user:</span>&nbsp;{{ account?.name ?? account?.login }}</p>
+              <p *ngIf="account?.id"><span i18n>Confirm if this is your user:</span>&nbsp;{{ account?.name ?? account?.login }}</p>
               <div *ngIf="invited$ | async as invite">
                 <p *ngIf="!invite?.errors" i18n>The invitation has been sent successfully</p>
                 <p *ngIf="invite?.errors">{{ invite.errors[0].message }}</p>
@@ -84,9 +84,7 @@
   </div>
 </section>
 <section class="mx-4 mb-32 text-center">
-  <h2 class="mb-12 text-3xl font-bold">
-    Meet the <span class="text-orange-500">Coderic</span> Development Team
-  </h2>
+  <h2 class="mb-12 text-3xl font-bold" i18n>Meet the <span class="text-orange-500">Coderic</span> Development Team</h2>
   <div class="grid gap-x-6 md:grid-cols-4 lg:gap-x-12">
     <app-member-card class="mb-6 lg:mb-0" *ngFor="let member of members$ | async" username="{{ member.login }}">{{ member.login }}</app-member-card>
   </div>

@@ -431,7 +431,17 @@
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">73</context>
         </context-group>
-      </trans-unit><trans-unit id="7484272056609114481" datatype="html">
+      </trans-unit>
+
+      <trans-unit id="8860193380123206693" datatype="html">
+        <source>Confirm if this is your user:</source>
+        <target>Confirma si este es tu usuario:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7484272056609114481" datatype="html">
         <source>The invitation has been sent successfully</source>
         <target>La invitación ha sido enviada exitosamente</target>
         <context-group purpose="location">
@@ -453,6 +463,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1456777950527578159" datatype="html">
+        <source>Meet the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-orange-500&quot;&gt;"/>Coderic<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Development Team</source>
+        <target>Conozca al equipo de desarrollo <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-orange-500&quot;&gt;"/>Coderic<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
+          <context context-type="linenumber">87</context>
         </context-group>
       </trans-unit>
     </body>

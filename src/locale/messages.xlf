@@ -6,7 +6,7 @@
         <source>Dashboard</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/account/navigation/navigation.component.html</context>
-          <context context-type="linenumber">13</context>
+          <context context-type="linenumber">14</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
@@ -17,28 +17,28 @@
         <source>Training</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/account/navigation/navigation.component.html</context>
-          <context context-type="linenumber">28</context>
+          <context context-type="linenumber">29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5519350180308640048" datatype="html">
         <source>Modules</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/account/navigation/navigation.component.html</context>
-          <context context-type="linenumber">40</context>
+          <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6707361102856436710" datatype="html">
         <source>Products</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/account/navigation/navigation.component.html</context>
-          <context context-type="linenumber">66</context>
+          <context context-type="linenumber">67</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="799485662157076328" datatype="html">
-        <source>Inbox</source>
+      <trans-unit id="6452372740127749380" datatype="html">
+        <source>Messages</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/account/navigation/navigation.component.html</context>
-          <context context-type="linenumber">90</context>
+          <context context-type="linenumber">91</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5051275796279096757" datatype="html">
@@ -382,6 +382,13 @@
           <context context-type="linenumber">73</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="8860193380123206693" datatype="html">
+        <source>Confirm if this is your user:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="7484272056609114481" datatype="html">
         <source>The invitation has been sent successfully</source>
         <context-group purpose="location">
@@ -401,6 +408,13 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1456777950527578159" datatype="html">
+        <source>Meet the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-orange-500&quot;&gt;"/>Coderic<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Development Team</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
+          <context context-type="linenumber">87</context>
         </context-group>
       </trans-unit>
     </body>
