@@ -120,9 +120,9 @@
                   </div>
                 </button>
               </div>
-              <div class="w-full p-2 mt-2 font-semibold text-center bg-white rounded-lg shadow-lg">
+              <a routerLink="/profile" class="block w-full p-2 mt-2 font-semibold text-center bg-white rounded-lg shadow-lg">
                 {{ user.displayName }}
-              </div>
+              </a>
             </div>
             <div *ngIf="!(user$ | async)">
               <div class="flex items-center justify-around gap-4 p-4 bg-white shadow-lg rounded-xl">

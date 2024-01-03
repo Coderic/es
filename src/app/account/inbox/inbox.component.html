@@ -1,1 +1,556 @@
-<p>inbox works!</p>
+<div class="flex flex-col h-full">
+  <!-- Bottom section -->
+  <div class="flex flex-1 min-h-0 overflow-hidden">
+    <!-- Narrow sidebar-->
+    <nav aria-label="Sidebar" class="hidden lg:block lg:flex-shrink-0 lg:overflow-y-auto lg:bg-stone-800">
+      <div class="relative flex flex-col w-20 p-3 space-y-3">
+        <a href="#"
+          class="inline-flex items-center justify-center flex-shrink-0 text-white rounded-lg bg-stone-900 h-14 w-14">
+          <span class="sr-only">Open</span>
+          <svg class="w-6 h-6" x-description="Heroicon name: outline/inbox" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z">
+            </path>
+          </svg>
+        </a>
+        <a href="#"
+          class="inline-flex items-center justify-center flex-shrink-0 rounded-lg text-stone-400 hover:bg-stone-700 h-14 w-14">
+          <span class="sr-only">Archive</span>
+          <svg class="w-6 h-6" x-description="Heroicon name: outline/archive-box" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z">
+            </path>
+          </svg>
+        </a>
+        <a href="#"
+          class="inline-flex items-center justify-center flex-shrink-0 rounded-lg text-stone-400 hover:bg-stone-700 h-14 w-14">
+          <span class="sr-only">Customers</span>
+          <svg class="w-6 h-6" x-description="Heroicon name: outline/user-circle" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z">
+            </path>
+          </svg>
+        </a>
+        <a href="#"
+          class="inline-flex items-center justify-center flex-shrink-0 rounded-lg text-stone-400 hover:bg-stone-700 h-14 w-14">
+          <span class="sr-only">Flagged</span>
+          <svg class="w-6 h-6" x-description="Heroicon name: outline/flag" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5">
+            </path>
+          </svg>
+        </a>
+        <a href="#"
+          class="inline-flex items-center justify-center flex-shrink-0 rounded-lg text-stone-400 hover:bg-stone-700 h-14 w-14">
+          <span class="sr-only">Spam</span>
+          <svg class="w-6 h-6" x-description="Heroicon name: outline/no-symbol" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636">
+            </path>
+          </svg>
+        </a>
+        <a href="#"
+          class="inline-flex items-center justify-center flex-shrink-0 rounded-lg text-stone-400 hover:bg-stone-700 h-14 w-14">
+          <span class="sr-only">Drafts</span>
+          <svg class="w-6 h-6" x-description="Heroicon name: outline/pencil-square" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Main area -->
+    <main class="flex-1 min-w-0 border-t border-stone-200 xl:flex">
+      <section aria-labelledby="message-heading"
+        class="flex flex-col flex-1 h-full min-w-0 overflow-hidden xl:order-last">
+        <!-- Top section -->
+        <div class="flex-shrink-0 bg-white border-b border-stone-200">
+          <!-- Toolbar-->
+          <div class="flex flex-col justify-center h-16">
+            <div class="px-4 sm:px-6 lg:px-8">
+              <div class="flex justify-between py-3">
+                <!-- Left buttons -->
+                <div>
+                  <div class="inline-flex rounded-md shadow-sm isolate sm:space-x-3 sm:shadow-none">
+                    <span class="inline-flex sm:shadow-sm">
+                      <button type="button"
+                        class="relative inline-flex items-center px-4 py-2 text-sm font-medium bg-white border text-stone-900 border-stone-300 rounded-l-md hover:bg-stone-50 focus:z-10 focus:border-blue-600 focus:outline-none focus:ring-1 focus:ring-blue-600">
+                        <svg class="mr-2.5 h-5 w-5 text-stone-400" x-description="Heroicon name: mini/arrow-uturn-left"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd"
+                            d="M7.793 2.232a.75.75 0 01-.025 1.06L3.622 7.25h10.003a5.375 5.375 0 010 10.75H10.75a.75.75 0 010-1.5h2.875a3.875 3.875 0 000-7.75H3.622l4.146 3.957a.75.75 0 01-1.036 1.085l-5.5-5.25a.75.75 0 010-1.085l5.5-5.25a.75.75 0 011.06.025z"
+                            clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Reply</span>
+                      </button>
+                      <button type="button"
+                        class="relative items-center hidden px-4 py-2 -ml-px text-sm font-medium bg-white border text-stone-900 border-stone-300 hover:bg-stone-50 focus:z-10 focus:border-blue-600 focus:outline-none focus:ring-1 focus:ring-blue-600 sm:inline-flex">
+                        <svg class="mr-2.5 h-5 w-5 text-stone-400" x-description="Heroicon name: mini/pencil"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path
+                            d="M2.695 14.763l-1.262 3.154a.5.5 0 00.65.65l3.155-1.262a4 4 0 001.343-.885L17.5 5.5a2.121 2.121 0 00-3-3L3.58 13.42a4 4 0 00-.885 1.343z">
+                          </path>
+                        </svg>
+                        <span>Note</span>
+                      </button>
+                      <button type="button"
+                        class="relative items-center hidden px-4 py-2 -ml-px text-sm font-medium bg-white border text-stone-900 border-stone-300 rounded-r-md hover:bg-stone-50 focus:z-10 focus:border-blue-600 focus:outline-none focus:ring-1 focus:ring-blue-600 sm:inline-flex">
+                        <svg class="mr-2.5 h-5 w-5 text-stone-400" x-description="Heroicon name: mini/user-plus"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path
+                            d="M11 5a3 3 0 11-6 0 3 3 0 016 0zM2.615 16.428a1.224 1.224 0 01-.569-1.175 6.002 6.002 0 0111.908 0c.058.467-.172.92-.57 1.174A9.953 9.953 0 018 18a9.953 9.953 0 01-5.385-1.572zM16.25 5.75a.75.75 0 00-1.5 0v2h-2a.75.75 0 000 1.5h2v2a.75.75 0 001.5 0v-2h2a.75.75 0 000-1.5h-2v-2z">
+                          </path>
+                        </svg>
+                        <span>Assign</span>
+                      </button>
+                    </span>
+
+                    <span class="hidden space-x-3 lg:flex">
+                      <button type="button"
+                        class="relative items-center hidden px-4 py-2 -ml-px text-sm font-medium bg-white border rounded-md text-stone-900 border-stone-300 hover:bg-stone-50 focus:z-10 focus:border-blue-600 focus:outline-none focus:ring-1 focus:ring-blue-600 sm:inline-flex">
+                        <svg class="mr-2.5 h-5 w-5 text-stone-400" x-description="Heroicon name: mini/archive-box"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path d="M2 3a1 1 0 00-1 1v1a1 1 0 001 1h16a1 1 0 001-1V4a1 1 0 00-1-1H2z"></path>
+                          <path fill-rule="evenodd"
+                            d="M2 7.5h16l-.811 7.71a2 2 0 01-1.99 1.79H4.802a2 2 0 01-1.99-1.79L2 7.5zM7 11a1 1 0 011-1h4a1 1 0 110 2H8a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Archive</span>
+                      </button>
+                      <button type="button"
+                        class="relative items-center hidden px-4 py-2 -ml-px text-sm font-medium bg-white border rounded-md text-stone-900 border-stone-300 hover:bg-stone-50 focus:z-10 focus:border-blue-600 focus:outline-none focus:ring-1 focus:ring-blue-600 sm:inline-flex">
+                        <svg class="mr-2.5 h-5 w-5 text-stone-400" x-description="Heroicon name: mini/folder-arrow-down"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd"
+                            d="M2 4.75C2 3.784 2.784 3 3.75 3h4.836c.464 0 .909.184 1.237.513l1.414 1.414a.25.25 0 00.177.073h4.836c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0116.25 17H3.75A1.75 1.75 0 012 15.25V4.75zm8.75 4a.75.75 0 00-1.5 0v2.546l-.943-1.048a.75.75 0 10-1.114 1.004l2.25 2.5a.75.75 0 001.114 0l2.25-2.5a.75.75 0 10-1.114-1.004l-.943 1.048V8.75z"
+                            clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Move</span>
+                      </button>
+                    </span>
+
+                    <div class="relative block -ml-px sm:shadow-sm lg:hidden">
+                      <div>
+                        <button type="button"
+                          class="relative inline-flex items-center px-2 py-2 text-sm font-medium bg-white border text-stone-900 border-stone-300 rounded-r-md hover:bg-stone-50 focus:z-10 focus:border-blue-600 focus:outline-none focus:ring-1 focus:ring-blue-600 sm:rounded-md sm:px-3"
+                          id="menu-2-button">
+                          <span class="sr-only sm:hidden">More</span>
+                          <span class="hidden sm:inline">More</span>
+                          <svg class="w-5 h-5 text-stone-400 sm:ml-2 sm:-mr-1"
+                            x-description="Heroicon name: mini/chevron-down" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                              d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                              clip-rule="evenodd"></path>
+                          </svg>
+                        </button>
+                      </div>
+
+
+                      <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                        x-transition:enter-start="transform opacity-0 scale-95"
+                        x-transition:enter-end="transform opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-75"
+                        x-transition:leave-start="transform opacity-100 scale-100"
+                        x-transition:leave-end="transform opacity-0 scale-95"
+                        class="absolute right-0 z-10 mt-2 origin-top-right bg-white rounded-md shadow-lg w-36 ring-1 ring-black ring-opacity-5 focus:outline-none"
+                        x-ref="menu-items" x-description="Dropdown menu, show/hide based on menu state."
+                        x-bind:aria-activedescendant="activeDescendant" role="menu" aria-orientation="vertical"
+                        aria-labelledby="menu-2-button" tabindex="-1">
+                        <div class="py-1" role="none">
+                          <a href="#" class="block px-4 py-2 text-sm text-stone-700 sm:hidden" role="menuitem"
+                            tabindex="-1" id="menu-2-item-0">Note</a>
+                          <a href="#" class="block px-4 py-2 text-sm text-stone-700 sm:hidden" role="menuitem"
+                            tabindex="-1" id="menu-2-item-1">Assign</a>
+                          <a href="#" class="block px-4 py-2 text-sm text-stone-700" role="menuitem" tabindex="-1"
+                            id="menu-2-item-2">Archive</a>
+                          <a href="#" class="block px-4 py-2 text-sm text-stone-700" role="menuitem" tabindex="-1"
+                            id="menu-2-item-3">Move</a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right buttons -->
+                <nav aria-label="Pagination">
+                  <span class="inline-flex rounded-md shadow-sm isolate">
+                    <a href="#"
+                      class="relative inline-flex items-center px-4 py-2 text-sm font-medium bg-white border text-stone-500 border-stone-300 rounded-l-md hover:bg-stone-50 focus:z-10 focus:border-blue-600 focus:outline-none focus:ring-1 focus:ring-blue-600">
+                      <span class="sr-only">Next</span>
+                      <svg class="w-5 h-5" x-description="Heroicon name: mini/chevron-up"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                          d="M14.77 12.79a.75.75 0 01-1.06-.02L10 8.832 6.29 12.77a.75.75 0 11-1.08-1.04l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 01-.02 1.06z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </a>
+                    <a href="#"
+                      class="relative inline-flex items-center px-4 py-2 -ml-px text-sm font-medium bg-white border text-stone-500 border-stone-300 rounded-r-md hover:bg-stone-50 focus:z-10 focus:border-blue-600 focus:outline-none focus:ring-1 focus:ring-blue-600">
+                      <span class="sr-only">Previous</span>
+                      <svg class="w-5 h-5" x-description="Heroicon name: mini/chevron-down"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                    </a>
+                  </span>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <!-- Message header -->
+        </div>
+
+        <div class="flex-1 min-h-0 overflow-y-auto">
+          <div class="pt-5 pb-6 bg-white shadow">
+            <div class="px-4 sm:flex sm:items-baseline sm:justify-between sm:px-6 lg:px-8">
+              <div class="sm:w-0 sm:flex-1">
+                <h1 id="message-heading" class="text-lg font-medium text-stone-900">Re: New pricing for existing
+                  customers</h1>
+                <p class="mt-1 text-sm truncate text-stone-500">callmebymyname@amadeus.net</p>
+              </div>
+
+              <div class="flex items-center justify-between mt-4 sm:mt-0 sm:ml-6 sm:flex-shrink-0 sm:justify-start">
+                <span
+                  class="inline-flex items-center rounded-full bg-orange-100 px-3 py-0.5 text-sm font-medium text-orange-800">Open</span>
+                <div class="relative inline-block ml-3 text-left">
+                  <div>
+                    <button type="button"
+                      class="flex items-center p-2 -my-2 bg-white rounded-full text-stone-400 hover:text-stone-600 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                      id="menu-3-button">
+                      <span class="sr-only">Open options</span>
+                      <svg class="w-5 h-5" x-description="Heroicon name: mini/ellipsis-vertical"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path
+                          d="M10 3a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM10 8.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM11.5 15.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z">
+                        </path>
+                      </svg>
+                    </button>
+                  </div>
+
+
+                  <div role="menu" aria-orientation="vertical" aria-labelledby="menu-3-button" tabindex="-1">
+                    <div class="py-1" role="none">
+                      <button type="button" class="flex justify-between w-full px-4 py-2 text-sm text-stone-700"
+                        role="menuitem" tabindex="-1" id="menu-3-item-0">
+                        <span>Copy email address</span>
+                      </button>
+                      <a href="#" class="flex justify-between px-4 py-2 text-sm text-stone-700" role="menuitem"
+                        tabindex="-1" id="menu-3-item-1">
+                        <span>Previous conversations</span>
+                      </a>
+                      <a href="#" class="flex justify-between px-4 py-2 text-sm text-stone-700" role="menuitem"
+                        tabindex="-1" id="menu-3-item-2">
+                        <span>View original</span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Thread section-->
+          <ul role="list" class="py-4 space-y-2 sm:space-y-4 sm:px-6 lg:px-8">
+
+            <li class="px-4 py-6 bg-white shadow sm:rounded-lg sm:px-6">
+              <div class="sm:flex sm:items-baseline sm:justify-between">
+                <h3 class="text-base font-medium">
+                  <span class="text-stone-900">Adam Sinew</span>
+                  <!-- space -->
+                  <span class="text-stone-600">wrote</span>
+                </h3>
+                <p class="mt-1 text-sm text-stone-600 whitespace-nowrap sm:mt-0 sm:ml-3">
+                  <time datetime="2021-01-28T19:24">Yesterday at 7:24am</time>
+                </p>
+              </div>
+              <div class="mt-4 space-y-6 text-sm text-stone-800">
+                <p>Thanks so much! Can't wait to try it out.</p>
+              </div>
+            </li>
+
+            <li class="px-4 py-6 bg-white shadow sm:rounded-lg sm:px-6">
+              <div class="sm:flex sm:items-baseline sm:justify-between">
+                <h3 class="text-base font-medium">
+                  <span class="text-stone-900">Monica White</span>
+                  <!-- space -->
+                  <span class="text-stone-600">wrote</span>
+                </h3>
+                <p class="mt-1 text-sm text-stone-600 whitespace-nowrap sm:mt-0 sm:ml-3">
+                  <time datetime="2021-01-27T16:35">Wednesday at 4:35pm</time>
+                </p>
+              </div>
+              <div class="mt-4 space-y-6 text-sm text-stone-800">
+                <p>Adam Wathan is an asshole. ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at
+                  ultricies tincidunt elit et, enim. Habitant nunc, adipiscing non fermentum, sed est a, aliquet.
+                  Lorem in vel libero vel augue aliquet dui commodo.</p>
+                <p>Nec malesuada sed sit ut aliquet. Cras ac pharetra, sapien purus vitae vestibulum auctor faucibus
+                  ullamcorper. Leo quam tincidunt porttitor neque, velit sed. Tortor mauris ornare ut tellus sed
+                  aliquet amet venenatis condimentum. Convallis accumsan et nunc eleifend.</p>
+                <p><strong style="font-weight: 600;">Monica White</strong><br>Customer Service</p>
+              </div>
+            </li>
+
+            <li class="px-4 py-6 bg-white shadow sm:rounded-lg sm:px-6">
+              <div class="sm:flex sm:items-baseline sm:justify-between">
+                <h3 class="text-base font-medium">
+                  <span class="text-stone-900">Border Coolie</span>
+                  <!-- space -->
+                  <span class="text-stone-600">wrote</span>
+                </h3>
+                <p class="mt-1 text-sm text-stone-600 whitespace-nowrap sm:mt-0 sm:ml-3">
+                  <time datetime="2021-01-27T16:09">Wednesday at 4:09pm</time>
+                </p>
+              </div>
+              <div class="mt-4 space-y-6 text-sm text-stone-800">
+                <p>Escucha me mucha ipsum dolor sit amet, consectetur adipiscing elit. Malesuada at ultricies
+                  tincidunt elit et, enim. Habitant nunc, adipiscing non fermentum, sed est a, aliquet. Lorem in vel
+                  libero vel augue aliquet dui commodo.</p>
+                <p>Nec malesuada sed sit ut aliquet. Cras ac pharetra, sapien purus vitae vestibulum auctor faucibus
+                  ullamcorper. Leo quam tincidunt porttitor neque, velit sed. Tortor mauris ornare ut tellus sed
+                  aliquet amet venenatis condimentum. Convallis accumsan et nunc eleifend.</p>
+                <p>– Joe</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <!-- Message list-->
+      <aside class="hidden xl:order-first xl:block xl:flex-shrink-0">
+        <div class="relative flex flex-col h-full border-r bg-stone-100 border-stone-200 w-96">
+          <div class="flex-shrink-0">
+            <div class="flex flex-col justify-center h-16 px-6 bg-white">
+              <div class="flex items-baseline space-x-3">
+                <h2 class="text-lg font-medium text-stone-900">Inbox</h2>
+                <p class="text-sm font-medium text-stone-500">42 messages</p>
+              </div>
+            </div>
+            <div class="px-6 py-2 text-sm font-medium border-t border-b text-stone-500 border-stone-200 bg-stone-50">
+              Sorted by date</div>
+          </div>
+          <nav aria-label="Message list" class="flex-1 min-h-0 overflow-y-auto">
+            <ul role="list" class="border-b divide-y border-stone-200 divide-stone-200">
+
+              <li
+                class="relative px-6 py-5 bg-white focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600 hover:bg-stone-50">
+                <div class="flex justify-between space-x-3">
+                  <div class="flex-1 min-w-0">
+                    <a href="#" class="block focus:outline-none">
+                      <span class="absolute inset-0" aria-hidden="true"></span>
+                      <p class="text-sm font-medium truncate text-stone-900">Gloria Roberston</p>
+                      <p class="text-sm truncate text-stone-500">Velit placeat sit ducimus non sed</p>
+                    </a>
+                  </div>
+                  <time datetime="2021-01-27T16:35" class="flex-shrink-0 text-sm text-stone-500 whitespace-nowrap">1d
+                    ago</time>
+                </div>
+                <div class="mt-1">
+                  <p class="text-sm text-stone-600 line-clamp-2">Doloremque dolorem maiores assumenda dolorem facilis.
+                    Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores
+                    omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.</p>
+                </div>
+              </li>
+
+              <li
+                class="relative px-6 py-5 bg-white focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600 hover:bg-stone-50">
+                <div class="flex justify-between space-x-3">
+                  <div class="flex-1 min-w-0">
+                    <a href="#" class="block focus:outline-none">
+                      <span class="absolute inset-0" aria-hidden="true"></span>
+                      <p class="text-sm font-medium truncate text-stone-900">Virginia Abshire</p>
+                      <p class="text-sm truncate text-stone-500">Nemo mollitia repudiandae adipisci explicabo optio
+                        consequatur tempora ut nihil</p>
+                    </a>
+                  </div>
+                  <time datetime="2021-01-27T16:35" class="flex-shrink-0 text-sm text-stone-500 whitespace-nowrap">1d
+                    ago</time>
+                </div>
+                <div class="mt-1">
+                  <p class="text-sm text-stone-600 line-clamp-2">Doloremque dolorem maiores assumenda dolorem facilis.
+                    Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores
+                    omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.</p>
+                </div>
+              </li>
+
+              <li
+                class="relative px-6 py-5 bg-white focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600 hover:bg-stone-50">
+                <div class="flex justify-between space-x-3">
+                  <div class="flex-1 min-w-0">
+                    <a href="#" class="block focus:outline-none">
+                      <span class="absolute inset-0" aria-hidden="true"></span>
+                      <p class="text-sm font-medium truncate text-stone-900">Kyle Gulgowski</p>
+                      <p class="text-sm truncate text-stone-500">Doloremque reprehenderit et harum quas explicabo nulla
+                        architecto dicta voluptatibus</p>
+                    </a>
+                  </div>
+                  <time datetime="2021-01-27T16:35" class="flex-shrink-0 text-sm text-stone-500 whitespace-nowrap">1d
+                    ago</time>
+                </div>
+                <div class="mt-1">
+                  <p class="text-sm text-stone-600 line-clamp-2">Doloremque dolorem maiores assumenda dolorem facilis.
+                    Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores
+                    omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.</p>
+                </div>
+              </li>
+
+              <li
+                class="relative px-6 py-5 bg-white focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600 hover:bg-stone-50">
+                <div class="flex justify-between space-x-3">
+                  <div class="flex-1 min-w-0">
+                    <a href="#" class="block focus:outline-none">
+                      <span class="absolute inset-0" aria-hidden="true"></span>
+                      <p class="text-sm font-medium truncate text-stone-900">Hattie Haag</p>
+                      <p class="text-sm truncate text-stone-500">Eos sequi et aut ex impedit</p>
+                    </a>
+                  </div>
+                  <time datetime="2021-01-27T16:35" class="flex-shrink-0 text-sm text-stone-500 whitespace-nowrap">1d
+                    ago</time>
+                </div>
+                <div class="mt-1">
+                  <p class="text-sm text-stone-600 line-clamp-2">Doloremque dolorem maiores assumenda dolorem facilis.
+                    Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores
+                    omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.</p>
+                </div>
+              </li>
+
+              <li
+                class="relative px-6 py-5 bg-white focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600 hover:bg-stone-50">
+                <div class="flex justify-between space-x-3">
+                  <div class="flex-1 min-w-0">
+                    <a href="#" class="block focus:outline-none">
+                      <span class="absolute inset-0" aria-hidden="true"></span>
+                      <p class="text-sm font-medium truncate text-stone-900">Wilma Glover</p>
+                      <p class="text-sm truncate text-stone-500">Quisquam veniam explicabo</p>
+                    </a>
+                  </div>
+                  <time datetime="2021-01-27T16:35" class="flex-shrink-0 text-sm text-stone-500 whitespace-nowrap">1d
+                    ago</time>
+                </div>
+                <div class="mt-1">
+                  <p class="text-sm text-stone-600 line-clamp-2">Doloremque dolorem maiores assumenda dolorem facilis.
+                    Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores
+                    omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.</p>
+                </div>
+              </li>
+
+              <li
+                class="relative px-6 py-5 bg-white focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600 hover:bg-stone-50">
+                <div class="flex justify-between space-x-3">
+                  <div class="flex-1 min-w-0">
+                    <a href="#" class="block focus:outline-none">
+                      <span class="absolute inset-0" aria-hidden="true"></span>
+                      <p class="text-sm font-medium truncate text-stone-900">Dolores Morissette</p>
+                      <p class="text-sm truncate text-stone-500">Est ratione molestiae modi maiores consequatur
+                        eligendi et excepturi magni</p>
+                    </a>
+                  </div>
+                  <time datetime="2021-01-27T16:35" class="flex-shrink-0 text-sm text-stone-500 whitespace-nowrap">1d
+                    ago</time>
+                </div>
+                <div class="mt-1">
+                  <p class="text-sm text-stone-600 line-clamp-2">Doloremque dolorem maiores assumenda dolorem facilis.
+                    Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores
+                    omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.</p>
+                </div>
+              </li>
+
+              <li
+                class="relative px-6 py-5 bg-white focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600 hover:bg-stone-50">
+                <div class="flex justify-between space-x-3">
+                  <div class="flex-1 min-w-0">
+                    <a href="#" class="block focus:outline-none">
+                      <span class="absolute inset-0" aria-hidden="true"></span>
+                      <p class="text-sm font-medium truncate text-stone-900">Guadalupe Walsh</p>
+                      <p class="text-sm truncate text-stone-500">Commodi deserunt aut veniam rem ipsam</p>
+                    </a>
+                  </div>
+                  <time datetime="2021-01-27T16:35" class="flex-shrink-0 text-sm text-stone-500 whitespace-nowrap">1d
+                    ago</time>
+                </div>
+                <div class="mt-1">
+                  <p class="text-sm text-stone-600 line-clamp-2">Doloremque dolorem maiores assumenda dolorem facilis.
+                    Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores
+                    omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.</p>
+                </div>
+              </li>
+
+              <li
+                class="relative px-6 py-5 bg-white focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600 hover:bg-stone-50">
+                <div class="flex justify-between space-x-3">
+                  <div class="flex-1 min-w-0">
+                    <a href="#" class="block focus:outline-none">
+                      <span class="absolute inset-0" aria-hidden="true"></span>
+                      <p class="text-sm font-medium truncate text-stone-900">Jasmine Hansen</p>
+                      <p class="text-sm truncate text-stone-500">Illo illum aut debitis earum</p>
+                    </a>
+                  </div>
+                  <time datetime="2021-01-27T16:35" class="flex-shrink-0 text-sm text-stone-500 whitespace-nowrap">1d
+                    ago</time>
+                </div>
+                <div class="mt-1">
+                  <p class="text-sm text-stone-600 line-clamp-2">Doloremque dolorem maiores assumenda dolorem facilis.
+                    Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores
+                    omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.</p>
+                </div>
+              </li>
+
+              <li
+                class="relative px-6 py-5 bg-white focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600 hover:bg-stone-50">
+                <div class="flex justify-between space-x-3">
+                  <div class="flex-1 min-w-0">
+                    <a href="#" class="block focus:outline-none">
+                      <span class="absolute inset-0" aria-hidden="true"></span>
+                      <p class="text-sm font-medium truncate text-stone-900">Ian Volkman</p>
+                      <p class="text-sm truncate text-stone-500">Qui dolore iste ut est cumque sed</p>
+                    </a>
+                  </div>
+                  <time datetime="2021-01-27T16:35" class="flex-shrink-0 text-sm text-stone-500 whitespace-nowrap">1d
+                    ago</time>
+                </div>
+                <div class="mt-1">
+                  <p class="text-sm text-stone-600 line-clamp-2">Doloremque dolorem maiores assumenda dolorem facilis.
+                    Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores
+                    omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.</p>
+                </div>
+              </li>
+
+              <li
+                class="relative px-6 py-5 bg-white focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600 hover:bg-stone-50">
+                <div class="flex justify-between space-x-3">
+                  <div class="flex-1 min-w-0">
+                    <a href="#" class="block focus:outline-none">
+                      <span class="absolute inset-0" aria-hidden="true"></span>
+                      <p class="text-sm font-medium truncate text-stone-900">Rafael Klocko</p>
+                      <p class="text-sm truncate text-stone-500">Aut sed aut illum delectus maiores laboriosam ex</p>
+                    </a>
+                  </div>
+                  <time datetime="2021-01-27T16:35" class="flex-shrink-0 text-sm text-stone-500 whitespace-nowrap">1d
+                    ago</time>
+                </div>
+                <div class="mt-1">
+                  <p class="text-sm text-stone-600 line-clamp-2">Doloremque dolorem maiores assumenda dolorem facilis.
+                    Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores
+                    omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.</p>
+                </div>
+              </li>
+
+            </ul>
+          </nav>
+        </div>
+      </aside>
+    </main>
+  </div>
+</div>

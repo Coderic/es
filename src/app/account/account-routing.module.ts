@@ -32,13 +32,20 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'inbox',
+        path: 'profile',
         loadChildren: () =>
-          import('./inbox/inbox.module').then(
-            (m) => m.InboxModule
+          import('./profile/profile.module').then(
+            (m) => m.ProfileModule
           ),
       }
     ],
+  },
+  {
+    path: 'inbox',
+    loadChildren: () =>
+      import('./inbox/inbox.module').then(
+        (m) => m.InboxModule
+      ),
   },
 ];
 
