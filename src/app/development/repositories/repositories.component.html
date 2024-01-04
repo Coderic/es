@@ -2,9 +2,9 @@
   <li class="px-4 py-6 bg-white shadow sm:rounded-lg sm:p-6" *ngFor="let repo of repositories$ | async">
     <article aria-labelledby="question-title-81614">
       <div>
-        <h2 class="mt-4 text-base font-medium text-stone-900">{{ repo.name }}</h2>
+        <h2 routerLink="/development/repositories/{{ repo.name }}" class="mt-4 text-base font-medium text-stone-900">{{ repo.name }}</h2>
       </div>
-      <div class="mt-2 space-y-4 text-sm text-stone-700">
+      <div routerLink="/development/repositories/{{ repo.name }}" class="mt-2 space-y-4 text-sm text-stone-700">
         <p>{{ repo.description }}</p>
       </div>
       <div class="flex justify-between mt-6 space-x-8">
