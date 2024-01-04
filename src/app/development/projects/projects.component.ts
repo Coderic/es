@@ -14,6 +14,5 @@ export class ProjectsComponent {
 
   ngOnInit(): void {
     this.projects$ = this.github.getProjects();
-    this.projects$.subscribe(console.dir);
   }
 }
