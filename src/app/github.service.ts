@@ -52,6 +52,7 @@ export class GithubService {
     return from(
       octokit.rest.projects.listForOrg({
         org: 'CodericLatam',
+        state: 'all'
       })
     ).pipe(map((response: any) => response.data));
   }
