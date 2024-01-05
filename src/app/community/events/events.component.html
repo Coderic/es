@@ -1,0 +1,30 @@
+<div *ngFor="let event of events$ | async">
+  <div [ngSwitch]="event.type">
+    <div *ngSwitchCase="'PushEvent'" class="text-orange-500">
+      <div class="flex">
+        <h2>{{ event.repo.name }}</h2>
+        <img src="{{event.actor.avatar_url}}" class="rounded-sm w-7" />
+      </div>
+    </div>
+    <div *ngSwitchCase="'CreateEvent'" class="text-sky-500">
+      <h2>{{ event.repo.name }}</h2>
+    </div>
+    <div *ngSwitchCase="'IssueCommentEvent'" class="text-blue-500">
+      <h2>{{ event.type }}</h2>
+    </div>
+    <div *ngSwitchCase="'IssuesEvent'" class="text-red-500">
+      <h2>{{ event.type }}</h2>
+    </div>
+    <div *ngSwitchCase="'MemberEvent'" class="text-stone-500">
+      <h2>{{ event.type }}</h2>
+    </div>
+    <div *ngSwitchDefault class="text-green-500">
+      <h2>{{ event.type }}</h2>
+    </div>
+  </div>
+</div>
+
+
+
+
+

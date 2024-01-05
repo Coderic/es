@@ -5,13 +5,15 @@ import { CommunityRoutingModule } from './community-routing.module';
 import { CommunityComponent } from './community.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ContainerComponent } from './container/container.component';
+import { EventsComponent } from './events/events.component';
 
 
 @NgModule({
   declarations: [
     CommunityComponent,
     NavigationComponent,
-    ContainerComponent
+    ContainerComponent,
+    EventsComponent
   ],
   imports: [
     CommonModule,

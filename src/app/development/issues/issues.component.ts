@@ -14,6 +14,6 @@ export class IssuesComponent {
 
   ngOnInit(): void {
     this.issues$ = this.github.getIssues();
-    this.issues$.subscribe(console.dir);
+    //this.issues$.subscribe(console.dir);
   }
 }

@@ -66,7 +66,12 @@ export class GithubService {
   }
 
   getEvents(): Observable<any> {
-    return from(octokit.rest.repos.listForOrg({ org: 'CodericLatam' })).pipe(
+    return from(octokit.request('GET /orgs/{org}/events', {
+      org: 'CodericLatam',
+      headers: {
+        'X-GitHub-Api-Version': '2022-11-28'
+      }
+     })).pipe(
       map((response: any) => response.data)
     );
   }

@@ -14,6 +14,7 @@ export const environment = {
     messagingSenderId: '368772660823',
     appId: '1:368772660823:web:0f071712e630d4e948ad12',
     locationId: 'europe-west',
+    measurementId: "G-7FXF0BYBH2"
   },
   web: {
     client_id:
@@ -24,4 +25,8 @@ export const environment = {
     auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
     client_secret: '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',
   },
+  pusher: {
+    key: '98abbd9d451e65336b94',
+    cluster: 'eu',
+  }
 };
