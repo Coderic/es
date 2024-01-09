@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="6570363013146073520" datatype="html">
         <source>Dashboard</source>
-        <target>Escritorio</target>
+        <target>Bureau</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/account/navigation/navigation.component.html</context>
           <context context-type="linenumber">13</context>
@@ -16,7 +16,7 @@
       </trans-unit>
       <trans-unit id="4013060476269413412" datatype="html">
         <source>Training</source>
-        <target>Capacitación</target>
+        <target>Entraînement</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/account/navigation/navigation.component.html</context>
           <context context-type="linenumber">28</context>
@@ -24,7 +24,7 @@
       </trans-unit>
       <trans-unit id="5519350180308640048" datatype="html">
         <source>Modules</source>
-        <target>Módulos</target>
+        <target>Modules</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/account/navigation/navigation.component.html</context>
           <context context-type="linenumber">40</context>
@@ -32,7 +32,7 @@
       </trans-unit>
       <trans-unit id="6707361102856436710" datatype="html">
         <source>Products</source>
-        <target>Productos</target>
+        <target>Produits</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/account/navigation/navigation.component.html</context>
           <context context-type="linenumber">66</context>
@@ -40,7 +40,7 @@
       </trans-unit>
       <trans-unit id="799485662157076328" datatype="html">
         <source>Inbox</source>
-        <target>Bandeja de entrada</target>
+        <target>Boîte de réception</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/account/navigation/navigation.component.html</context>
           <context context-type="linenumber">90</context>
@@ -48,7 +48,7 @@
       </trans-unit>
       <trans-unit id="5051275796279096757" datatype="html">
         <source>Development</source>
-        <target>Desarrollo</target>
+        <target>Développement</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">14</context>
@@ -60,7 +60,7 @@
       </trans-unit>
       <trans-unit id="6766426820613979595" datatype="html">
         <source>Crowdfunding</source>
-        <target>Recaudación de fondos</target>
+        <target>Financement participatif</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">27</context>
@@ -72,7 +72,7 @@
       </trans-unit>
       <trans-unit id="6169807874946516695" datatype="html">
         <source>Coworking</source>
-        <target>Trabajo colaborativo</target>
+        <target>Cotravail</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">40</context>
@@ -82,9 +82,9 @@
           <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8592968690354608818" datatype="html">
+      <trans-unit id="8592968690354608818" datatype="html"s>
         <source>Freelancers</source>
-        <target>Autónomos</target>
+        <target>Indépendantes</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">53</context>
@@ -96,7 +96,7 @@
       </trans-unit>
       <trans-unit id="8832343684695963710" datatype="html">
         <source>Learning</source>
-        <target>Apendizaje</target>
+        <target>Apprentissage</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">66</context>
@@ -108,7 +108,7 @@
       </trans-unit>
       <trans-unit id="1274247756500564795" datatype="html">
         <source>Community</source>
-        <target>Comunidad</target>
+        <target>Communauté</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">79</context>
@@ -120,7 +120,7 @@
       </trans-unit>
       <trans-unit id="8893390761160292681" datatype="html">
         <source>My account</source>
-        <target>Mi cuenta</target>
+        <target>Mon compte</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">107</context>
@@ -128,7 +128,7 @@
       </trans-unit>
       <trans-unit id="3797778920049399855" datatype="html">
         <source>Logout</source>
-        <target>Salir</target>
+        <target>Déconnecter</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">119</context>
@@ -136,7 +136,7 @@
       </trans-unit>
       <trans-unit id="2949848596707725099" datatype="html">
         <source>Sign out</source>
-        <target>Cerrar sesión</target>
+        <target>Se déconnecter</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">120</context>
@@ -144,7 +144,7 @@
       </trans-unit>
       <trans-unit id="8307140841776883735" datatype="html">
         <source>Join</source>
-        <target>Únete</target>
+        <target>Rejoindre</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">130</context>
@@ -152,7 +152,7 @@
       </trans-unit>
       <trans-unit id="2336550011721758066" datatype="html">
         <source>Log in</source>
-        <target>Iniciar sesión</target>
+        <target>Se connecter</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">131</context>
@@ -160,7 +160,7 @@
       </trans-unit>
       <trans-unit id="8440128775129354214" datatype="html">
         <source>Privacy</source>
-        <target>Privacidad</target>
+        <target>Confidentialité</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">106</context>
@@ -168,7 +168,7 @@
       </trans-unit>
       <trans-unit id="7372755454773589030" datatype="html">
         <source>Delivery</source>
-        <target>Entrega</target>
+        <target>Livraison</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">111</context>
@@ -176,7 +176,7 @@
       </trans-unit>
       <trans-unit id="2350687709484433717" datatype="html">
         <source>Refunds</source>
-        <target>Reembolsos</target>
+        <target>Remboursements</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">116</context>
@@ -184,7 +184,7 @@
       </trans-unit>
       <trans-unit id="7814069298939347422" datatype="html">
         <source>Legal</source>
-        <target>Marco Legal</target>
+        <target>Légal</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">124</context>
@@ -192,7 +192,7 @@
       </trans-unit>
       <trans-unit id="664573589261423471" datatype="html">
         <source>Terms and Conditions</source>
-        <target>Términos y Condiciones</target>
+        <target>Termes et conditions</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">129</context>
@@ -200,7 +200,7 @@
       </trans-unit>
       <trans-unit id="5710053734496712707" datatype="html">
         <source>Faq&apos;s</source>
-        <target>Preguntas Frecuentes</target>
+        <target>Questions fréquentes</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">134</context>
@@ -216,7 +216,7 @@
       </trans-unit>
       <trans-unit id="2543092545743423349" datatype="html">
         <source>since september 30, 2004</source>
-        <target>desde el 30 de septiembre de 2004</target>
+        <target>depuis le 30 septembre 2004</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">211</context>
@@ -224,7 +224,7 @@
       </trans-unit>
       <trans-unit id="6451191643745835290" datatype="html">
         <source>We don&apos;t know what the hell we should put here,</source>
-        <target>No sabemos qué rayos deberíamos colocar aquí,</target>
+        <target>Nous ne savons pas ce que nous devrions mettre ici,</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/coworking/coworking.component.html</context>
           <context context-type="linenumber">10</context>
@@ -232,7 +232,7 @@
       </trans-unit>
       <trans-unit id="8404591718096552230" datatype="html">
         <source>what we do know is that Coderic must have Coworking spaces</source>
-        <target>lo que sí sabemos es que Coderic debe tener espacios de Coworking</target>
+        <target>ce que nous savons, c'est que Coderic doit disposer d'espaces de Coworking</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/coworking/coworking.component.html</context>
           <context context-type="linenumber">11</context>
@@ -240,7 +240,7 @@
       </trans-unit>
       <trans-unit id="1726138143449361222" datatype="html">
         <source>Join the discussion</source>
-        <target>Únete a la discusión</target>
+        <target>Rejoignez la discussion</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/coworking/coworking.component.html</context>
           <context context-type="linenumber">14</context>
@@ -248,7 +248,7 @@
       </trans-unit>
       <trans-unit id="7091571651222742304" datatype="html">
         <source>Projects</source>
-        <target>Proyectos</target>
+        <target>Projets</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/crowdfunding/navigation/navigation.component.html</context>
           <context context-type="linenumber">22</context>
@@ -260,7 +260,7 @@
       </trans-unit>
       <trans-unit id="4111208477948747698" datatype="html">
         <source>Matchfunding</source>
-        <target>Cofinanciados</target>
+        <target>Cofinancé</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/crowdfunding/navigation/navigation.component.html</context>
           <context context-type="linenumber">26</context>
@@ -268,7 +268,7 @@
       </trans-unit>
       <trans-unit id="1697703440980943507" datatype="html">
         <source>Stakeholders</source>
-        <target>Interesados</target>
+        <target>Intéressé</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/crowdfunding/navigation/navigation.component.html</context>
           <context context-type="linenumber">30</context>
@@ -276,7 +276,7 @@
       </trans-unit>
       <trans-unit id="2950450486092426663" datatype="html">
         <source>Funds</source>
-        <target>Fondos</target>
+        <target>Fonds</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/crowdfunding/navigation/navigation.component.html</context>
           <context context-type="linenumber">34</context>
@@ -284,7 +284,7 @@
       </trans-unit>
       <trans-unit id="3579359653177704656" datatype="html">
         <source>Investors</source>
-        <target>Inversionistas</target>
+        <target>Investisseurs</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/crowdfunding/navigation/navigation.component.html</context>
           <context context-type="linenumber">38</context>
@@ -292,7 +292,7 @@
       </trans-unit>
       <trans-unit id="6342682425862972636" datatype="html">
         <source>Investments</source>
-        <target>Inversiones</target>
+        <target>Investissements</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/crowdfunding/navigation/navigation.component.html</context>
           <context context-type="linenumber">42</context>
@@ -300,7 +300,7 @@
       </trans-unit>
       <trans-unit id="3305829793924000785" datatype="html">
         <source>Repositories</source>
-        <target>Repositorios</target>
+        <target>Dépôts</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/development/navigation/navigation.component.html</context>
           <context context-type="linenumber">19</context>
@@ -308,7 +308,7 @@
       </trans-unit>
       <trans-unit id="1176990449799757498" datatype="html">
         <source>Issues</source>
-        <target>Incidencias</target>
+        <target>Problèmes</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/development/navigation/navigation.component.html</context>
           <context context-type="linenumber">27</context>
@@ -316,7 +316,7 @@
       </trans-unit>
       <trans-unit id="88715016040550427" datatype="html">
         <source>Contests</source>
-        <target>Concursos</target>
+        <target>Concours</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
           <context context-type="linenumber">26</context>
@@ -324,7 +324,7 @@
       </trans-unit>
       <trans-unit id="4025908637465733151" datatype="html">
         <source>Recruiters</source>
-        <target>Reclutadores</target>
+        <target>Recruteurs</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
           <context context-type="linenumber">34</context>
@@ -332,7 +332,7 @@
       </trans-unit>
       <trans-unit id="6748928356220723437" datatype="html">
         <source>Local Jobs</source>
-        <target>Empleos Locales</target>
+        <target>Emplois locaux</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
           <context context-type="linenumber">38</context>
@@ -340,7 +340,7 @@
       </trans-unit>
       <trans-unit id="3620668876378879803" datatype="html">
         <source>Exams</source>
-        <target>Exámenes</target>
+        <target>Examens</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/freelancers/navigation/navigation.component.html</context>
           <context context-type="linenumber">42</context>
@@ -348,7 +348,7 @@
       </trans-unit>
       <trans-unit id="5779770381601735038" datatype="html">
         <source>Careers</source>
-        <target>Carreras</target>
+        <target>Carrières</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/learning/navigation/navigation.component.html</context>
           <context context-type="linenumber">22</context>
@@ -356,7 +356,7 @@
       </trans-unit>
       <trans-unit id="1368388923673520351" datatype="html">
         <source>Courses</source>
-        <target>Cursos</target>
+        <target>Cours</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/learning/navigation/navigation.component.html</context>
           <context context-type="linenumber">26</context>
@@ -364,7 +364,7 @@
       </trans-unit>
       <trans-unit id="4699310706051946809" datatype="html">
         <source>Tutorials</source>
-        <target>Tutoriales</target>
+        <target>Tutoriels</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/learning/navigation/navigation.component.html</context>
           <context context-type="linenumber">30</context>
@@ -372,7 +372,7 @@
       </trans-unit>
       <trans-unit id="4145287881406093444" datatype="html">
         <source>Video Tutorials</source>
-        <target>Vídeotutoriales</target>
+        <target>Tutoriels vidéos</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/learning/navigation/navigation.component.html</context>
           <context context-type="linenumber">34</context>
@@ -380,7 +380,7 @@
       </trans-unit>
       <trans-unit id="6747202928800453043" datatype="html">
         <source>Welcome! This is</source>
-        <target>¡Bienvenido! Esto es</target>
+        <target>Accueillir! C'est</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">4</context>
@@ -388,7 +388,7 @@
       </trans-unit>
       <trans-unit id="6729681822193900473" datatype="html">
         <source>Coderic may seem like a lot to you, but the truth is that we are a Software Factory, and that is that we, we do software engineering, our technological ecosystems are our exposure to the world of what we do offering tools and integration within everyone’s reach.</source>
-        <target>Puede que Coderic te parezca muchas cosas, pero la verdad es que sómos una Casa de Software, y es que nosotros, hacemos ingeniería de software, nuestros ecosistemas tecnológicos son nuestra exposición al mundo de lo que hacemos ofreciendo herramientas e integración al alcance de todos</target>
+        <target>Peut-être que Coderic vous montre beaucoup de choses, mais la vérité est que c'est une maison de logiciels, et c'est que nous avons l'ingénierie logicielle, nos systèmes écologiques technologiques dans notre exposition au monde qui nous proposons des outils et une intégration pour toutes les possibilités.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">7</context>
@@ -396,7 +396,7 @@
       </trans-unit>
       <trans-unit id="964906777101279395" datatype="html">
         <source>Not yet a member?</source>
-        <target>¿Todavía no eres miembro?</target>
+        <target>Pas encore membre?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">57</context>
@@ -404,7 +404,7 @@
       </trans-unit>
       <trans-unit id="3572000366455600240" datatype="html">
         <source>Enter your github address and receive an invitation to our repositories, collaborate with professionals, and share in our Free Software development ecosystem, training, support, advice, tools, take-off platforms, incubators, collaborative work spaces.</source>
-        <target>Ingresa tu dirección de github y recibe una invitación a nuestros repositorios, colabora con profesionales y comparte en nuestro ecosistema de desarrollo de Software Libre, capacitación, soporte, asesoría, herramientas, plataformas de despegue, incubadoras, espacios de trabajo colaborativo.</target>
+        <target>Inscrivez-vous directement sur github et recevez une invitation à nos référentiels, collaborez avec des professionnels et partagez-le avec notre écosystème de développement de logiciels libres, capacité, support, assistance, outils, plates-formes de développement, incubateurs, espaces de travail collaboratif.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">58</context>
@@ -412,7 +412,7 @@
       </trans-unit>
       <trans-unit id="4993445553787667175" datatype="html">
         <source>Github Username</source>
-        <target>Nombre de usuario de Github</target>
+        <target>Nom d'utilisateur Github</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">62</context>
@@ -420,7 +420,7 @@
       </trans-unit>
       <trans-unit id="6587804180762587915" datatype="html">
         <source>Enter your Github Username</source>
-        <target>Ingrese su nombre de usuario de Github</target>
+        <target>Entrez votre nom d'utilisateur Github</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">69</context>
@@ -428,7 +428,7 @@
       </trans-unit>
       <trans-unit id="3463797202358605584" datatype="html">
         <source>Invite</source>
-        <target>Invitar</target>
+        <target>Inviter</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">73</context>
@@ -437,7 +437,7 @@
 
       <trans-unit id="8860193380123206693" datatype="html">
         <source>Confirm if this is your user:</source>
-        <target>Confirma si este es tu usuario:</target>
+        <target>Confirmez s'il s'agit de votre utilisateur:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">76</context>
@@ -445,7 +445,7 @@
       </trans-unit>
       <trans-unit id="7484272056609114481" datatype="html">
         <source>The invitation has been sent successfully</source>
-        <target>La invitación ha sido enviada exitosamente</target>
+        <target>L'invitation a été envoyée avec succès</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">78</context>
@@ -453,7 +453,7 @@
       </trans-unit>
       <trans-unit id="4777900865118624664" datatype="html">
         <source>We care about the protection of your data.</source>
-        <target>Nos preocupamos por la protección de tus datos.</target>
+        <target>Nous nous soucions de la protection de vos données.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">79</context>
@@ -461,7 +461,7 @@
       </trans-unit>
       <trans-unit id="7218347871480825149" datatype="html">
         <source>Read our Privacy Policy</source>
-        <target>Lea nuestra Política de Privacidad</target>
+        <target>Lisez notre politique de confidentialité</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">79</context>
@@ -469,7 +469,7 @@
       </trans-unit>
       <trans-unit id="1456777950527578159" datatype="html">
         <source>Meet the <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-orange-500&quot;&gt;"/>Coderic<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Development Team</source>
-        <target>Conozca al equipo de desarrollo <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-orange-500&quot;&gt;"/>Coderic<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <target>Rencontrez l'équipe de développement <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-orange-500&quot;&gt;"/>Coderic<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/portal/home/home.component.html</context>
           <context context-type="linenumber">87</context>

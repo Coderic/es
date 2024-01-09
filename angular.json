@@ -22,6 +22,10 @@
           "es": {
             "translation": "src/locale/messages.es.xlf",
             "baseHref": "/"
+          },
+          "fr": {
+            "translation": "src/locale/messages.fr.xlf",
+            "baseHref": "/"
           }
         }
       },
