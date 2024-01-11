@@ -1,6 +1,6 @@
 export const environment = {
   production: false,
-  api: 'http://127.0.0.1:5000/api',
+  api: 'http://localhost:3000',
   services: {
     github: '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'
   },

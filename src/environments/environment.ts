@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  api: '/api',
+  api: 'https://backend.coderic.org',
   services: {
     github: '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'
   },

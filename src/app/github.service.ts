@@ -25,15 +25,13 @@ export class GithubService {
   }
 
   getMember(username: string): Observable<any> {
-    return from(octokit.rest.users.getByUsername({ username: username })).pipe(
-      map((response: any) => response.data)
-    );
+    let url = environment.api + '/members/'+username;
+    return this.http.get(url);
   }
 
   getMembers(): Observable<any> {
-    return from(
-      octokit.rest.orgs.listMembers({ org: 'CodericLatam', per_page: 1000000 })
-    ).pipe(map((response: any) => response.data));
+    let url = environment.api + '/members';
+    return this.http.get(url);
   }
 
   getRepositories(): Observable<any> {
