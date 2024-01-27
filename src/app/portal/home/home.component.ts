@@ -9,8 +9,8 @@ import { GithubService } from 'src/app/github.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit{
-  public members$: Observable<any[]>;
+export class HomeComponent implements OnInit {
+  public members$: Observable<any[]> = this.github.getMembers();
   public account$: Observable<any>;
   public invited$: Observable<any>;
 
@@ -20,11 +20,9 @@ export class HomeComponent implements OnInit{
     userId: new FormControl<number | null>(0, { updateOn: 'change' }),
   });
 
-  constructor(private github: GithubService) {
-  }
+  constructor(private github: GithubService) {}
 
   ngOnInit(): void {
-    this.members$ = this.github.getMembers();
     this.githubInviteForm.controls.username.valueChanges.subscribe((value: string | null) => {
       this.account$ = this.github.getMember(value??'');
       this.account$.subscribe(account => this.account = account);

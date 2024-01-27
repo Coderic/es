@@ -32,6 +32,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'canvas',
+        loadChildren: () =>
+          import('./canvas/canvas.module').then(
+            (m) => m.CanvasModule
+          ),
+      },
+      {
         path: 'profile',
         loadChildren: () =>
           import('./profile/profile.module').then(
