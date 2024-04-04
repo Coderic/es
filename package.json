@@ -28,7 +28,7 @@
     "@angular/router": "^17.3.3",
     "@angular/youtube-player": "^17.3.3",
     "@auth0/angular-jwt": "^5.2.0",
-    "axios": "^1.6.0",
+    "axios": "^1.6.1",
     "github-api": "^3.4.0",
     "jszip": "^3.10.1",
     "laravel-echo": "^1.16.0",
