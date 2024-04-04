@@ -53,7 +53,10 @@
             "serviceWorker": false,
             "ngswConfigPath": "ngsw-config.json",
             "allowedCommonJsDependencies": [
-              "lodash"
+              "pusher-js",
+              "@octokit",
+              "once",
+              "before-after-hook"
             ]
           },
           "configurations": {
