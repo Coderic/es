@@ -96,13 +96,13 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "coderic-org:build:production"
+              "buildTarget": "coderic-org:build:production"
             },
             "development": {
-              "browserTarget": "coderic-org:build:development"
+              "buildTarget": "coderic-org:build:development"
             },
             "es": {
-              "browserTarget": "coderic-org:build:development,es"
+              "buildTarget": "coderic-org:build:development,es"
             }
           },
           "defaultConfiguration": "development"
@@ -110,7 +110,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "coderic-org:build"
+            "buildTarget": "coderic-org:build"
           }
         },
         "test": {
