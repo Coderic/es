@@ -27,7 +27,7 @@ import { NotifyComponent } from './utils/notify/notify.component';
 import localeEs from '@angular/common/locales/es';
 import { AuthService } from './security/auth.service';
 import { UtilsService } from './utils/utils.service';
-import { ServiceWorkerModule } from '@angular/service-worker';
+//import { ServiceWorkerModule } from '@angular/service-worker';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { getApp, initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { connectAuthEmulator, getAuth, provideAuth } from '@angular/fire/auth';
@@ -79,12 +79,6 @@ registerLocaleData(localeEs, 'es');
     LayoutModule,
     ReactiveFormsModule,
     AngularFireFunctionsModule,
-    ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: !isDevMode(),
-      // Register the ServiceWorker as soon as the application is stable
-      // or after 30 seconds (whichever comes first).
-      registrationStrategy: 'registerWhenStable:30000',
-    }),
 
     provideAnalytics(() => getAnalytics()),
     /*
