@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { YoutubeService } from './youtube.service';
 
@@ -6,7 +7,9 @@ describe('YoutubeService', () => {
   let service: YoutubeService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule]      
+    });
     service = TestBed.inject(YoutubeService);
   });
 

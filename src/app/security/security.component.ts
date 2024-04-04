@@ -11,7 +11,7 @@ import { CheckUserSecurityValidator } from './check-user-security.validator';
   styleUrls: ['./security.component.css']
 })
 export class SecurityComponent {
-
+  /*
   authForm = new FormGroup({
     username: new FormControl(null, {
       validators: [Validators.required],
@@ -21,7 +21,7 @@ export class SecurityComponent {
     }),
     password: new FormControl(null, Validators.required)
   });
-
+*/
   constructor(
     private fb: FormBuilder,
     private httpSrv: HttpClient,
@@ -52,9 +52,10 @@ export class SecurityComponent {
   }
 
   async onSubmit(): Promise<void> {
-
+    /*
     let username: string | null = this.authForm.controls.username.value;
     let password: string | null = this.authForm.controls.password.value;
     console.dir(await this.authSrv.authenticate(username, password));
+    */
   }
 }

@@ -3,6 +3,10 @@ import { TestBed } from '@angular/core/testing';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { environment } from 'src/environments/environment';
+import { AngularFireModule, FIREBASE_OPTIONS } from '@angular/fire/compat';
+import { getRemoteConfig, provideRemoteConfig } from '@angular/fire/remote-config';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -13,8 +17,14 @@ describe('AppComponent', () => {
       imports: [
         HttpClientModule,
         RouterTestingModule,
-        RouterModule
-      ]
+        RouterModule,
+        AngularFireModule,
+        provideFirebaseApp(() => initializeApp(environment.firebase)),
+        provideRemoteConfig(() => getRemoteConfig()),
+      ],
+      providers: [
+        { provide: FIREBASE_OPTIONS, useValue: environment.firebase },
+      ],
     }).compileComponents();
   });
 
