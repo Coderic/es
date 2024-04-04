@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CommunityComponent } from './community.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('CommunityComponent', () => {
   let component: CommunityComponent;
@@ -8,7 +9,8 @@ describe('CommunityComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CommunityComponent]
+      declarations: [CommunityComponent],
+      imports: [HttpClientTestingModule]
     });
     fixture = TestBed.createComponent(CommunityComponent);
     component = fixture.componentInstance;

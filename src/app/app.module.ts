@@ -53,6 +53,7 @@ import { environment } from 'src/environments/environment';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { AngularFireFunctionsModule, ORIGIN } from '@angular/fire/compat/functions';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 registerLocaleData(localeEs, 'es');
 
@@ -67,6 +68,7 @@ registerLocaleData(localeEs, 'es');
   imports: [
     BrowserModule,
     HttpClientModule,
+    HttpClientTestingModule,
     BrowserAnimationsModule,
     LayoutModule,
     YouTubePlayerModule,

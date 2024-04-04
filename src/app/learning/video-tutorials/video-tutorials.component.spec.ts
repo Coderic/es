@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { VideoTutorialsComponent } from './video-tutorials.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('VideoTutorialsComponent', () => {
   let component: VideoTutorialsComponent;
@@ -8,7 +9,8 @@ describe('VideoTutorialsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [VideoTutorialsComponent]
+      declarations: [VideoTutorialsComponent],
+      imports: [HttpClientTestingModule]
     });
     fixture = TestBed.createComponent(VideoTutorialsComponent);
     component = fixture.componentInstance;

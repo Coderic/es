@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PortalComponent } from './portal.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('PortalComponent', () => {
   let component: PortalComponent;
@@ -8,7 +9,8 @@ describe('PortalComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PortalComponent]
+      declarations: [PortalComponent],
+      imports: [HttpClientTestingModule]
     });
     fixture = TestBed.createComponent(PortalComponent);
     component = fixture.componentInstance;

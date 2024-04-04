@@ -1,6 +1,5 @@
 import { HttpClientModule } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
-import { MatNativeDateModule } from '@angular/material/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
@@ -14,8 +13,7 @@ describe('AppComponent', () => {
       imports: [
         HttpClientModule,
         RouterTestingModule,
-        RouterModule,
-        MatNativeDateModule
+        RouterModule
       ]
     }).compileComponents();
   });
