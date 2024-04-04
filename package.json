@@ -1,8 +1,12 @@
 {
   "name": "@coderic/org",
   "version": "0.0.1",
-  "author": "Coderic",
-  "homepage": "https://coderic.org/",
+  "author": {
+    "name": "Coderic",
+    "email": "coderic@coderic.net",
+    "url": "https://coderic.org/"
+  },
+  "homepage": "https://github.com/Coderic/coderic.org/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
