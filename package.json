@@ -42,7 +42,7 @@
     "@angular-devkit/build-angular": "^17.3.3",
     "@angular/cli": "^17.3.3",
     "@angular/compiler-cli": "^17.3.3",
-    "@angular/localize": "^17.3.3",
+    "@angular/localize": "^17.3.4",
     "@octokit/rest": "^20.1.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@types/datatables.net": "^1.10.28",
