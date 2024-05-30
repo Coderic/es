@@ -41,7 +41,7 @@ jobs:
             './dist/browser/*' => /home/ubuntu/dist/browser/
           last_ssh: |
             sudo rm -rf /var/www/english/*
-            sudo cp ./dist/browser/en/* /var/www/english/
+            sudo cp /home/ubuntu/dist/browser/en/* /var/www/english/
             sudo rm -rf /var/www/spanish/*
-            sudo cp ./dist/browser/es/* /var/www/spanish/
+            sudo cp /home/ubuntu/dist/browser/es/* /var/www/spanish/
 
