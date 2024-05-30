@@ -91,7 +91,7 @@
           background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(229, 229, 229, 0.50) 150%);">
         <div class="flex items-center justify-center h-full text-right">
           <div class="flex justify-end w-full gap-3 px-6 text-black md:px-6">
-            <div *ngIf="user$ | async as user">
+            <div *ngIf="false">
               <div class="flex w-full gap-4">
                 <a routerLink="/dashboard" class="flex items-center justify-around p-4 bg-white shadow-lg rounded-xl">
                   <div class="p-2 mr-4 text-white shadow-lg rounded-xl bg-gradient-to-r from-stone-500 to-stone-700">
@@ -121,16 +121,16 @@
                 </button>
               </div>
               <a routerLink="/profile" class="block w-full p-2 mt-2 font-semibold text-center bg-white rounded-lg shadow-lg">
-                {{ user.displayName }}
+                Lorem lipsum
               </a>
             </div>
-            <div *ngIf="!(user$ | async)">
+            <div *ngIf="!(false)">
               <div class="flex items-center justify-around gap-4 p-4 bg-white shadow-lg rounded-xl">
                 <div class="mx-4 text-center">
                   <h1 class="text-4xl font-bold text-gray-800" i18n>Join</h1>
                   <span class="text-gray-500" i18n>Log in</span>
                 </div>
-                <button (click)="loginGithub()"
+                <button
                   class="inline-flex items-center p-2 space-x-2 font-semibold text-white bg-gray-700 shadow-lg rounded-xl">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
                     role="img" class="w-16 h-16" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
@@ -141,7 +141,7 @@
                     </g>
                   </svg>
                 </button>
-                <button (click)="loginGoogle()"
+                <button
                   class="inline-flex items-center p-2 space-x-2 font-semibold text-white bg-red-500 shadow-lg rounded-xl">
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
                     role="img" class="w-16 h-16" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
@@ -152,7 +152,7 @@
                     </g>
                   </svg>
                 </button>
-                <button (click)="loginFacebook()"
+                <button
                   class="inline-flex items-center p-2 space-x-2 font-semibold text-white bg-blue-500 rounded-xl">
                   <svg class="w-16 h-16 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path

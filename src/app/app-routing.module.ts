@@ -6,16 +6,6 @@ import { SecurityGuard } from './security/security.guard';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { AppComponent } from './app.component';
 
-import {
-  AngularFireAuthGuard,
-  hasCustomClaim,
-  redirectUnauthorizedTo,
-  redirectLoggedInTo,
-} from '@angular/fire/compat/auth-guard';
-
-const adminOnly = () => hasCustomClaim('admin');
-const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['login']);
-const redirectLoggedInToItems = () => redirectLoggedInTo(['dashboard']);
 //const belongsToAccount = (next) => hasCustomClaim(`account-${next.params.id}`)
 
 const routes: Routes = [
@@ -64,14 +54,14 @@ const routes: Routes = [
     path: '',
     loadChildren: () =>
       import('./account/account.module').then((m) => m.AccountModule),
-    canActivate: [AngularFireAuthGuard],
-    data: { authGuardPipe: redirectUnauthorizedToLogin },
+    //canActivate: [AngularFireAuthGuard],
+    //data: { authGuardPipe: redirectUnauthorizedToLogin },
   },
   {
     path: 'login',
     component: UserLoginComponent,
-    canActivate: [AngularFireAuthGuard],
-    data: { authGuardPipe: redirectLoggedInToItems },
+    //canActivate: [AngularFireAuthGuard],
+    //data: { authGuardPipe: redirectLoggedInToItems },
   },
   { path: '**', component: PageNotFoundComponent },
 ];

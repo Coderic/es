@@ -11,13 +11,7 @@ export class PusherService {
   private pusher: any;
   public webhooks: any;
 
-  constructor(private http: HttpClient) {
-    this.pusher = new Pusher(environment.pusher.key, {
-      cluster: environment.pusher.cluster
-    });
-
-    this.webhooks = this.pusher.subscribe('webhooks');
-  }
+  constructor(private http: HttpClient) {}
 
   getEvents(eventName: string): Observable<any> {
     return new Observable<string>(observer => {

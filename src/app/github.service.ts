@@ -3,16 +3,15 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment';
 import { Observable, defer, filter, from, map } from 'rxjs';
 import { Octokit } from '@octokit/rest';
-import { FirefunctionsService } from './firefunctions.service';
 
 const octokit = new Octokit({
-  auth: environment.services.github,
+  //auth: environment.services.github,
 });
 @Injectable({
   providedIn: 'root',
 })
 export class GithubService {
-  constructor(private http: HttpClient, private fire: FirefunctionsService) {}
+  constructor(private http: HttpClient) {}
 
   inviteMember(invitee_id: number): Observable<any> {
     return from(

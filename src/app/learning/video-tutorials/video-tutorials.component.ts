@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { FirefunctionsService } from 'src/app/firefunctions.service';
 
 @Component({
   selector: 'app-video-tutorials',
@@ -9,10 +8,10 @@ import { FirefunctionsService } from 'src/app/firefunctions.service';
 })
 export class VideoTutorialsComponent implements OnInit {
   public playlists$: Observable<any>;
-  constructor(private ffSrv: FirefunctionsService) {
+  constructor() {
 
   }
   ngOnInit(): void {
-    this.playlists$ = this.ffSrv.getPlaylists();
+    //this.playlists$ = this.ffSrv.getPlaylists();
   }
 }

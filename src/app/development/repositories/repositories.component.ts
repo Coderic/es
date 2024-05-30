@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { GithubService } from '../../github.service';
-import { FirefunctionsService } from '../../firefunctions.service';
 import { Observable } from 'rxjs';
 @Component({
   selector: 'app-repositories',
@@ -13,6 +12,6 @@ export class RepositoriesComponent implements OnInit {
   constructor(private github: GithubService) { }
 
   ngOnInit(): void {
-    this.repositories$ = this.github.getRepositories();
+    //this.repositories$ = this.github.getRepositories();
   }
 }
