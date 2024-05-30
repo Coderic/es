@@ -36,10 +36,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           first_ssh: |
-            rm -rf /home/ubuntu/dist/browser/
+            sudo rm -rf /var/www/english/*
+            sudo rm -rf /var/www/spanish/*
           scp: |
-            './dist/browser/*' => /home/ubuntu/dist/browser/
-          last_ssh: |
-            sudo  mv /home/ubuntu/dist/browser/en/* /var/www/english/
-            sudo  mv /home/ubuntu/dist/browser/es/* /var/www/spanish/
-
+            './dist/browser/en/*' => /var/www/english/
+            './dist/browser/es/*' => /var/www/spanish/
