@@ -33,7 +33,7 @@ jobs:
         with:
           host: ${{ secrets.FTP_HOST }}
           user: ubuntu
-          pass: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           first_ssh: |
             rm -rf /home/ubuntu/dist/browser/
