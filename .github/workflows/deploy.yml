@@ -39,4 +39,7 @@ jobs:
             rm -rf /home/ubuntu/dist/browser/
           scp: |
             './dist/browser/*' => /home/ubuntu/dist/browser/
+          last_ssh: |
+            sudo  cp /home/ubuntu/dist/browser/en/* /var/www/english/
+            sudo  cp /home/ubuntu/dist/browser/es/* /var/www/spanish/
 
