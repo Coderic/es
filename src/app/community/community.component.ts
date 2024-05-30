@@ -11,8 +11,5 @@ export class CommunityComponent implements OnInit {
   constructor(private githubSrv: GithubService, private pusherSrv: PusherService) {}
 
   ngOnInit(): void {
-    this.pusherSrv.webhooks.bind('repository', (data: any) => {
-      console.dir(data);
-    });
   }
 }
