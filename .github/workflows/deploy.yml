@@ -35,6 +35,8 @@ jobs:
           user: ubuntu
           pass: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
+          first_ssh: |
+            rm -rf /home/ubuntu/dist/browser/
           scp: |
             './dist/browser/*' => /home/ubuntu/dist/browser/
 
