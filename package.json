@@ -32,6 +32,7 @@
     "laravel-echo": "^1.16.1",
     "octonode": "^0.10.2",
     "pusher-js": "^8.4.0-rc2",
+    "request": "^2.88.2",
     "rxjs": "^7.8.1",
     "tough-cookie": "^4.1.4",
     "tslib": "^2.6.2",
