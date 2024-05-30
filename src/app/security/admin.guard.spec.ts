@@ -1,15 +1,17 @@
 import { TestBed } from '@angular/core/testing';
 
 import { AdminGuard } from './admin.guard';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { provideHttpClientTesting } from '@angular/common/http/testing';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 describe('AdminGuard', () => {
   let guard: AdminGuard;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule]
-    });
+    imports: [],
+    providers: [provideHttpClient(withInterceptorsFromDi()), provideHttpClientTesting()]
+});
     guard = TestBed.inject(AdminGuard);
   });
 

@@ -1,8 +1,4 @@
-import {
-  HttpClientModule,
-  HttpClientXsrfModule,
-  HTTP_INTERCEPTORS,
-} from '@angular/common/http';
+import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { NgModule, DEFAULT_CURRENCY_CODE, isDevMode, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -27,46 +23,39 @@ import { NotifyComponent } from './utils/notify/notify.component';
 import localeEs from '@angular/common/locales/es';
 import { AuthService } from './security/auth.service';
 import { UtilsService } from './utils/utils.service';
-//import { ServiceWorkerModule } from '@angular/service-worker';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { environment } from 'src/environments/environment';
 import { YouTubePlayerModule } from '@angular/youtube-player';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { provideHttpClientTesting } from '@angular/common/http/testing';
 
 registerLocaleData(localeEs, 'es');
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    DashboardComponent,
-    PageNotFoundComponent,
-    NotifyComponent,
-    UserLoginComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    HttpClientTestingModule,
-    BrowserAnimationsModule,
-    LayoutModule,
-    YouTubePlayerModule,
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    LayoutModule,
-    ReactiveFormsModule,
-  ],
-  providers: [
-    AuthService,
-    UtilsService,
-    { provide: LocationStrategy, useClass: PathLocationStrategy },
-    { provide: HTTP_INTERCEPTORS, useClass: AppInterceptor, multi: true },
-    { provide: DEFAULT_CURRENCY_CODE, useValue: 'USD' },
-  ],
-  bootstrap: [AppComponent],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
-  ]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        DashboardComponent,
+        PageNotFoundComponent,
+        NotifyComponent,
+        UserLoginComponent
+    ],
+    bootstrap: [AppComponent],
+    schemas: [
+        CUSTOM_ELEMENTS_SCHEMA
+    ], imports: [BrowserModule,
+        BrowserAnimationsModule,
+        LayoutModule,
+        YouTubePlayerModule,
+        BrowserModule,
+        FormsModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        LayoutModule,
+        ReactiveFormsModule], providers: [
+        AuthService,
+        UtilsService,
+        { provide: LocationStrategy, useClass: PathLocationStrategy },
+        { provide: HTTP_INTERCEPTORS, useClass: AppInterceptor, multi: true },
+        { provide: DEFAULT_CURRENCY_CODE, useValue: 'USD' },
+        provideHttpClient(withInterceptorsFromDi()),
+        provideHttpClientTesting(),
+    ] })
 export class AppModule {}

@@ -1,8 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { VideoTutorialsComponent } from './video-tutorials.component';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { provideHttpClientTesting } from '@angular/common/http/testing';
 import { environment } from 'src/environments/environment';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 describe('VideoTutorialsComponent', () => {
   let component: VideoTutorialsComponent;
@@ -10,12 +11,10 @@ describe('VideoTutorialsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [VideoTutorialsComponent],
-      imports: [
-        HttpClientTestingModule
-        
-      ],
-    });
+    declarations: [VideoTutorialsComponent],
+    imports: [],
+    providers: [provideHttpClient(withInterceptorsFromDi()), provideHttpClientTesting()]
+});
     fixture = TestBed.createComponent(VideoTutorialsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

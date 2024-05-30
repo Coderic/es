@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing'; // TODO Check if remove is safe
@@ -8,15 +8,13 @@ import { environment } from 'src/environments/environment';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [
+    declarations: [
         AppComponent
-      ],
-      imports: [
-        HttpClientModule,
-        RouterTestingModule,
-        RouterModule,
-      ],
-    }).compileComponents();
+    ],
+    imports: [RouterTestingModule,
+        RouterModule],
+    providers: [provideHttpClient(withInterceptorsFromDi())]
+}).compileComponents();
   });
 
   it('should create the app', () => {

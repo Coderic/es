@@ -30,6 +30,7 @@
       ]
     },
     "outDir": "./dist/out-tsc",
+    "esModuleInterop": true,
     "strictPropertyInitialization": false,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -39,7 +40,6 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
-    "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
