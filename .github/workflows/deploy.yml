@@ -29,11 +29,12 @@ jobs:
       - run: npm ci
       - run: npm run build
       - name: Publish
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        uses: cross-the-world/ssh-scp-ssh-pipelines@latest
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ubuntu
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          local_path: './dist/browser/*'
-          remote_path: '/home/ubuntu/dist/browser/'
+          host: ${{ secrets.FTP_HOST }}
+          user: ubuntu
+          pass: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          scp: |
+            './dist/browser/*' => /home/ubuntu/dist/browser/
 
