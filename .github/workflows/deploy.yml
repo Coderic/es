@@ -19,6 +19,7 @@ jobs:
     environment:
       name: staging
       url: https://coderic.org
+    needs: testing
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -32,7 +33,7 @@ jobs:
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ubuntu
-          key: ${{ secrets.FTP_KEY }}
+          ssh_private_key: ${{ secrets.FTP_KEY }}
           local_path: './dist/browser/*'
           remote_path: '/home/ubuntu/dist/browser/'
 
