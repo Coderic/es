@@ -42,7 +42,7 @@
     "@angular/cli": "^18.0.2",
     "@angular/compiler-cli": "^18.0.1",
     "@angular/localize": "^18.0.1",
-    "@octokit/rest": "^20.1.0",
+    "@octokit/rest": "^20.1.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@types/jasmine": "^5.1.4",
     "autoprefixer": "^10.4.19",
