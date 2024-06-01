@@ -1,9 +1,11 @@
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
-import { RouterModule, RouterOutlet } from '@angular/router';
-import { RouterTestingModule } from '@angular/router/testing'; // TODO Check if remove is safe
+import { ActivatedRoute, RouterLink, RouterModule, RouterOutlet, provideRouter } from '@angular/router';
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
+import { OidcSecurityService, StsConfigLoader } from 'angular-auth-oidc-client';
+import { ModulesModule } from './account/modules/modules.module';
+import { provideHttpClientTesting } from '@angular/common/http/testing';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -11,9 +13,16 @@ describe('AppComponent', () => {
     declarations: [
         AppComponent
     ],
-    imports: [RouterTestingModule,
-        RouterModule],
-    providers: [provideHttpClient(withInterceptorsFromDi())]
+    imports: [
+        RouterModule
+      ],
+    providers: [
+      OidcSecurityService,
+      StsConfigLoader,
+      provideHttpClient(withInterceptorsFromDi()),
+      provideHttpClientTesting(),
+      provideRouter([])
+    ]
 }).compileComponents();
   });
 
