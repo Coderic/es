@@ -215,7 +215,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="5824741766548666534" datatype="html">
-        <source>General Documentation</source>
+        <source>Documentation</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">184,185</context>
