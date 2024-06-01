@@ -1,4 +1,6 @@
 export const environment = {
   production: false,
-  api: '/api/'
+  api: '/api/',
+  clientId: 'sandbox-local',
+  authority: 'http://localhost:8080/realms/sandbox'
 };

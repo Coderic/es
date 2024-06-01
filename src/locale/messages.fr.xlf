@@ -245,6 +245,14 @@
           <context context-type="linenumber">211</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="7618870723010461457" datatype="html">
+        <source>en</source>
+        <target>fr</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/auth-config.module.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="6451191643745835290" datatype="html">
         <source>We don&apos;t know what the hell we should put here,</source>
         <target>Nous ne savons pas ce que nous devrions mettre ici,</target>
