@@ -13,6 +13,7 @@ import { DashboardComponent } from './account/dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 import {
+    CommonModule,
   HashLocationStrategy,
   LocationStrategy,
   PathLocationStrategy,
@@ -27,6 +28,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { environment } from 'src/environments/environment';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { provideHttpClientTesting } from '@angular/common/http/testing';
+import { AuthConfigModule } from './auth/auth-config.module';
 
 registerLocaleData(localeEs, 'es');
 
@@ -40,7 +42,10 @@ registerLocaleData(localeEs, 'es');
     bootstrap: [AppComponent],
     schemas: [
         CUSTOM_ELEMENTS_SCHEMA
-    ], imports: [BrowserModule,
+    ],
+    imports: [
+        BrowserModule,
+        CommonModule,
         BrowserAnimationsModule,
         LayoutModule,
         YouTubePlayerModule,
@@ -49,13 +54,15 @@ registerLocaleData(localeEs, 'es');
         AppRoutingModule,
         BrowserAnimationsModule,
         LayoutModule,
-        ReactiveFormsModule], providers: [
+        ReactiveFormsModule,
+        AuthConfigModule], providers: [
         AuthService,
         UtilsService,
         { provide: LocationStrategy, useClass: PathLocationStrategy },
-        { provide: HTTP_INTERCEPTORS, useClass: AppInterceptor, multi: true },
+//        { provide: HTTP_INTERCEPTORS, useClass: AppInterceptor, multi: true },
         { provide: DEFAULT_CURRENCY_CODE, useValue: 'USD' },
         provideHttpClient(withInterceptorsFromDi()),
         provideHttpClientTesting(),
+        provideHttpClient()
     ] })
 export class AppModule {}

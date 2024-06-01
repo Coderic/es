@@ -23,10 +23,12 @@ export class HomeComponent implements OnInit {
   constructor(private github: GithubService) {}
 
   ngOnInit(): void {
+    /*
+    TODO: FIx later
     this.githubInviteForm.controls.username.valueChanges.subscribe((value: string | null) => {
       this.account$ = this.github.getMember(value??'');
       this.account$.subscribe(account => this.account = account);
-    });
+    });*/
   }
 
   onInvite() {

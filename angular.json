@@ -45,7 +45,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/manifest.webmanifest"
+              "src/manifest.webmanifest",
+              "src/silent-renew.html"
             ],
             "styles": [
               "src/styles.css"
@@ -87,11 +88,15 @@
                 }
               ]
             },
-            "en":{
-              "localize": ["en"]
+            "en": {
+              "localize": [
+                "en"
+              ]
             },
-            "es":{
-              "localize": ["es"]
+            "es": {
+              "localize": [
+                "es"
+              ]
             }
           },
           "defaultConfiguration": "production"
