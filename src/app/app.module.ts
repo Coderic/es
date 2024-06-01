@@ -38,8 +38,7 @@ import { environment } from 'src/environments/environment';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { provideHttpClientTesting } from '@angular/common/http/testing';
 import { AuthConfigModule } from './auth/auth-config.module';
-import { OidcSecurityService, OpenIdConfigLoader, StsConfigLoader } from 'angular-auth-oidc-client';
-import { RouterLink, RouterModule } from '@angular/router';
+import { OidcSecurityService } from 'angular-auth-oidc-client';
 
 registerLocaleData(localeEs, 'es');
 
@@ -65,10 +64,7 @@ registerLocaleData(localeEs, 'es');
     BrowserAnimationsModule,
     LayoutModule,
     ReactiveFormsModule,
-    RouterModule,
     AuthConfigModule,
-    OidcSecurityService,
-    OpenIdConfigLoader,
   ],
   providers: [
     AuthService,
