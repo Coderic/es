@@ -16,6 +16,7 @@ import { environment } from 'src/environments/environment';
             silentRenewUrl: window.location.origin + '/silent-renew.html',
             renewTimeBeforeTokenExpiresInSeconds: 10,
             customParamsAuthRequest:  {
+                ui_locales: $localize`en`,
                 kc_locale: $localize`en`
             }
         }
