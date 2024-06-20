@@ -28,7 +28,7 @@
     "@angular/youtube-player": "^18.0.3",
     "@auth0/angular-jwt": "^5.2.0",
     "@schematics/angular": "^18.0.2",
-    "angular-auth-oidc-client": "18.0.0",
+    "angular-auth-oidc-client": "18.0.1",
     "github-api": "^3.4.0",
     "jszip": "^3.10.1",
     "laravel-echo": "^1.16.1",
