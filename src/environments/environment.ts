@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
   api: '/api/',
-  clientId: 'coderic.org',
-  authority: 'https://auth.coderic.cloud/realms/coderic.org'
+  clientId: 'GaokJKUfOkti0iBQkwxdicAxSJHQMQjx',
+  authority: 'https://coderic.eu.auth0.com'
 };
