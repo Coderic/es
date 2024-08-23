@@ -25,7 +25,7 @@
     "@angular/platform-browser": "^18.0.3",
     "@angular/platform-browser-dynamic": "^18.0.3",
     "@angular/router": "^18.0.3",
-    "@angular/youtube-player": "^18.0.3",
+    "@angular/youtube-player": "^18.2.1",
     "@auth0/angular-jwt": "^5.2.0",
     "@schematics/angular": "^18.0.2",
     "angular-auth-oidc-client": "18.0.0",
