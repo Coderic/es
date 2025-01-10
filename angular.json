@@ -48,7 +48,12 @@
               "src/favicon.svg",
               "src/assets",
               "src/manifest.webmanifest",
-              "src/silent-renew.html"
+              "src/silent-renew.html",
+              {
+                "glob": "index.html",
+                "input": "dist/your-project-name",
+                "output": "404.html"
+              }
             ],
             "styles": [
               "src/styles.css"
@@ -140,7 +145,12 @@
               "src/favicon.ico",
               "src/favicon.svg",
               "src/assets",
-              "src/manifest.webmanifest"
+              "src/manifest.webmanifest",
+              {
+                "glob": "index.html",
+                "input": "dist/your-project-name",
+                "output": "404.html"
+              }
             ],
             "styles": [
               "src/styles.css"
