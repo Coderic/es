@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script>
+    const str = navigator.language || navigator.userLanguage;
+    const langs = ["en", "es", "fr"];
+    var lang = str.substr(0,2);
+    
+    if(langs.includes(lang)) {
+     window.location = '/'+lang+'/';
+    }
+    else {
+     window.location = '/en/';
+    }
+    </script>
+  </head>
+  <body>
+      <a href="/en/">EN</a>
+      <a href="/es/">ES</a>
+      <a href="/fr/">FR</a>
+  </body>
+</html>
