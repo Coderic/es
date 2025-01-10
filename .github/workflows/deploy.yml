@@ -62,8 +62,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist/browser/
-      - name: Build with antora
-        run: ls -al ./dist/browser/
+      - name: Mode default
+        run: mv ./dist/browser/en/* ./dist/browser/
   deploy:
     environment:
       name: github-pages
