@@ -56,14 +56,14 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install dependencies
         run: npm install
-      - name: Build with antora
+      - name: Build
         run: npm run build
+      - name: Mode default
+        run: mv ./dist/browser/en/* ./dist/browser/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist/browser/
-      - name: Mode default
-        run: mv ./dist/browser/en/* ./dist/browser/
   deploy:
     environment:
       name: github-pages
