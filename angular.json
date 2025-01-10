@@ -49,11 +49,7 @@
               "src/assets",
               "src/manifest.webmanifest",
               "src/silent-renew.html",
-              {
-                "glob": "index.html",
-                "input": "src/",
-                "output": "404.html"
-              }
+              "src/404.html"
             ],
             "styles": [
               "src/styles.css"
