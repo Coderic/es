@@ -1,8 +1,38 @@
 <div class="container mx-auto bg-white shadow-2xl">
   <div class="w-full">
-    <nav class="flex px-4 py-2 bg-neutral-200 text-stone-500" aria-label="Breadcrumb">
-      <ol class="inline-flex md:space-x-2 rtl:space-x-reverse">
-        <li>
+  <nav class="flex px-4 py-2 text-stone-500 justify-between" aria-label="Breadcrumb">
+    <ol class="inline-flex md:space-x-2 rtl:space-x-reverse">
+      <li>
+        <a href="https://code-ric.com"
+          class="inline-flex items-center text-sm font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
+          title="Coderic FinTech">
+          <svg class="w-3.5 h-3.5 ms-2 mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="mdi-finance" viewBox="0 0 24 24"><path d="M6,16.5L3,19.44V11H6M11,14.66L9.43,13.32L8,14.64V7H11M16,13L13,16V3H16M18.81,12.81L17,11H22V16L20.21,14.21L13,21.36L9.53,18.34L5.75,22H3L9.47,15.66L13,18.64" /></svg>          <span class="hidden sm:inline-block" i18n>FINTECH</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://coderic.cloud"
+          class="inline-flex items-center text-sm font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
+          title="Coderic Cloud">
+          <svg class="w-3.5 h-3.5 ms-2 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6m0-2C9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96C18.67 6.59 15.64 4 12 4z"/></svg>          <span class="hidden sm:inline-block" i18n>CLOUD</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://coderic.net"
+          class="inline-flex items-center text-sm font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
+          title="Coderic Hub Content">
+          <svg class="w-3.5 h-3.5 ms-2 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="7" width="8" height="2"/><rect x="6" y="11" width="12" height="2"/><rect x="6" y="15" width="2.99" height="2"/><path d="M14,3,11,0V2H4A2,2,0,0,0,2,4V20a2,2,0,0,0,2,2H8V20H4V4h7V6Z"/><path d="M10,21l3,3V22h7a2,2,0,0,0,2-2V4a2,2,0,0,0-2-2H16V4h4V20H13V18Z"/></svg>          <span class="hidden sm:inline-block" i18n>HUB</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://coderic.org"
+          class="inline-flex items-center text-sm font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
+          title="Coderic Organization">
+          <svg class="w-3.5 h-3.5 ms-2 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19,9A7,7,0,1,0,8.0257,14.75928L5,20l2.25562.09314L8.46411,22l3.46613-6.00354C11.95374,15.9967,11.97644,16,12,16s.04626-.0033.06976-.00354L15.53589,22l1.232-1.866L19,20l-3.02576-5.24072A6.98951,6.98951,0,0,0,19,9ZM7,9a5,5,0,1,1,5,5A5,5,0,0,1,7,9Z"/><circle cx="12" cy="9" r="3"/></svg>          <span class="hidden sm:inline-block" i18n>ORGANIZATION</span>
+        </a>
+      </li>
+    </ol>
+    <ol class="inline-flex md:space-x-2 rtl:space-x-reverse">
+            <li>
           <a routerLink="/development"
             class="inline-flex items-center text-sm font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
             title="Development">
@@ -74,8 +104,8 @@
             <span class="hidden sm:inline-block" i18n>Community</span>
           </a>
         </li>
-      </ol>
-    </nav>
+    </ol>
+  </nav>
   </div>
   <header class="flex justify-between border-t-4 border-b-8 border-orange-500">
     <div class="flex items-center w-1/4 h-32 ml-6">
