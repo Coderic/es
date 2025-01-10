@@ -48,8 +48,7 @@
               "src/favicon.svg",
               "src/assets",
               "src/manifest.webmanifest",
-              "src/silent-renew.html",
-              "src/404.html"
+              "src/silent-renew.html"
             ],
             "styles": [
               "src/styles.css"
