@@ -51,7 +51,7 @@
               "src/silent-renew.html",
               {
                 "glob": "index.html",
-                "input": "dist/your-project-name",
+                "input": "dist/en/",
                 "output": "404.html"
               }
             ],
