@@ -3,9 +3,10 @@ import { Observable } from 'rxjs';
 import { GithubService } from 'src/app/github.service';
 
 @Component({
-  selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+    selector: 'app-projects',
+    templateUrl: './projects.component.html',
+    styleUrls: ['./projects.component.css'],
+    standalone: false
 })
 export class ProjectsComponent {
   public projects$: Observable<any>;

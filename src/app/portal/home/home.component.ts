@@ -5,9 +5,10 @@ import { Observable, catchError, map, throwError } from 'rxjs';
 import { GithubService } from 'src/app/github.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.css'],
+    standalone: false
 })
 export class HomeComponent implements OnInit {
   public members$: Observable<any[]> = this.github.getMembers();

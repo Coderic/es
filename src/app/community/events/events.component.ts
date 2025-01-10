@@ -4,9 +4,10 @@ import { GithubService } from 'src/app/github.service';
 import { PusherService } from 'src/app/pusher.service';
 
 @Component({
-  selector: 'app-events',
-  templateUrl: './events.component.html',
-  styleUrls: ['./events.component.css']
+    selector: 'app-events',
+    templateUrl: './events.component.html',
+    styleUrls: ['./events.component.css'],
+    standalone: false
 })
 export class EventsComponent {
   public event$: Observable<any>;

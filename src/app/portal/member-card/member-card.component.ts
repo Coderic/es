@@ -3,9 +3,10 @@ import { Observable } from 'rxjs';
 import { GithubService } from 'src/app/github.service';
 
 @Component({
-  selector: 'app-member-card',
-  templateUrl: './member-card.component.html',
-  styleUrls: ['./member-card.component.css']
+    selector: 'app-member-card',
+    templateUrl: './member-card.component.html',
+    styleUrls: ['./member-card.component.css'],
+    standalone: false
 })
 export class MemberCardComponent implements OnInit {
   @Input('username') public username: string;

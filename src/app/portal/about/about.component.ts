@@ -3,9 +3,10 @@ import { Observable } from 'rxjs';
 import { GithubService } from 'src/app/github.service';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+    selector: 'app-about',
+    templateUrl: './about.component.html',
+    styleUrls: ['./about.component.css'],
+    standalone: false
 })
 export class AboutComponent {
   public members$: Observable<any[]>;

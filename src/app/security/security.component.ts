@@ -6,9 +6,10 @@ import { AuthService } from './auth.service';
 import { CheckUserSecurityValidator } from './check-user-security.validator';
 
 @Component({
-  selector: 'app-security',
-  templateUrl: './security.component.html',
-  styleUrls: ['./security.component.css']
+    selector: 'app-security',
+    templateUrl: './security.component.html',
+    styleUrls: ['./security.component.css'],
+    standalone: false
 })
 export class SecurityComponent {
   /*

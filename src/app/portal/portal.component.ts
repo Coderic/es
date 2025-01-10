@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { AuthService } from '../security/auth.service';
 
 @Component({
-  selector: 'app-portal',
-  templateUrl: './portal.component.html',
-  styleUrls: ['./portal.component.css']
+    selector: 'app-portal',
+    templateUrl: './portal.component.html',
+    styleUrls: ['./portal.component.css'],
+    standalone: false
 })
 export class PortalComponent {
   constructor(private authSrv: AuthService) {}

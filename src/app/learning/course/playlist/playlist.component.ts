@@ -4,9 +4,10 @@ import { YoutubeService } from '../youtube.service';
 let apiLoaded = false;
 
 @Component({
-  selector: 'app-playlist',
-  templateUrl: './playlist.component.html',
-  styleUrls: ['./playlist.component.css']
+    selector: 'app-playlist',
+    templateUrl: './playlist.component.html',
+    styleUrls: ['./playlist.component.css'],
+    standalone: false
 })
 export class PlaylistComponent implements OnInit {
   private playlistItems: any;

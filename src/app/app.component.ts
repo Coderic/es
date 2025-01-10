@@ -5,8 +5,9 @@ import { Observable } from 'rxjs';
 import { LoginResponse, OidcSecurityService } from 'angular-auth-oidc-client';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
+    selector: 'app-root',
+    templateUrl: 'app.component.html',
+    standalone: false
 })
 export class AppComponent implements OnInit {
   public categories$: Observable<any[]>;
