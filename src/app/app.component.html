@@ -4,7 +4,7 @@
       <ol class="inline-flex md:space-x-2 rtl:space-x-reverse">
         <li>
           <a href="https://code-ric.com"
-            class="inline-flex items-center text-sm font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
+            class="inline-flex items-center text-sm font-medium hover:text-orange-600"
             title="Coderic FinTech">
             <svg class="w-3.5 h-3.5 ms-2 mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="mdi-finance"
               viewBox="0 0 24 24">
@@ -15,7 +15,7 @@
         </li>
         <li>
           <a href="https://coderic.cloud"
-            class="inline-flex items-center text-sm font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
+            class="inline-flex items-center text-sm font-medium hover:text-orange-600"
             title="Coderic Cloud">
             <svg class="w-3.5 h-3.5 ms-2 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
               fill="currentColor">
@@ -26,7 +26,7 @@
         </li>
         <li>
           <a href="https://coderic.net"
-            class="inline-flex items-center text-sm font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
+            class="inline-flex items-center text-sm font-medium hover:text-orange-600"
             title="Coderic Hub Content">
             <svg class="w-3.5 h-3.5 ms-2 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
               fill="currentColor">
@@ -40,7 +40,7 @@
         </li>
         <li>
           <a href="https://coderic.org"
-            class="inline-flex items-center text-sm font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
+            class="inline-flex items-center text-sm font-medium hover:text-orange-600"
             title="Coderic Organization">
             <svg class="w-3.5 h-3.5 ms-2 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
               fill="currentColor">
@@ -54,7 +54,7 @@
       <ol class="inline-flex md:space-x-2 rtl:space-x-reverse" *ngIf="auth.user$ | async as user; else loggedOut">
         <li>
           <a  routerLink="/profile"
-            class="inline-flex items-center text-sm font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
+            class="inline-flex items-center text-sm font-medium hover:text-orange-600"
             title="Profile">
             <svg class="w-3.5 h-3.5 ms-2 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
               fill="currentColor">
@@ -69,7 +69,7 @@
         </li>
         <li>
           <a  routerLink="/dashboard"
-            class="inline-flex items-center text-sm font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
+            class="inline-flex items-center text-sm font-medium hover:text-orange-600"
             title="Dashboard">
             <svg class="w-3.5 h-3.5 ms-2 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
               fill="currentColor">
@@ -87,7 +87,7 @@
         </li>
         <li>
             <button type="submit" (click)="logout()"
-              class="inline-flex items-center text-sm font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white">
+              class="inline-flex items-center text-sm font-medium hover:text-orange-600">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-3.5 h-3.5 ms-2 mr-2">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -101,14 +101,14 @@
       <ol class="inline-flex md:space-x-2 rtl:space-x-reverse">
         <li>
     <a (click)="login()"
-      class="inline-flex items-center text-sm font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
+      class="inline-flex items-center text-sm font-medium hover:text-orange-600"
       title="Coworking">
       <svg class="w-3.5 h-3.5 ms-2 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"><defs/><title>logout</title><path d="M6,30H18a2.0023,2.0023,0,0,0,2-2V25H18v3H6V4H18V7h2V4a2.0023,2.0023,0,0,0-2-2H6A2.0023,2.0023,0,0,0,4,4V28A2.0023,2.0023,0,0,0,6,30Z"/><polygon points="20.586 20.586 24.172 17 10 17 10 15 24.172 15 20.586 11.414 22 10 28 16 22 22 20.586 20.586"/><rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32" style="fill:none"/></svg>          <span class="hidden sm:inline-block" i18n>Sign up</span>
     </a>
   </li>
   <li>
     <a (click)="login()"
-      class="inline-flex items-center text-sm font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
+      class="inline-flex items-center text-sm font-medium hover:text-orange-600"
       title="Log in">
       <svg class="w-3.5 h-3.5 ms-2 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"><defs/><title>login</title><path d="M26,30H14a2,2,0,0,1-2-2V25h2v3H26V4H14V7H12V4a2,2,0,0,1,2-2H26a2,2,0,0,1,2,2V28A2,2,0,0,1,26,30Z"/><polygon points="14.59 20.59 18.17 17 4 17 4 15 18.17 15 14.59 11.41 16 10 22 16 16 22 14.59 20.59"/><rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32" style="fill:none"/></svg>          <span class="hidden sm:inline-block">Sign in</span>
     </a>
@@ -155,7 +155,7 @@
               <ol class="inline-flex md:space-x-2 rtl:space-x-reverse">
                 <li>
                   <a routerLink="/development"
-                    class="inline-flex items-center font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
+                    class="inline-flex items-center font-medium hover:text-orange-600"
                     title="Development">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                       stroke="currentColor" class="w-3.5 h-3.5 ms-2 mr-2">
@@ -167,7 +167,7 @@
                 </li>
                 <li>
                   <a routerLink="/crowdfunding"
-                    class="inline-flex items-center font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
+                    class="inline-flex items-center font-medium hover:text-orange-600"
                     title="Crowdfunding">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                       stroke="currentColor" class="w-3.5 h-3.5 ms-2 mr-2">
@@ -179,7 +179,7 @@
                 </li>
                 <li>
                   <a routerLink="/coworking"
-                    class="inline-flex items-center font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
+                    class="inline-flex items-center font-medium hover:text-orange-600"
                     title="Coworking">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                       stroke="currentColor" class="w-3.5 h-3.5 ms-2 mr-2">
@@ -191,7 +191,7 @@
                 </li>
                 <li>
                   <a routerLink="/freelancers"
-                    class="inline-flex items-center font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
+                    class="inline-flex items-center font-medium hover:text-orange-600"
                     title="Freelancers">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                       stroke="currentColor" class="w-3.5 h-3.5 ms-2 mr-2">
@@ -203,7 +203,7 @@
                 </li>
                 <li>
                   <a routerLink="/learning"
-                    class="inline-flex items-center font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
+                    class="inline-flex items-center font-medium hover:text-orange-600"
                     title="Learning">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                       stroke="currentColor" class="w-3.5 h-3.5 ms-2 mr-2">
@@ -215,12 +215,12 @@
                 </li>
                 <li>
                   <a routerLink="/community"
-                    class="inline-flex items-center font-medium hover:text-orange-600 dark:text-gray-400 dark:hover:text-white"
+                    class="inline-flex items-center font-medium hover:text-orange-600"
                     title="Community">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                       stroke="currentColor" class="w-3.5 h-3.5 ms-2 mr-2">
                       <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                        d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 1-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
                     </svg>
                     <span class="hidden sm:inline-block" i18n>Community</span>
                   </a>
@@ -244,19 +244,19 @@
         <ol class="inline-flex items-center text-stone-500 md:space-x-2 rtl:space-x-reverse">
           <li>
             <a href="/docs/"
-              class="inline-flex items-center text-sm font-medium hover:text-white dark:text-gray-400 dark:hover:text-white"
+              class="inline-flex items-center text-sm font-medium hover:text-white"
               i18n>Documentation</a>
           </li>
           <li>·</li>
           <!--li>
             <a href="/wiki/"
-              class="inline-flex items-center text-sm font-medium hover:text-white dark:text-gray-400 dark:hover:text-white"
+              class="inline-flex items-center text-sm font-medium hover:text-white"
               i18n>Wiki</a>
           </li>
           <li>·</li>
           <li>
             <a routerLink="/faqs"
-              class="text-sm font-medium ms-1 hover:text-white md:ms-2 dark:text-gray-400 dark:hover:text-white"
+              class="text-sm font-medium ms-1 hover:text-white md:ms-2"
               i18n>Faq's</a>
         </li-->
         </ol>
@@ -265,18 +265,18 @@
         <ol class="inline-flex items-center text-stone-500 md:space-x-2 rtl:space-x-reverse">
           <li>
             <a routerLink="/privacy"
-              class="inline-flex items-center text-sm font-medium hover:text-white dark:text-gray-400 dark:hover:text-white"
+              class="inline-flex items-center text-sm font-medium hover:text-white"
               i18n>Privacy</a>
           </li>
           <li>
             <a routerLink="/legal"
-              class="inline-flex items-center text-sm font-medium hover:text-white dark:text-gray-400 dark:hover:text-white"
+              class="inline-flex items-center text-sm font-medium hover:text-white"
               i18n>Legal</a>
           </li>
           <li>·</li>
           <li>
             <a routerLink="/tos"
-              class="text-sm font-medium ms-1 hover:text-white md:ms-2 dark:text-gray-400 dark:hover:text-white"
+              class="text-sm font-medium ms-1 hover:text-white"
               i18n>Terms and Conditions</a>
           </li>
         </ol>
