@@ -2,9 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DashboardComponent } from './account/dashboard/dashboard.component';
-import { SecurityGuard } from './security/security.guard';
-import { UserLoginComponent } from './user-login/user-login.component';
 import { AppComponent } from './app.component';
+import { AuthGuard } from '@auth0/auth0-angular';
 
 //const belongsToAccount = (next) => hasCustomClaim(`account-${next.params.id}`)
 
@@ -49,19 +48,13 @@ const routes: Routes = [
     path: 'community',
     loadChildren: () =>
       import('./community/community.module').then((m) => m.CommunityModule),
+      canActivate: [AuthGuard]
   },
   {
     path: '',
     loadChildren: () =>
       import('./account/account.module').then((m) => m.AccountModule),
-    //canActivate: [AngularFireAuthGuard],
-    //data: { authGuardPipe: redirectUnauthorizedToLogin },
-  },
-  {
-    path: 'login',
-    component: UserLoginComponent,
-    //canActivate: [AngularFireAuthGuard],
-    //data: { authGuardPipe: redirectLoggedInToItems },
+    canActivate: [AuthGuard]
   },
   { path: '**', component: PageNotFoundComponent },
 ];

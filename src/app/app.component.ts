@@ -1,7 +1,5 @@
 import { Component, OnInit, inject } from '@angular/core';
-
 import { Observable } from 'rxjs';
-
 import { AuthService } from '@auth0/auth0-angular';
 
 @Component({
@@ -11,19 +9,11 @@ import { AuthService } from '@auth0/auth0-angular';
 })
 export class AppComponent implements OnInit {
   public categories$: Observable<any[]>;
-  //private readonly oidcSecurityService = inject(OidcSecurityService);
   public user: any;
 
   constructor(public auth: AuthService) {}
 
-  ngOnInit(): void {
-    /*
-    this.oidcSecurityService
-      .checkAuth()
-      .subscribe(
-        (loginResponse: LoginResponse) => (this.user = loginResponse.userData)
-      );*/
-  }
+  ngOnInit(): void {  }
 
   login(): void {
     //this.oidcSecurityService.authorize();

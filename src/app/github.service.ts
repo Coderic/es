@@ -17,7 +17,7 @@ export class GithubService {
     return from(
       octokit.rest.orgs.createInvitation({
         invitee_id: invitee_id,
-        org: 'CodericLatam',
+        org: 'Coderic',
         team_ids: [9194674],
       })
     ).pipe(map((response: any) => response.data));
@@ -36,7 +36,7 @@ export class GithubService {
   getRepositories(): Observable<any> {
     return from(
       octokit.rest.repos.listForOrg({
-        org: 'CodericLatam',
+        org: 'Coderic',
         type: 'sources',
       })
     ).pipe(
@@ -48,7 +48,7 @@ export class GithubService {
   getProjects(): Observable<any> {
     return from(
       octokit.rest.projects.listForOrg({
-        org: 'CodericLatam',
+        org: 'Coderic',
         state: 'all'
       })
     ).pipe(map((response: any) => response.data));
@@ -57,14 +57,14 @@ export class GithubService {
   getTeams(): Observable<any> {
     return from(
       octokit.rest.teams.list({
-        org: 'CodericLatam',
+        org: 'Coderic',
       })
     ).pipe(map((response: any) => response.data));
   }
 
   getEvents(): Observable<any> {
     return from(octokit.request('GET /orgs/{org}/events', {
-      org: 'CodericLatam',
+      org: 'Coderic',
       headers: {
         'X-GitHub-Api-Version': '2022-11-28'
       }
@@ -75,7 +75,7 @@ export class GithubService {
 
   getIssues(): Observable<any> {
     return defer(() =>
-      from(octokit.rest.issues.listForOrg({ org: 'CodericLatam' })).pipe(
+      from(octokit.rest.issues.listForOrg({ org: 'Coderic' })).pipe(
         map((response: any) => response.data)
       )
     );

@@ -1,10 +1,11 @@
-import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { provideHttpClient, withInterceptors, withInterceptorsFromDi } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, RouterLink, RouterModule, RouterOutlet, provideRouter } from '@angular/router';
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
 import { ModulesModule } from './account/modules/modules.module';
 import { provideHttpClientTesting } from '@angular/common/http/testing';
+import { authHttpInterceptorFn } from '@auth0/auth0-angular';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -16,7 +17,7 @@ describe('AppComponent', () => {
         RouterModule
       ],
     providers: [
-      provideHttpClient(withInterceptorsFromDi()),
+      provideHttpClient(withInterceptors([authHttpInterceptorFn])),
       provideHttpClientTesting(),
       provideRouter([])
     ]

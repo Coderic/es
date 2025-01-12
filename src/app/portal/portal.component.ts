@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { AuthService } from '../security/auth.service';
 
 @Component({
     selector: 'app-portal',
@@ -8,11 +7,5 @@ import { AuthService } from '../security/auth.service';
     standalone: false
 })
 export class PortalComponent {
-  constructor(private authSrv: AuthService) {}
-  
-  async cerrar(): Promise<void> {
-    await this.authSrv.logout();
-  }
-
-
+  constructor() {}
 }

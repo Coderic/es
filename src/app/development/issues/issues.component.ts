@@ -14,7 +14,7 @@ export class IssuesComponent {
   constructor(private github: GithubService) { }
 
   ngOnInit(): void {
-    this.issues$ = this.github.getIssues();
+    //is.issues$ = this.github.getIssues();
     //this.issues$.subscribe(console.dir);
   }
 }

@@ -32,9 +32,7 @@ import {
 import { NotifyComponent } from './utils/notify/notify.component';
 
 import localeEs from '@angular/common/locales/es';
-import { AuthService } from './security/auth.service';
 import { UtilsService } from './utils/utils.service';
-import { UserLoginComponent } from './user-login/user-login.component';
 import { environment as env } from '../environments/environment';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { provideHttpClientTesting } from '@angular/common/http/testing';
@@ -48,7 +46,6 @@ registerLocaleData(localeEs, 'es');
     DashboardComponent,
     PageNotFoundComponent,
     NotifyComponent,
-    UserLoginComponent,
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -66,7 +63,6 @@ registerLocaleData(localeEs, 'es');
     ReactiveFormsModule,
   ],
   providers: [
-    AuthService,
     UtilsService,
     provideHttpClient(withInterceptors([authHttpInterceptorFn])),
     provideAuth0({
