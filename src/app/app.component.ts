@@ -2,7 +2,7 @@ import { Component, OnInit, inject } from '@angular/core';
 
 import { Observable } from 'rxjs';
 
-import { LoginResponse, OidcSecurityService } from 'angular-auth-oidc-client';
+import { AuthService } from '@auth0/auth0-angular';
 
 @Component({
     selector: 'app-root',
@@ -11,23 +11,25 @@ import { LoginResponse, OidcSecurityService } from 'angular-auth-oidc-client';
 })
 export class AppComponent implements OnInit {
   public categories$: Observable<any[]>;
-  private readonly oidcSecurityService = inject(OidcSecurityService);
+  //private readonly oidcSecurityService = inject(OidcSecurityService);
   public user: any;
 
+  constructor(public auth: AuthService) {}
+
   ngOnInit(): void {
+    /*
     this.oidcSecurityService
       .checkAuth()
       .subscribe(
         (loginResponse: LoginResponse) => (this.user = loginResponse.userData)
-      );
+      );*/
   }
 
   login(): void {
-    this.oidcSecurityService.authorize();
+    //this.oidcSecurityService.authorize();
+    this.auth.loginWithRedirect();
   }
   logout(): void {
-    this.oidcSecurityService
-      .logoff()
-      .subscribe((result: any) => console.dir(result));
+    this.auth.logout({ logoutParams: { returnTo: document.location.origin } });
   }
 }

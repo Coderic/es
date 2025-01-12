@@ -1,6 +1,7 @@
 import {
   HTTP_INTERCEPTORS,
   provideHttpClient,
+  withInterceptors,
   withInterceptorsFromDi,
 } from '@angular/common/http';
 import {
@@ -34,11 +35,10 @@ import localeEs from '@angular/common/locales/es';
 import { AuthService } from './security/auth.service';
 import { UtilsService } from './utils/utils.service';
 import { UserLoginComponent } from './user-login/user-login.component';
-import { environment } from 'src/environments/environment';
+import { environment as env } from '../environments/environment';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { provideHttpClientTesting } from '@angular/common/http/testing';
-import { AuthConfigModule } from './auth/auth-config.module';
-import { OidcSecurityService } from 'angular-auth-oidc-client';
+import { AuthHttpInterceptor, authHttpInterceptorFn, AuthModule, provideAuth0 } from '@auth0/auth0-angular';
 
 registerLocaleData(localeEs, 'es');
 
@@ -64,13 +64,19 @@ registerLocaleData(localeEs, 'es');
     BrowserAnimationsModule,
     LayoutModule,
     ReactiveFormsModule,
-    AuthConfigModule,
   ],
   providers: [
     AuthService,
     UtilsService,
+    provideHttpClient(withInterceptors([authHttpInterceptorFn])),
+    provideAuth0({
+      domain: "auth.coderic.org",
+      clientId: "In43D8hfptI5B17Xo7XZX4aBkhfMuH56",
+      authorizationParams: {
+        redirect_uri: window.location.origin,
+      },
+    }),
     { provide: LocationStrategy, useClass: PathLocationStrategy },
-    //{ provide: HTTP_INTERCEPTORS, useClass: AppInterceptor, multi: true },
     { provide: DEFAULT_CURRENCY_CODE, useValue: 'USD' },
     provideHttpClient(withInterceptorsFromDi()),
     provideHttpClientTesting(),

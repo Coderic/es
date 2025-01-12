@@ -3,7 +3,6 @@ import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, RouterLink, RouterModule, RouterOutlet, provideRouter } from '@angular/router';
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
-import { OidcSecurityService, StsConfigLoader } from 'angular-auth-oidc-client';
 import { ModulesModule } from './account/modules/modules.module';
 import { provideHttpClientTesting } from '@angular/common/http/testing';
 
@@ -17,8 +16,6 @@ describe('AppComponent', () => {
         RouterModule
       ],
     providers: [
-      OidcSecurityService,
-      StsConfigLoader,
       provideHttpClient(withInterceptorsFromDi()),
       provideHttpClientTesting(),
       provideRouter([])
