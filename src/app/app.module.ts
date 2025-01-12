@@ -36,7 +36,7 @@ import { UtilsService } from './utils/utils.service';
 import { environment as env } from '../environments/environment';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { provideHttpClientTesting } from '@angular/common/http/testing';
-import { AuthHttpInterceptor, authHttpInterceptorFn, AuthModule, provideAuth0 } from '@auth0/auth0-angular';
+import { AuthHttpInterceptor, authHttpInterceptorFn, AuthModule, provideAuth0, AuthClientConfig } from '@auth0/auth0-angular';
 
 registerLocaleData(localeEs, 'es');
 
@@ -72,6 +72,8 @@ registerLocaleData(localeEs, 'es');
       authorizationParams: {
         redirect_uri: window.location.origin,
       },
+      cacheLocation: 'localstorage', // Persistir estado en localStorage
+      useRefreshTokens: true, // Usar tokens de actualización
     }),
     { provide: LocationStrategy, useClass: PathLocationStrategy },
     { provide: DEFAULT_CURRENCY_CODE, useValue: 'USD' },
