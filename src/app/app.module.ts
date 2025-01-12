@@ -52,6 +52,7 @@ registerLocaleData(localeEs, 'es');
   imports: [
     BrowserModule,
     CommonModule,
+    AuthModule,
     BrowserAnimationsModule,
     LayoutModule,
     YouTubePlayerModule,
