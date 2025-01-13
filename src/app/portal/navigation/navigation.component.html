@@ -1,0 +1,47 @@
+<nav
+  class="relative flex items-center justify-between w-full shadow-lg bg-stone-800 text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300 dark:shadow-black/5 lg:flex-wrap lg:justify-start"
+  >
+  <div class="pl-8">
+    <button
+      class="py-3 text-xl leading-none transition-shadow duration-150 ease-in-out bg-transparent border-0 hover:text-neutral-700 focus:bg-neutral-600 lg:hidden"
+      type="button" data-te-collapse-init data-te-target="#navbarSupportedContentY"
+      aria-controls="navbarSupportedContentY" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="[&>svg]:w-8">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </span>
+    </button>
+    <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto" id="navbarSupportedContentY"
+      data-te-collapse-item>
+      <ul class="flex flex-row mr-auto" data-te-navbar-nav-ref>
+
+        <li class="static">
+          <a class="flex items-end h-24 pb-6 pr-2 font-semibold text-white transition duration-200 ease-in-out whitespace-nowrap bg-stone-800 hover:bg-orange-500 focus:bg-neutral-600 lg:px-6"
+            routerLink="/development" type="button" i18n>Development</a>
+        </li>
+        <li class="static">
+          <a class="flex items-end h-24 pb-6 pr-2 font-semibold text-white transition duration-200 ease-in-out whitespace-nowrap bg-stone-800 hover:bg-orange-500 focus:bg-neutral-600 lg:px-6"
+            routerLink="/crowdfunding" type="button" i18n>Crowdfunding</a>
+        </li>
+        <li class="static">
+          <a class="flex items-end h-24 pb-6 pr-2 font-semibold text-white transition duration-200 ease-in-out whitespace-nowrap bg-stone-800 hover:bg-orange-500 focus:bg-neutral-600 lg:px-6"
+            routerLink="/coworking" type="button" i18n>Coworking</a>
+        </li>
+        <li class="static">
+          <a class="flex items-end h-24 pb-6 pr-2 font-semibold text-white transition duration-200 ease-in-out whitespace-nowrap bg-stone-800 hover:bg-orange-500 focus:bg-neutral-600 lg:px-6"
+            routerLink="/freelancers" type="button" i18n>Freelancers</a>
+        </li>
+        <li class="static">
+          <a class="flex items-end h-24 pb-6 pr-2 font-semibold text-white transition duration-200 ease-in-out whitespace-nowrap bg-stone-800 hover:bg-orange-500 focus:bg-neutral-600 lg:px-6"
+            routerLink="/learning" type="button" i18n>Learning</a>
+        </li>
+        <li class="static">
+          <a class="flex items-end h-24 pb-6 pr-2 font-semibold text-white transition duration-200 ease-in-out whitespace-nowrap bg-stone-800 hover:bg-orange-500 focus:bg-neutral-600 lg:px-6"
+            routerLink="/community" type="button" i18n>Community</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
