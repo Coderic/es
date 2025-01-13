@@ -19,14 +19,14 @@ describe('AccountService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-    imports: [],
-    providers: [
-          { provide: AuthService, useClass: MockAuthService },
-          provideHttpClient(withInterceptors([authHttpInterceptorFn])),
-          provideHttpClientTesting(),
-          provideRouter([])
-        ]
-});
+      imports: [],
+      providers: [
+        { provide: AuthService, useClass: MockAuthService },
+        provideHttpClient(withInterceptors([authHttpInterceptorFn])),
+        provideHttpClientTesting(),
+        provideRouter([])
+      ]
+    });
     service = TestBed.inject(AccountService);
   });
 
