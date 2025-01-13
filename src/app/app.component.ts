@@ -16,9 +16,9 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {  }
 
   login(): void {
-    //this.oidcSecurityService.authorize();
     this.auth.loginWithRedirect();
   }
+  
   logout(): void {
     this.auth.logout({ logoutParams: { returnTo: document.location.origin } });
   }

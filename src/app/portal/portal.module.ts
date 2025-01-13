@@ -13,6 +13,7 @@ import { TosComponent } from './tos/tos.component';
 import { FaqsComponent } from './faqs/faqs.component';
 import { MemberCardComponent } from './member-card/member-card.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NavigationComponent } from './navigation/navigation.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     TosComponent,
     FaqsComponent,
     MemberCardComponent,
+    NavigationComponent
   ],
   imports: [
     CommonModule,
