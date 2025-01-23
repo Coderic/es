@@ -10,7 +10,7 @@ module.exports = {
     aspectRatio: false,
   },
   plugins: [
-    require('@tailwindcss/aspect-ratio'),
+    //require('@tailwindcss/aspect-ratio'),
   ],
 }
 
