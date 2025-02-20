@@ -59,7 +59,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: Create standard files
-        run: npm run build postbuild
+        run: npm run postbuild
       - name: Mode default
         run: mv ./dist/browser/en/* ./dist/browser/
       - name: Upload artifact
