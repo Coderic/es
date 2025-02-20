@@ -13,7 +13,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "postbuild": "cpx ./dist/browser/en/index.html './dist/browser/en/{404,development,crowdfunding,coworking,freelancers,community}/index.html'"
+    "postbuild": "node copy-routes.js"
   },
   "private": true,
   "dependencies": {
