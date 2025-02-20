@@ -75,7 +75,7 @@ registerLocaleData(localeEs, 'es');
       cacheLocation: 'localstorage', // Persistir estado en localStorage
       useRefreshTokens: true, // Usar tokens de actualización
     }),
-    { provide: LocationStrategy, useClass: HashLocationStrategy },
+    { provide: LocationStrategy, useClass: PathLocationStrategy },
     { provide: DEFAULT_CURRENCY_CODE, useValue: 'USD' },
     provideHttpClient(withInterceptorsFromDi()),
     provideHttpClientTesting(),
