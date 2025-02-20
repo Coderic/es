@@ -58,8 +58,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: Create standard files
-        run: npm run postbuild
+      - name: Create 404
+        run: cp ./dist/browser/en/index.html ./dist/browser/en/404.html
       - name: Mode default
         run: mv ./dist/browser/en/* ./dist/browser/
       - name: Upload artifact
