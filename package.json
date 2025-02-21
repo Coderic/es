@@ -44,7 +44,7 @@
     "@angular/compiler-cli": "^19.1.7",
     "@angular/localize": "^19.1.7",
     "@cypress/request": "^3.0.7",
-    "@octokit/rest": "^21.1.0",
+    "@octokit/rest": "^21.1.1",
     "@tailwindcss/postcss": "^4.0.7",
     "@types/jasmine": "^5.1.5",
     "autoprefixer": "^10.4.19",
